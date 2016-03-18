@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,25 +35,25 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.format.SSTableFormat;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.sstable.format.Version;
-import org.apache.cassandra.io.sstable.format.big.BigFormat;
-import org.apache.cassandra.service.CacheService;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.streaming.StreamPlan;
-import org.apache.cassandra.streaming.StreamSession;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableFormat;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.sstable.format.Version;
+import org.apache.cassandraBloomFilters.io.sstable.format.big.BigFormat;
+import org.apache.cassandraBloomFilters.service.CacheService;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.streaming.StreamPlan;
+import org.apache.cassandraBloomFilters.streaming.StreamSession;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 /**
  * Tests backwards compatibility for SSTables

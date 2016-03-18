@@ -1,4 +1,4 @@
-package org.apache.cassandra.net;
+package org.apache.cassandraBloomFilters.net;
 
 import java.util.List;
 

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.lifecycle;
+package org.apache.cassandraBloomFilters.db.lifecycle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,16 +27,16 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction.ReaderState;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction.ReaderState.Action;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.utils.Pair;
-import org.apache.cassandra.utils.concurrent.AbstractTransactionalTest;
-import org.apache.cassandra.utils.concurrent.Transactional.AbstractTransactional.State;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction.ReaderState;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction.ReaderState.Action;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.utils.Pair;
+import org.apache.cassandraBloomFilters.utils.concurrent.AbstractTransactionalTest;
+import org.apache.cassandraBloomFilters.utils.concurrent.Transactional.AbstractTransactional.State;
 
 import static com.google.common.base.Predicates.in;
 import static com.google.common.collect.ImmutableList.copyOf;
@@ -44,9 +44,9 @@ import static com.google.common.collect.ImmutableList.of;
 import static com.google.common.collect.Iterables.all;
 import static com.google.common.collect.Iterables.concat;
 import static com.google.common.collect.Iterables.size;
-import static org.apache.cassandra.db.lifecycle.Helpers.idIn;
-import static org.apache.cassandra.db.lifecycle.Helpers.orIn;
-import static org.apache.cassandra.db.lifecycle.Helpers.select;
+import static org.apache.cassandraBloomFilters.db.lifecycle.Helpers.idIn;
+import static org.apache.cassandraBloomFilters.db.lifecycle.Helpers.orIn;
+import static org.apache.cassandraBloomFilters.db.lifecycle.Helpers.select;
 
 public class LifecycleTransactionTest extends AbstractTransactionalTest
 {

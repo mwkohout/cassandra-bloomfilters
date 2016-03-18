@@ -15,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable.format;
+package org.apache.cassandraBloomFilters.io.sstable.format;
 
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 
 import java.io.File;
 import java.nio.ByteBuffer;
@@ -26,16 +26,16 @@ import com.google.common.util.concurrent.Runnables;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.concurrent.ScheduledExecutors;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.db.Slices;
-import org.apache.cassandra.db.filter.ColumnFilter;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.rows.UnfilteredRowIterator;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.concurrent.ScheduledExecutors;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.db.Slices;
+import org.apache.cassandraBloomFilters.db.filter.ColumnFilter;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterator;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
 
 /**
  * Tests backwards compatibility for SSTables

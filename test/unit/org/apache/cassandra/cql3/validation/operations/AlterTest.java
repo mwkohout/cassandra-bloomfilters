@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.schema.SchemaKeyspace;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.schema.SchemaKeyspace;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -143,10 +143,10 @@ public class AlterTest extends CQLTester
         execute("ALTER KEYSPACE ks2 WITH durable_writes=true");
 
         assertRows(execute("SELECT keyspace_name, durable_writes, replication FROM system_schema.keyspaces"),
-                   row("ks1", false, map("class", "org.apache.cassandra.locator.NetworkTopologyStrategy", "dc1", "1")),
-                   row(KEYSPACE, true, map("class", "org.apache.cassandra.locator.SimpleStrategy", "replication_factor", "1")),
-                   row(KEYSPACE_PER_TEST, true, map("class", "org.apache.cassandra.locator.SimpleStrategy", "replication_factor", "1")),
-                   row("ks2", true, map("class", "org.apache.cassandra.locator.SimpleStrategy", "replication_factor", "1")));
+                   row("ks1", false, map("class", "org.apache.cassandraBloomFilters.locator.NetworkTopologyStrategy", "dc1", "1")),
+                   row(KEYSPACE, true, map("class", "org.apache.cassandraBloomFilters.locator.SimpleStrategy", "replication_factor", "1")),
+                   row(KEYSPACE_PER_TEST, true, map("class", "org.apache.cassandraBloomFilters.locator.SimpleStrategy", "replication_factor", "1")),
+                   row("ks2", true, map("class", "org.apache.cassandraBloomFilters.locator.SimpleStrategy", "replication_factor", "1")));
 
         execute("USE ks1");
 
@@ -154,7 +154,7 @@ public class AlterTest extends CQLTester
 
         execute("CREATE TABLE cf1 (a int PRIMARY KEY, b int) WITH compaction = { 'class' : 'SizeTieredCompactionStrategy', 'min_threshold' : 7 }");
         assertRows(execute("SELECT table_name, compaction FROM system_schema.tables WHERE keyspace_name='ks1'"),
-                   row("cf1", map("class", "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy",
+                   row("cf1", map("class", "org.apache.cassandraBloomFilters.db.compaction.SizeTieredCompactionStrategy",
                                   "min_threshold", "7",
                                   "max_threshold", "32")));
 
@@ -219,7 +219,7 @@ public class AlterTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandra.io.compress.LZ4Compressor")));
+                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandraBloomFilters.io.compress.LZ4Compressor")));
 
         execute("ALTER TABLE %s WITH compression = { 'class' : 'SnappyCompressor', 'chunk_length_in_kb' : 32 };");
 
@@ -228,7 +228,7 @@ public class AlterTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandra.io.compress.SnappyCompressor")));
+                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandraBloomFilters.io.compress.SnappyCompressor")));
 
         execute("ALTER TABLE %s WITH compression = { 'sstable_compression' : 'LZ4Compressor', 'chunk_length_kb' : 64 };");
 
@@ -237,7 +237,7 @@ public class AlterTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandra.io.compress.LZ4Compressor")));
+                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandraBloomFilters.io.compress.LZ4Compressor")));
 
         execute("ALTER TABLE %s WITH compression = { 'sstable_compression' : '', 'chunk_length_kb' : 32 };");
 

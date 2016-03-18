@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.compaction;
+package org.apache.cassandraBloomFilters.db.compaction;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -27,20 +27,20 @@ import java.util.Map;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.metrics.RestorableMeter;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.metrics.RestorableMeter;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
-import static org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.getBuckets;
-import static org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.mostInterestingBucket;
-import static org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.trimToThresholdWithHotness;
-import static org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.validateOptions;
+import static org.apache.cassandraBloomFilters.db.compaction.SizeTieredCompactionStrategy.getBuckets;
+import static org.apache.cassandraBloomFilters.db.compaction.SizeTieredCompactionStrategy.mostInterestingBucket;
+import static org.apache.cassandraBloomFilters.db.compaction.SizeTieredCompactionStrategy.trimToThresholdWithHotness;
+import static org.apache.cassandraBloomFilters.db.compaction.SizeTieredCompactionStrategy.validateOptions;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;

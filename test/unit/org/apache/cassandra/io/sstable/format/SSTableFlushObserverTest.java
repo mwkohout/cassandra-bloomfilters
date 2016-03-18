@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable.format;
+package org.apache.cassandraBloomFilters.io.sstable.format;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,28 +25,28 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.Clustering;
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.db.DeletionTime;
-import org.apache.cassandra.db.SerializationHeader;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.io.FSReadError;
-import org.apache.cassandra.io.FSWriteError;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.format.big.BigTableWriter;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.io.util.FileDataInput;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.Clustering;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.db.DeletionTime;
+import org.apache.cassandraBloomFilters.db.SerializationHeader;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.io.FSReadError;
+import org.apache.cassandraBloomFilters.io.FSWriteError;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.format.big.BigTableWriter;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.io.util.FileDataInput;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;

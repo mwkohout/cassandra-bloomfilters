@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.plan;
+package org.apache.cassandraBloomFilters.index.sasi.plan;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -24,24 +24,24 @@ import java.util.concurrent.TimeUnit;
 import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.Operator;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.filter.RowFilter;
-import org.apache.cassandra.db.marshal.DoubleType;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.index.sasi.plan.Operation.OperationType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.Tables;
-import org.apache.cassandra.service.MigrationManager;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.Operator;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.filter.RowFilter;
+import org.apache.cassandraBloomFilters.db.marshal.DoubleType;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.index.sasi.plan.Operation.OperationType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.Tables;
+import org.apache.cassandraBloomFilters.service.MigrationManager;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import org.junit.*;
 

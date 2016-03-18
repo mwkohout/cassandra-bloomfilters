@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -31,14 +31,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.locator.TokenMetadata;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 import static org.junit.Assert.assertEquals;
 

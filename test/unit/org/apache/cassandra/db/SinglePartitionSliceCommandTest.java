@@ -1,4 +1,4 @@
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -13,31 +13,31 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.db.filter.ClusteringIndexSliceFilter;
-import org.apache.cassandra.db.filter.ColumnFilter;
-import org.apache.cassandra.db.filter.DataLimits;
-import org.apache.cassandra.db.filter.RowFilter;
-import org.apache.cassandra.db.marshal.IntegerType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterator;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.UnfilteredRowIterator;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.db.filter.ClusteringIndexSliceFilter;
+import org.apache.cassandraBloomFilters.db.filter.ColumnFilter;
+import org.apache.cassandraBloomFilters.db.filter.DataLimits;
+import org.apache.cassandraBloomFilters.db.filter.RowFilter;
+import org.apache.cassandraBloomFilters.db.marshal.IntegerType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterator;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterator;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class SinglePartitionSliceCommandTest
 {

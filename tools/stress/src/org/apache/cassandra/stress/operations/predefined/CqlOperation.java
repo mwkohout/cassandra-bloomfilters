@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.stress.operations.predefined;
+package org.apache.cassandraBloomFilters.stress.operations.predefined;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -29,21 +29,21 @@ import com.google.common.base.Function;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.settings.Command;
-import org.apache.cassandra.stress.settings.ConnectionStyle;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.Compression;
-import org.apache.cassandra.thrift.CqlResult;
-import org.apache.cassandra.thrift.CqlRow;
-import org.apache.cassandra.thrift.ThriftConversion;
-import org.apache.cassandra.transport.SimpleClient;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.settings.Command;
+import org.apache.cassandraBloomFilters.stress.settings.ConnectionStyle;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.Compression;
+import org.apache.cassandraBloomFilters.thrift.CqlResult;
+import org.apache.cassandraBloomFilters.thrift.CqlRow;
+import org.apache.cassandraBloomFilters.thrift.ThriftConversion;
+import org.apache.cassandraBloomFilters.transport.SimpleClient;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.apache.thrift.TException;
 
 public abstract class CqlOperation<V> extends PredefinedOperation

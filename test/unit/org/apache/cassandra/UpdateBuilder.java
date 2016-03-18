@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 
 /**

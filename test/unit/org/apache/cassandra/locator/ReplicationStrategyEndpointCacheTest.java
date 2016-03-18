@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -27,12 +27,12 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
 
 public class ReplicationStrategyEndpointCacheTest
 {

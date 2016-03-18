@@ -1,4 +1,4 @@
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import org.junit.Test;
 

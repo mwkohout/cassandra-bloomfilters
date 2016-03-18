@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,13 +29,13 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.db.ClusteringComparator;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.io.compress.CompressedSequentialWriter;
-import org.apache.cassandra.io.compress.CompressionMetadata;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.schema.CompressionParams;
-import org.apache.cassandra.utils.ChecksumType;
+import org.apache.cassandraBloomFilters.db.ClusteringComparator;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.io.compress.CompressedSequentialWriter;
+import org.apache.cassandraBloomFilters.io.compress.CompressionMetadata;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.schema.CompressionParams;
+import org.apache.cassandraBloomFilters.utils.ChecksumType;
 
 import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertEquals;

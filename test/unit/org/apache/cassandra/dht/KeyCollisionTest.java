@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -24,19 +24,19 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 /**
  * Test cases where multiple keys collides, ie have the same token.

@@ -1,8 +1,8 @@
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.serializers.MarshalException;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;

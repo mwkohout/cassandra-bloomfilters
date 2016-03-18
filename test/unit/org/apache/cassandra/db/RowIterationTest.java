@@ -16,14 +16,14 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.rows.UnfilteredRowIterator;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterator;
-import org.apache.cassandra.Util;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterator;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterator;
+import org.apache.cassandraBloomFilters.Util;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

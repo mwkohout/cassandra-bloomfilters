@@ -15,11 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.config.YamlConfigurationLoader;
-import org.apache.cassandra.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.config.YamlConfigurationLoader;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
 
 import java.io.File;
 

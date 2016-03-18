@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
@@ -29,14 +29,14 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.cassandra.*;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.marshal.IntegerType;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.*;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.marshal.IntegerType;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class PartitionRangeReadTest
 {

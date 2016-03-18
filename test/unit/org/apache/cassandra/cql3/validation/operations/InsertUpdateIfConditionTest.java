@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.schema.SchemaKeyspace;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.schema.SchemaKeyspace;
 
 import static java.lang.String.format;
 import static org.junit.Assert.assertEquals;

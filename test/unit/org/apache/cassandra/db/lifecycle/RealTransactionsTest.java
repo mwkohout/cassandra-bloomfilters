@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.db.lifecycle;
+package org.apache.cassandraBloomFilters.db.lifecycle;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,24 +29,24 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.SerializationHeader;
-import org.apache.cassandra.db.compaction.AbstractCompactionStrategy;
-import org.apache.cassandra.db.compaction.CompactionController;
-import org.apache.cassandra.db.compaction.CompactionIterator;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.io.sstable.CQLSSTableWriter;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.SSTableRewriter;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.sstable.format.SSTableWriter;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.SerializationHeader;
+import org.apache.cassandraBloomFilters.db.compaction.AbstractCompactionStrategy;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionController;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionIterator;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.io.sstable.CQLSSTableWriter;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.SSTableRewriter;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableWriter;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

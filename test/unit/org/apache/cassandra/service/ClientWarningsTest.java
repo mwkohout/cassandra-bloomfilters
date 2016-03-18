@@ -15,22 +15,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import org.apache.commons.lang3.StringUtils;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.QueryOptions;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.transport.Message;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.transport.SimpleClient;
-import org.apache.cassandra.transport.messages.QueryMessage;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.QueryOptions;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.transport.Message;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.transport.SimpleClient;
+import org.apache.cassandraBloomFilters.transport.messages.QueryMessage;
 
 import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

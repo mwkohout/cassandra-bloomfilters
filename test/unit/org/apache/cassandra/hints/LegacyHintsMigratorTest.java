@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,26 +26,26 @@ import java.util.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.marshal.UUIDType;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.rows.BTreeRow;
-import org.apache.cassandra.db.rows.BufferCell;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.marshal.UUIDType;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.rows.BTreeRow;
+import org.apache.cassandraBloomFilters.db.rows.BufferCell;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
-import static org.apache.cassandra.hints.HintsTestUtil.assertMutationsEqual;
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.hints.HintsTestUtil.assertMutationsEqual;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 
 // TODO: test split into several files
 @SuppressWarnings("deprecation")

@@ -16,11 +16,11 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 
-import org.apache.cassandra.utils.DynamicList;
+import org.apache.cassandraBloomFilters.utils.DynamicList;
 
 public class Seed implements Comparable<Seed>
 {

@@ -18,13 +18,13 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.cassandra.db.marshal.SetType;
+import org.apache.cassandraBloomFilters.db.marshal.SetType;
 
 public class Sets<T> extends Generator<Set<T>>
 {

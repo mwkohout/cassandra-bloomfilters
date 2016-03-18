@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.db.monitoring;
+package org.apache.cassandraBloomFilters.db.monitoring;
 
 import java.util.ArrayList;
 import java.util.Arrays;

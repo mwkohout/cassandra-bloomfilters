@@ -1,4 +1,4 @@
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.util.Arrays;
 
@@ -7,9 +7,9 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertEquals;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
 
 /**
  * SELECT statement tests that require a ByteOrderedPartitioner

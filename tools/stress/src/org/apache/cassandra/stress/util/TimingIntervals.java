@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 
 import java.util.Arrays;
 import java.util.Map;

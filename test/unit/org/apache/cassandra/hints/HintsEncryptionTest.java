@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import java.util.Arrays;
 
@@ -25,9 +25,9 @@ import com.google.common.collect.ImmutableMap;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.security.EncryptionContext;
-import org.apache.cassandra.security.EncryptionContextGenerator;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.security.EncryptionContext;
+import org.apache.cassandraBloomFilters.security.EncryptionContextGenerator;
 
 public class HintsEncryptionTest extends AlteredHints
 {

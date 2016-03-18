@@ -1,4 +1,4 @@
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 /*
  *
@@ -43,23 +43,23 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.UpdateBuilder;
-import org.apache.cassandra.config.Config.CommitLogSync;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.SerializationHelper;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.security.EncryptionContext;
-import org.apache.cassandra.security.EncryptionContextGenerator;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.UpdateBuilder;
+import org.apache.cassandraBloomFilters.config.Config.CommitLogSync;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.SerializationHelper;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.security.EncryptionContext;
+import org.apache.cassandraBloomFilters.security.EncryptionContextGenerator;
 
 
 public class CommitLogStressTest

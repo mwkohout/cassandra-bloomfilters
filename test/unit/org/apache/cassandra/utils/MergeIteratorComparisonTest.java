@@ -16,14 +16,14 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.nio.ByteBuffer;
 import java.util.*;
 
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
-import org.apache.cassandra.utils.AbstractIterator;
+import org.apache.cassandraBloomFilters.utils.AbstractIterator;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
@@ -33,11 +33,11 @@ import com.google.common.collect.Sets;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.TimeUUIDType;
-import org.apache.cassandra.db.marshal.UUIDType;
-import org.apache.cassandra.utils.MergeIterator.Candidate;
-import org.apache.cassandra.utils.MergeIterator.Reducer;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.TimeUUIDType;
+import org.apache.cassandraBloomFilters.db.marshal.UUIDType;
+import org.apache.cassandraBloomFilters.utils.MergeIterator.Candidate;
+import org.apache.cassandraBloomFilters.utils.MergeIterator.Reducer;
 
 public class MergeIteratorComparisonTest
 {

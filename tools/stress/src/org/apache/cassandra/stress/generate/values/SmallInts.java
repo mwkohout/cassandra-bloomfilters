@@ -18,10 +18,10 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.ShortType;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.ShortType;
 
 public class SmallInts extends Generator<Short>
 {

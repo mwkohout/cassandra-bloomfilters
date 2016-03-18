@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.security;
+package org.apache.cassandraBloomFilters.security;
 
 import java.io.File;
 import java.io.IOException;
@@ -33,10 +33,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.TransparentDataEncryptionOptions;
-import org.apache.cassandra.io.compress.ICompressor;
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.config.TransparentDataEncryptionOptions;
+import org.apache.cassandraBloomFilters.io.compress.ICompressor;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
 
 public class EncryptionUtilsTest
 {

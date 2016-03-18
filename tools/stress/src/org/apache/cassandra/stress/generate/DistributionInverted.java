@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one

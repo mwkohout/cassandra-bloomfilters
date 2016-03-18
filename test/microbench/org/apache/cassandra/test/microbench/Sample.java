@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.test.microbench;
+package org.apache.cassandraBloomFilters.test.microbench;
 
 import net.jpountz.lz4.LZ4Compressor;
 import net.jpountz.lz4.LZ4Factory;

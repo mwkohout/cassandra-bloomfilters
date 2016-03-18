@@ -1,4 +1,4 @@
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -34,30 +34,30 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.Iterators;
 import org.apache.commons.lang3.StringUtils;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.compaction.AbstractCompactionTask;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.gms.ApplicationState;
-import org.apache.cassandra.gms.Gossiper;
-import org.apache.cassandra.gms.VersionedValue;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.CounterId;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.compaction.AbstractCompactionTask;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.gms.ApplicationState;
+import org.apache.cassandraBloomFilters.gms.Gossiper;
+import org.apache.cassandraBloomFilters.gms.VersionedValue;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.CounterId;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

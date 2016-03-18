@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -25,33 +25,33 @@ import java.util.concurrent.CountDownLatch;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.restrictions.StatementRestrictions;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.DeletionTime;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.index.IndexNotAvailableException;
-import org.apache.cassandra.index.SecondaryIndexManager;
-import org.apache.cassandra.index.StubIndex;
-import org.apache.cassandra.index.internal.CustomCassandraIndex;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.MD5Digest;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.restrictions.StatementRestrictions;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.DeletionTime;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.index.IndexNotAvailableException;
+import org.apache.cassandraBloomFilters.index.SecondaryIndexManager;
+import org.apache.cassandraBloomFilters.index.StubIndex;
+import org.apache.cassandraBloomFilters.index.internal.CustomCassandraIndex;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.MD5Digest;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
-import static org.apache.cassandra.Util.throwAssert;
+import static org.apache.cassandraBloomFilters.Util.throwAssert;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;

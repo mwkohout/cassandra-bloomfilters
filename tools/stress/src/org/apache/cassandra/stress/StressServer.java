@@ -15,7 +15,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -26,7 +26,7 @@ import java.net.Socket;
 
 import org.apache.commons.cli.*;
 
-import org.apache.cassandra.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
 
 public class StressServer
 {

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.IOException;
 import java.security.MessageDigest;
@@ -25,21 +25,21 @@ import java.util.Arrays;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.rows.EncodingStats;
-import org.apache.cassandra.db.rows.UnfilteredRowIterators;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.rows.EncodingStats;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterators;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;

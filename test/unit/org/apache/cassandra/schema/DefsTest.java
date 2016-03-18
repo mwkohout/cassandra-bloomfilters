@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.schema;
+package org.apache.cassandraBloomFilters.schema;
 
 import java.io.File;
 import java.nio.ByteBuffer;
@@ -29,30 +29,30 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Directories;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.Component;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.locator.OldNetworkTopologyStrategy;
-import org.apache.cassandra.service.MigrationManager;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Directories;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.Component;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.locator.OldNetworkTopologyStrategy;
+import org.apache.cassandraBloomFilters.service.MigrationManager;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
-import static org.apache.cassandra.Util.throwAssert;
-import static org.apache.cassandra.cql3.CQLTester.assertRows;
-import static org.apache.cassandra.cql3.CQLTester.row;
+import static org.apache.cassandraBloomFilters.Util.throwAssert;
+import static org.apache.cassandraBloomFilters.cql3.CQLTester.assertRows;
+import static org.apache.cassandraBloomFilters.cql3.CQLTester.row;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;

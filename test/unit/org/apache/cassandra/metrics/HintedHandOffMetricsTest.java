@@ -18,7 +18,7 @@
  * under the License.
  * 
  */
-package org.apache.cassandra.metrics;
+package org.apache.cassandraBloomFilters.metrics;
 
 import java.net.InetAddress;
 import java.util.Map;
@@ -28,15 +28,15 @@ import org.junit.Test;
 
 import com.google.common.collect.Iterators;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.db.SystemKeyspace;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.UUIDType;
-import org.apache.cassandra.hints.HintsService;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.db.SystemKeyspace;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.UUIDType;
+import org.apache.cassandraBloomFilters.hints.HintsService;
 
 import static org.junit.Assert.assertEquals;
-import static org.apache.cassandra.cql3.QueryProcessor.executeInternal;
+import static org.apache.cassandraBloomFilters.cql3.QueryProcessor.executeInternal;
 
 public class HintedHandOffMetricsTest
 {

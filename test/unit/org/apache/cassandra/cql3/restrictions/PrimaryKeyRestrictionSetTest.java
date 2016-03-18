@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.restrictions;
+package org.apache.cassandraBloomFilters.cql3.restrictions;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -23,17 +23,17 @@ import java.util.*;
 import com.google.common.collect.Iterables;
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.*;
-import org.apache.cassandra.cql3.Term.MultiItemTerminal;
-import org.apache.cassandra.cql3.statements.Bound;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.*;
+import org.apache.cassandraBloomFilters.cql3.Term.MultiItemTerminal;
+import org.apache.cassandraBloomFilters.cql3.statements.Bound;
 
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.ReversedType;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.ReversedType;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;

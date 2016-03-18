@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.util.*;
 
@@ -28,7 +28,7 @@ import org.junit.Test;
 import com.datastax.driver.core.exceptions.InvalidQueryException;
 import junit.framework.Assert;
 
-import org.apache.cassandra.db.SystemKeyspace;
+import org.apache.cassandraBloomFilters.db.SystemKeyspace;
 
 public class ViewFilteringTest extends CQLTester
 {

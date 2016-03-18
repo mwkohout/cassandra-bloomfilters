@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
@@ -27,9 +27,9 @@ import com.google.common.collect.Sets;
 import org.junit.After;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

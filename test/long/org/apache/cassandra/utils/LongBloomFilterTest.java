@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -25,8 +25,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.apache.cassandra.utils.FilterFactory.getFilter;
-import static org.apache.cassandra.utils.FilterTestHelper.testFalsePositives;
+import static org.apache.cassandraBloomFilters.utils.FilterFactory.getFilter;
+import static org.apache.cassandraBloomFilters.utils.FilterTestHelper.testFalsePositives;
 
 public class LongBloomFilterTest
 {

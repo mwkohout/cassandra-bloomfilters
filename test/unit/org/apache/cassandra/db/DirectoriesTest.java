@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -30,21 +30,21 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.Config.DiskFailurePolicy;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.db.Directories.DataDirectory;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.index.internal.CassandraIndex;
-import org.apache.cassandra.io.FSWriteError;
-import org.apache.cassandra.io.sstable.Component;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.Config.DiskFailurePolicy;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.db.Directories.DataDirectory;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.index.internal.CassandraIndex;
+import org.apache.cassandraBloomFilters.io.FSWriteError;
+import org.apache.cassandraBloomFilters.io.sstable.Component;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

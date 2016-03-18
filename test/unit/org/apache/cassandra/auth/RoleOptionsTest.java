@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.auth;
+package org.apache.cassandraBloomFilters.auth;
 
 import java.lang.reflect.Field;
 import java.util.*;
@@ -23,9 +23,9 @@ import java.util.*;
 import com.google.common.collect.ImmutableSet;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.exceptions.*;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.exceptions.*;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

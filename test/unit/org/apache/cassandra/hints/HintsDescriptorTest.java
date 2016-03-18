@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import java.io.DataInput;
 import java.io.File;
@@ -27,8 +27,8 @@ import com.google.common.io.ByteStreams;
 import com.google.common.io.Files;
 import org.junit.Test;
 
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;

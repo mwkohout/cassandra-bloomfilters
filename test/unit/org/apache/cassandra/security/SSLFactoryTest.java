@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.security;
+package org.apache.cassandraBloomFilters.security;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -29,8 +29,8 @@ import com.google.common.base.Predicates;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
-import org.apache.cassandra.config.EncryptionOptions;
-import org.apache.cassandra.config.EncryptionOptions.ServerEncryptionOptions;
+import org.apache.cassandraBloomFilters.config.EncryptionOptions;
+import org.apache.cassandraBloomFilters.config.EncryptionOptions.ServerEncryptionOptions;
 import org.junit.Test;
 
 public class SSLFactoryTest

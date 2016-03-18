@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.security;
+package org.apache.cassandraBloomFilters.security;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.TransparentDataEncryptionOptions;
+import org.apache.cassandraBloomFilters.config.TransparentDataEncryptionOptions;
 
 public class JKSKeyProviderTest
 {

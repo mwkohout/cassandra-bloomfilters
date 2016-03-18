@@ -1,4 +1,4 @@
-package org.apache.cassandra.index;
+package org.apache.cassandraBloomFilters.index;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -10,29 +10,29 @@ import com.google.common.collect.ImmutableMap;
 import org.junit.Test;
 
 import com.datastax.driver.core.exceptions.QueryValidationException;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.cql3.restrictions.IndexRestrictions;
-import org.apache.cassandra.cql3.restrictions.StatementRestrictions;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.cql3.statements.ModificationStatement;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.ReadCommand;
-import org.apache.cassandra.db.ReadExecutionController;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterator;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.schema.Indexes;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.cql3.restrictions.IndexRestrictions;
+import org.apache.cassandraBloomFilters.cql3.restrictions.StatementRestrictions;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.cql3.statements.ModificationStatement;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.ReadCommand;
+import org.apache.cassandraBloomFilters.db.ReadExecutionController;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterator;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.schema.Indexes;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
-import static org.apache.cassandra.Util.throwAssert;
-import static org.apache.cassandra.cql3.statements.IndexTarget.CUSTOM_INDEX_OPTION_NAME;
+import static org.apache.cassandraBloomFilters.Util.throwAssert;
+import static org.apache.cassandraBloomFilters.cql3.statements.IndexTarget.CUSTOM_INDEX_OPTION_NAME;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -46,7 +46,7 @@ public class CustomIndexTest extends CQLTester
         // test to ensure that we don't deadlock when flushing CFS backed custom indexers
         // see CASSANDRA-10181
         createTable("CREATE TABLE %s (a int, b int, c int, d int, PRIMARY KEY (a, b))");
-        createIndex("CREATE CUSTOM INDEX myindex ON %s(c) USING 'org.apache.cassandra.index.internal.CustomCassandraIndex'");
+        createIndex("CREATE CUSTOM INDEX myindex ON %s(c) USING 'org.apache.cassandraBloomFilters.index.internal.CustomCassandraIndex'");
 
         execute("INSERT INTO %s (a, b, c, d) VALUES (?, ?, ?, ?)", 0, 0, 0, 2);
         execute("INSERT INTO %s (a, b, c, d) VALUES (?, ?, ?, ?)", 0, 1, 0, 1);

@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,7 +27,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.cassandra.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
 
 public class SettingsMisc implements Serializable
 {

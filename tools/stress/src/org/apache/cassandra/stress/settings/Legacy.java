@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 
 import java.io.Serializable;
 import java.util.*;
@@ -65,7 +65,7 @@ public class Legacy implements Serializable
         availableOptions.addOption("P",  "use-prepared-statements", false, "Perform queries using prepared statements (only applicable to CQL).");
         availableOptions.addOption("e",  "consistency-level",    true,   "Consistency Level to use (ONE, QUORUM, LOCAL_QUORUM, EACH_QUORUM, ALL, ANY), default:ONE");
         availableOptions.addOption("x",  "create-index",         true,   "Type of index to create on needed column families (KEYS)");
-        availableOptions.addOption("R",  "replication-strategy", true,   "Replication strategy to use (only on insert if keyspace does not exist), default:org.apache.cassandra.locator.SimpleStrategy");
+        availableOptions.addOption("R",  "replication-strategy", true,   "Replication strategy to use (only on insert if keyspace does not exist), default:org.apache.cassandraBloomFilters.locator.SimpleStrategy");
         availableOptions.addOption("O",  "strategy-properties",  true,   "Replication strategy properties in the following format <dc_name>:<num>,<dc_name>:<num>,...");
         availableOptions.addOption("V",  "average-size-values",  false,  "Generate column values of average rather than specific size");
         availableOptions.addOption("T",  "send-to",              true,   "Send this as a request to the stress daemon at specified address.");
@@ -73,7 +73,7 @@ public class Legacy implements Serializable
         availableOptions.addOption("Q",  "query-names",          true,   "Comma-separated list of column names to retrieve from each row.");
         availableOptions.addOption("Z",  "compaction-strategy",  true,   "CompactionStrategy to use.");
         availableOptions.addOption("U",  "comparator",           true,   "Column Comparator to use. Currently supported types are: TimeUUIDType, AsciiType, UTF8Type.");
-        availableOptions.addOption("tf", "transport-factory",    true,   "Fully-qualified TTransportFactory class name for creating a connection. Note: For Thrift over SSL, use org.apache.cassandra.stress.SSLTransportFactory.");
+        availableOptions.addOption("tf", "transport-factory",    true,   "Fully-qualified TTransportFactory class name for creating a connection. Note: For Thrift over SSL, use org.apache.cassandraBloomFilters.stress.SSLTransportFactory.");
         availableOptions.addOption("ns", "no-statistics",        false,  "Turn off the aggegate statistics that is normally output after completion.");
         availableOptions.addOption("ts", SSL_TRUSTSTORE,         true, "SSL: full path to truststore");
         availableOptions.addOption("tspw", SSL_TRUSTSTORE_PW,    true, "SSL: full path to truststore");

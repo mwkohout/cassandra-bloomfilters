@@ -15,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
-import org.apache.cassandra.Util;
+import org.apache.cassandraBloomFilters.Util;
 import org.jboss.byteman.contrib.bmunit.BMRule;
 import org.jboss.byteman.contrib.bmunit.BMUnitRunner;
 import org.junit.BeforeClass;
@@ -52,7 +52,7 @@ public class HintsBufferPoolTest
             targetClass="HintsBufferPool",
             targetMethod="switchCurrentBuffer",
             targetLocation="AT INVOKE java.util.concurrent.BlockingQueue.take",
-            action="org.apache.cassandra.hints.HintsBufferPoolTest.blockedOnBackpressure = true;")
+            action="org.apache.cassandraBloomFilters.hints.HintsBufferPoolTest.blockedOnBackpressure = true;")
     public void testBackpressure() throws Exception
     {
         Queue<HintsBuffer> returnedBuffers = new ConcurrentLinkedQueue<>();

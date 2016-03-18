@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.index.internal;
+package org.apache.cassandraBloomFilters.index.internal;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -26,23 +26,23 @@ import com.google.common.base.Joiner;
 import com.google.common.collect.*;
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.restrictions.StatementRestrictions;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.filter.ClusteringIndexFilter;
-import org.apache.cassandra.db.filter.ClusteringIndexSliceFilter;
-import org.apache.cassandra.db.filter.ColumnFilter;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.Unfiltered;
-import org.apache.cassandra.db.rows.UnfilteredRowIterator;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.restrictions.StatementRestrictions;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.filter.ClusteringIndexFilter;
+import org.apache.cassandraBloomFilters.db.filter.ClusteringIndexSliceFilter;
+import org.apache.cassandraBloomFilters.db.filter.ColumnFilter;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.Unfiltered;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterator;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
-import static org.apache.cassandra.Util.throwAssert;
+import static org.apache.cassandraBloomFilters.Util.throwAssert;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.streaming;
+package org.apache.cassandraBloomFilters.streaming;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.UUID;
 
 import org.junit.Test;
 
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class SessionInfoTest
 {

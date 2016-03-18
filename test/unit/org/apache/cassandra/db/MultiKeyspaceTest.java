@@ -1,4 +1,4 @@
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -20,7 +20,7 @@ package org.apache.cassandra.db;
  *
  */
 
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 import org.junit.Test;
 
 

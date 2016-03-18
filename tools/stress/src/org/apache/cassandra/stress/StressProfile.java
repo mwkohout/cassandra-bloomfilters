@@ -18,7 +18,7 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 
 import java.io.IOError;
@@ -34,23 +34,23 @@ import com.google.common.util.concurrent.Uninterruptibles;
 
 import com.datastax.driver.core.*;
 import com.datastax.driver.core.exceptions.AlreadyExistsException;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.statements.CreateKeyspaceStatement;
-import org.apache.cassandra.exceptions.RequestValidationException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.stress.generate.*;
-import org.apache.cassandra.stress.generate.values.*;
-import org.apache.cassandra.stress.operations.userdefined.TokenRangeQuery;
-import org.apache.cassandra.stress.operations.userdefined.SchemaInsert;
-import org.apache.cassandra.stress.operations.userdefined.SchemaQuery;
-import org.apache.cassandra.stress.operations.userdefined.ValidatingSchemaQuery;
-import org.apache.cassandra.stress.settings.*;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.Compression;
-import org.apache.cassandra.thrift.ThriftConversion;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.statements.CreateKeyspaceStatement;
+import org.apache.cassandraBloomFilters.exceptions.RequestValidationException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.generate.values.*;
+import org.apache.cassandraBloomFilters.stress.operations.userdefined.TokenRangeQuery;
+import org.apache.cassandraBloomFilters.stress.operations.userdefined.SchemaInsert;
+import org.apache.cassandraBloomFilters.stress.operations.userdefined.SchemaQuery;
+import org.apache.cassandraBloomFilters.stress.operations.userdefined.ValidatingSchemaQuery;
+import org.apache.cassandraBloomFilters.stress.settings.*;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.Compression;
+import org.apache.cassandraBloomFilters.thrift.ThriftConversion;
 import org.apache.thrift.TException;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
@@ -173,20 +173,20 @@ public class StressProfile implements Serializable
         {
             try
             {
-                client.execute(keyspaceCql, org.apache.cassandra.db.ConsistencyLevel.ONE);
+                client.execute(keyspaceCql, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
             }
             catch (AlreadyExistsException e)
             {
             }
         }
 
-        client.execute("use " + keyspaceName, org.apache.cassandra.db.ConsistencyLevel.ONE);
+        client.execute("use " + keyspaceName, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
 
         if (tableCql != null)
         {
             try
             {
-                client.execute(tableCql, org.apache.cassandra.db.ConsistencyLevel.ONE);
+                client.execute(tableCql, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
             }
             catch (AlreadyExistsException e)
             {
@@ -203,7 +203,7 @@ public class StressProfile implements Serializable
 
                 try
                 {
-                    client.execute(extraCql, org.apache.cassandra.db.ConsistencyLevel.ONE);
+                    client.execute(extraCql, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
                 }
                 catch (AlreadyExistsException e)
                 {
@@ -222,7 +222,7 @@ public class StressProfile implements Serializable
         JavaDriverClient client = settings.getJavaDriverClient(false);
         assert settings.command.truncate != SettingsCommand.TruncateWhen.NEVER;
         String cql = String.format("TRUNCATE %s.%s", keyspaceName, tableName);
-        client.execute(cql, org.apache.cassandra.db.ConsistencyLevel.ONE);
+        client.execute(cql, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
         System.out.println(String.format("Truncated %s.%s. Sleeping %ss for propagation.",
                                          keyspaceName, tableName, settings.node.nodes.size()));
         Uninterruptibles.sleepUninterruptibly(settings.node.nodes.size(), TimeUnit.SECONDS);

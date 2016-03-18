@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -30,32 +30,32 @@ import com.google.common.collect.Iterables;
 
 import org.junit.*;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.commitlog.CommitLogReplayer.CommitLogReplayException;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.SerializationHelper;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.compress.DeflateCompressor;
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.compress.SnappyCompressor;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.FastByteArrayInputStream;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.security.EncryptionContext;
-import org.apache.cassandra.security.EncryptionContextGenerator;
-import org.apache.cassandra.utils.*;
-import org.apache.cassandra.utils.vint.VIntCoding;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLogReplayer.CommitLogReplayException;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.SerializationHelper;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.compress.DeflateCompressor;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.compress.SnappyCompressor;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.FastByteArrayInputStream;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.security.EncryptionContext;
+import org.apache.cassandraBloomFilters.security.EncryptionContextGenerator;
+import org.apache.cassandraBloomFilters.utils.*;
+import org.apache.cassandraBloomFilters.utils.vint.VIntCoding;
 
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

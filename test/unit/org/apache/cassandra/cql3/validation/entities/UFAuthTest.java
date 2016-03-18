@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.lang.reflect.Field;
 import java.util.*;
@@ -26,20 +26,20 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.auth.*;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.Attributes;
-import org.apache.cassandra.cql3.CQLStatement;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.functions.Function;
-import org.apache.cassandra.cql3.functions.FunctionName;
-import org.apache.cassandra.cql3.statements.BatchStatement;
-import org.apache.cassandra.cql3.statements.ModificationStatement;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.exceptions.*;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.auth.*;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.Attributes;
+import org.apache.cassandraBloomFilters.cql3.CQLStatement;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.functions.Function;
+import org.apache.cassandraBloomFilters.cql3.functions.FunctionName;
+import org.apache.cassandraBloomFilters.cql3.statements.BatchStatement;
+import org.apache.cassandraBloomFilters.cql3.statements.ModificationStatement;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.exceptions.*;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

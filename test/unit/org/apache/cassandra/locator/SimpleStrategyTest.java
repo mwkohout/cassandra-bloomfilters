@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -27,19 +27,19 @@ import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.OrderPreservingPartitioner;
-import org.apache.cassandra.dht.OrderPreservingPartitioner.StringToken;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.service.PendingRangeCalculatorService;
-import org.apache.cassandra.service.StorageServiceAccessor;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.OrderPreservingPartitioner;
+import org.apache.cassandraBloomFilters.dht.OrderPreservingPartitioner.StringToken;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.service.PendingRangeCalculatorService;
+import org.apache.cassandraBloomFilters.service.StorageServiceAccessor;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

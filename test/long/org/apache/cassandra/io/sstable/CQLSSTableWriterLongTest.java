@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -28,9 +28,9 @@ import com.google.common.io.Files;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 public class CQLSSTableWriterLongTest
 {

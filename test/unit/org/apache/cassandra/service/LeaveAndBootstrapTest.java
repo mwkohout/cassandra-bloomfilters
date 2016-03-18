@@ -17,7 +17,7 @@
 * under the License.
 */
 
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -30,22 +30,22 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.Util.PartitionerSwitcher;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.SystemKeyspace;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.gms.ApplicationState;
-import org.apache.cassandra.gms.Gossiper;
-import org.apache.cassandra.gms.VersionedValue;
-import org.apache.cassandra.locator.AbstractReplicationStrategy;
-import org.apache.cassandra.locator.SimpleSnitch;
-import org.apache.cassandra.locator.TokenMetadata;
-import org.apache.cassandra.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.Util.PartitionerSwitcher;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.SystemKeyspace;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.gms.ApplicationState;
+import org.apache.cassandraBloomFilters.gms.Gossiper;
+import org.apache.cassandraBloomFilters.gms.VersionedValue;
+import org.apache.cassandraBloomFilters.locator.AbstractReplicationStrategy;
+import org.apache.cassandraBloomFilters.locator.SimpleSnitch;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
 
 import static org.junit.Assert.*;
 

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -40,8 +40,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.io.compress.BufferType;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.io.compress.BufferType;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class DataOutputTest
 {

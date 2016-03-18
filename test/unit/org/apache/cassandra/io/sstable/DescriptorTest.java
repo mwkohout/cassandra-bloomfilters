@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,10 +25,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.db.Directories;
-import org.apache.cassandra.io.sstable.format.SSTableFormat;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.db.Directories;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableFormat;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

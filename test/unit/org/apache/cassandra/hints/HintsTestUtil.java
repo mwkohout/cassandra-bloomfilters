@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import java.util.UUID;
 
 import com.google.common.collect.Iterators;
 
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.partitions.AbstractBTreePartition;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.partitions.AbstractBTreePartition;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;

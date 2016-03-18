@@ -1,4 +1,4 @@
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -28,12 +28,12 @@ import java.util.Collections;
 import java.util.List;
 
 import org.junit.Test;
-import org.apache.cassandra.io.ISerializer;
-import org.apache.cassandra.io.IVersionedSerializer;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.DataOutputPlus;
+import org.apache.cassandraBloomFilters.io.ISerializer;
+import org.apache.cassandraBloomFilters.io.IVersionedSerializer;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputPlus;
 
 import static org.junit.Assert.assertEquals;
 

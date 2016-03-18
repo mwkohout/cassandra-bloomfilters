@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,9 +23,9 @@ import java.net.SocketException;
 
 import org.junit.Test;
 
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.io.FSReadError;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.io.FSReadError;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

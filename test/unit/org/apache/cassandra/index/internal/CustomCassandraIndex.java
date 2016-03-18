@@ -1,4 +1,4 @@
-package org.apache.cassandra.index.internal;
+package org.apache.cassandraBloomFilters.index.internal;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -8,39 +8,39 @@ import java.util.function.BiFunction;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import org.apache.cassandra.index.TargetParser;
+import org.apache.cassandraBloomFilters.index.TargetParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.Operator;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.filter.RowFilter;
-import org.apache.cassandra.db.lifecycle.SSTableSet;
-import org.apache.cassandra.db.lifecycle.View;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.partitions.PartitionIterator;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.index.Index;
-import org.apache.cassandra.index.IndexRegistry;
-import org.apache.cassandra.index.SecondaryIndexBuilder;
-import org.apache.cassandra.index.transactions.IndexTransaction;
-import org.apache.cassandra.index.transactions.UpdateTransaction;
-import org.apache.cassandra.io.sstable.ReducingKeyIterator;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.Pair;
-import org.apache.cassandra.utils.concurrent.OpOrder;
-import org.apache.cassandra.utils.concurrent.Refs;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.Operator;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.filter.RowFilter;
+import org.apache.cassandraBloomFilters.db.lifecycle.SSTableSet;
+import org.apache.cassandraBloomFilters.db.lifecycle.View;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionIterator;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.index.Index;
+import org.apache.cassandraBloomFilters.index.IndexRegistry;
+import org.apache.cassandraBloomFilters.index.SecondaryIndexBuilder;
+import org.apache.cassandraBloomFilters.index.transactions.IndexTransaction;
+import org.apache.cassandraBloomFilters.index.transactions.UpdateTransaction;
+import org.apache.cassandraBloomFilters.io.sstable.ReducingKeyIterator;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.Pair;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.utils.concurrent.Refs;
 
-import static org.apache.cassandra.index.internal.CassandraIndex.getFunctions;
-import static org.apache.cassandra.index.internal.CassandraIndex.indexCfsMetadata;
+import static org.apache.cassandraBloomFilters.index.internal.CassandraIndex.getFunctions;
+import static org.apache.cassandraBloomFilters.index.internal.CassandraIndex.indexCfsMetadata;
 
 /**
  * Clone of KeysIndex used in CassandraIndexTest#testCustomIndexWithCFS to verify

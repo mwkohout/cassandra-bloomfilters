@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.cache;
+package org.apache.cassandraBloomFilters.cache;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
@@ -31,20 +31,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import com.googlecode.concurrentlinkedhashmap.Weighers;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class CacheProviderTest
 {

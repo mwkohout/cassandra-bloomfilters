@@ -1,4 +1,4 @@
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 
 import java.util.Arrays;
 

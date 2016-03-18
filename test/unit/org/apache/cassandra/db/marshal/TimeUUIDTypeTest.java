@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
@@ -25,11 +25,11 @@ import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
 import junit.framework.Assert;
-import org.apache.cassandra.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 public class TimeUUIDTypeTest
 {

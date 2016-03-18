@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -32,7 +32,7 @@ import org.apache.commons.math3.distribution.UniformRealDistribution;
 import org.apache.commons.math3.distribution.WeibullDistribution;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 
-import org.apache.cassandra.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.generate.*;
 
 /**
  * For selecting a mathematical distribution

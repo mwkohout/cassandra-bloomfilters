@@ -16,28 +16,28 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.index;
+package org.apache.cassandraBloomFilters.index;
 
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.function.BiFunction;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.Operator;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.filter.RowFilter;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.partitions.PartitionIterator;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterator;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.index.transactions.IndexTransaction;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.utils.Pair;
-import org.apache.cassandra.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.Operator;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.filter.RowFilter;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionIterator;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterator;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.index.transactions.IndexTransaction;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.utils.Pair;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
 
 /**
  * Basic custom index implementation for testing.

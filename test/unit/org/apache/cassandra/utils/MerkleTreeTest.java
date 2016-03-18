@@ -16,31 +16,31 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.math.BigInteger;
 import java.util.*;
 
-import org.apache.cassandra.utils.AbstractIterator;
+import org.apache.cassandraBloomFilters.utils.AbstractIterator;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.utils.MerkleTree.Hashable;
-import org.apache.cassandra.utils.MerkleTree.RowHash;
-import org.apache.cassandra.utils.MerkleTree.TreeRange;
-import org.apache.cassandra.utils.MerkleTree.TreeRangeIterator;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.Hashable;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.RowHash;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.TreeRange;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.TreeRangeIterator;
 
-import static org.apache.cassandra.utils.MerkleTree.RECOMMENDED_DEPTH;
+import static org.apache.cassandraBloomFilters.utils.MerkleTree.RECOMMENDED_DEPTH;
 import static org.junit.Assert.*;
 
 public class MerkleTreeTest

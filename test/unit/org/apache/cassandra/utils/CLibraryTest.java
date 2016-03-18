@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.File;
 
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 public class CLibraryTest
 {

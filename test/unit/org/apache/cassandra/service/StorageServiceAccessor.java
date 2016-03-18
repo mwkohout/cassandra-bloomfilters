@@ -16,9 +16,9 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
-import org.apache.cassandra.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
 
 public class StorageServiceAccessor
 {

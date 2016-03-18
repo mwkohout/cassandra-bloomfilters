@@ -16,7 +16,7 @@
  *
  */
 
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

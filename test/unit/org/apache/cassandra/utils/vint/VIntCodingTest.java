@@ -16,12 +16,12 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils.vint;
+package org.apache.cassandraBloomFilters.utils.vint;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 
-import org.apache.cassandra.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
 import org.junit.Test;
 
 import junit.framework.Assert;

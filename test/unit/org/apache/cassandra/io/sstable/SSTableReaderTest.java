@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -28,31 +28,31 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.Operator;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterators;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.LocalPartitioner.LocalToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.index.Index;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.util.FileDataInput;
-import org.apache.cassandra.io.util.MmappedRegions;
-import org.apache.cassandra.io.util.SegmentedFile;
-import org.apache.cassandra.schema.CachingParams;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.service.CacheService;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.Operator;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterators;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.LocalPartitioner.LocalToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.index.Index;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.util.FileDataInput;
+import org.apache.cassandraBloomFilters.io.util.MmappedRegions;
+import org.apache.cassandraBloomFilters.io.util.SegmentedFile;
+import org.apache.cassandraBloomFilters.schema.CachingParams;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.service.CacheService;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

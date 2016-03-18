@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations;
+package org.apache.cassandraBloomFilters.stress.operations;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,15 +23,15 @@ package org.apache.cassandra.stress.operations;
 
 import java.util.*;
 
-import org.apache.cassandra.stress.generate.*;
-import org.apache.cassandra.stress.util.Timing;
+import org.apache.cassandraBloomFilters.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.util.Timing;
 import org.apache.commons.math3.distribution.EnumeratedDistribution;
 import org.apache.commons.math3.util.Pair;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 public abstract class SampledOpDistributionFactory<T> implements OpDistributionFactory
 {

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.compaction;
+package org.apache.cassandraBloomFilters.db.compaction;
 
 import java.util.HashMap;
 import java.util.List;
@@ -23,8 +23,8 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

@@ -1,12 +1,12 @@
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
-import org.apache.cassandra.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
 
 public class SelectLimitTest extends CQLTester
 {

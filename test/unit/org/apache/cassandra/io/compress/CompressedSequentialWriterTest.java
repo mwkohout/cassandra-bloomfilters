@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.compress;
+package org.apache.cassandraBloomFilters.io.compress;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -32,17 +32,17 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-import org.apache.cassandra.db.ClusteringComparator;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.io.util.ChannelProxy;
-import org.apache.cassandra.io.util.DataPosition;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SequentialWriterTest;
-import org.apache.cassandra.schema.CompressionParams;
-import org.apache.cassandra.utils.ChecksumType;
+import org.apache.cassandraBloomFilters.db.ClusteringComparator;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.io.util.ChannelProxy;
+import org.apache.cassandraBloomFilters.io.util.DataPosition;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriterTest;
+import org.apache.cassandraBloomFilters.schema.CompressionParams;
+import org.apache.cassandraBloomFilters.utils.ChecksumType;
 
 public class CompressedSequentialWriterTest extends SequentialWriterTest
 {

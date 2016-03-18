@@ -16,16 +16,16 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import com.google.common.collect.ImmutableMap;
 import org.junit.Test;
 
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.io.compress.DeflateCompressor;
-import org.apache.cassandra.io.compress.ICompressor;
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.compress.SnappyCompressor;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.io.compress.DeflateCompressor;
+import org.apache.cassandraBloomFilters.io.compress.ICompressor;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.compress.SnappyCompressor;
 
 public class HintsCompressionTest extends AlteredHints
 {

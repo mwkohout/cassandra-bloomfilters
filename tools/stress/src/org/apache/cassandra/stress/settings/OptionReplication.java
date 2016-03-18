@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,7 +27,7 @@ import java.util.Map;
 
 import com.google.common.base.Function;
 
-import org.apache.cassandra.locator.AbstractReplicationStrategy;
+import org.apache.cassandraBloomFilters.locator.AbstractReplicationStrategy;
 
 /**
  * For specifying replication options
@@ -35,7 +35,7 @@ import org.apache.cassandra.locator.AbstractReplicationStrategy;
 class OptionReplication extends OptionMulti
 {
 
-    private final OptionSimple strategy = new OptionSimple("strategy=", new StrategyAdapter(), "org.apache.cassandra.locator.SimpleStrategy", "The replication strategy to use", false);
+    private final OptionSimple strategy = new OptionSimple("strategy=", new StrategyAdapter(), "org.apache.cassandraBloomFilters.locator.SimpleStrategy", "The replication strategy to use", false);
     private final OptionSimple factor = new OptionSimple("factor=", "[0-9]+", "1", "The number of replicas", false);
 
     public OptionReplication()
@@ -51,7 +51,7 @@ class OptionReplication extends OptionMulti
     public Map<String, String> getOptions()
     {
         Map<String, String> options = extraOptions();
-        if (!options.containsKey("replication_factor") && (strategy.value().equals("org.apache.cassandra.locator.SimpleStrategy") || factor.setByUser()))
+        if (!options.containsKey("replication_factor") && (strategy.value().equals("org.apache.cassandraBloomFilters.locator.SimpleStrategy") || factor.setByUser()))
             options.put("replication_factor", factor.value());
         return options;
     }
@@ -72,7 +72,7 @@ class OptionReplication extends OptionMulti
         public String apply(String name)
         {
             String strategy = null;
-            for (String fullname : new String[] { name, "org.apache.cassandra.locator." + name })
+            for (String fullname : new String[] { name, "org.apache.cassandraBloomFilters.locator." + name })
             {
                 try
                 {

@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import org.junit.Test;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 // see CASSANDRA-9743, CASSANDRA-9746
 public class RowUpdateBuilderTest extends CQLTester

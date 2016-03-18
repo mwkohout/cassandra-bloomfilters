@@ -15,17 +15,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.utils;
+package org.apache.cassandraBloomFilters.index.sasi.utils;
 
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.apache.cassandra.index.sasi.disk.Token;
-import org.apache.cassandra.index.sasi.utils.RangeIntersectionIterator.Strategy;
-import org.apache.cassandra.index.sasi.utils.RangeIntersectionIterator.LookupIntersectionIterator;
-import org.apache.cassandra.index.sasi.utils.RangeIntersectionIterator.BounceIntersectionIterator;
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.index.sasi.disk.Token;
+import org.apache.cassandraBloomFilters.index.sasi.utils.RangeIntersectionIterator.Strategy;
+import org.apache.cassandraBloomFilters.index.sasi.utils.RangeIntersectionIterator.LookupIntersectionIterator;
+import org.apache.cassandraBloomFilters.index.sasi.utils.RangeIntersectionIterator.BounceIntersectionIterator;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 import com.carrotsearch.hppc.LongOpenHashSet;
 import com.carrotsearch.hppc.LongSet;
@@ -33,7 +33,7 @@ import com.carrotsearch.hppc.LongSet;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.apache.cassandra.index.sasi.utils.LongIterator.convert;
+import static org.apache.cassandraBloomFilters.index.sasi.utils.LongIterator.convert;
 
 public class RangeIntersectionIteratorTest
 {

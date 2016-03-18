@@ -1,4 +1,4 @@
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -20,9 +20,9 @@ package org.apache.cassandra.db.marshal;
  *
  */
 
-import org.apache.cassandra.serializers.*;
-import org.apache.cassandra.utils.Hex;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.serializers.*;
+import org.apache.cassandraBloomFilters.utils.Hex;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 import org.junit.Test;
 
 import java.math.BigInteger;

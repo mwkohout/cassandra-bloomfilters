@@ -15,20 +15,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.triggers;
+package org.apache.cassandraBloomFilters.triggers;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.Tables;
-import org.apache.cassandra.schema.TriggerMetadata;
-import org.apache.cassandra.service.MigrationManager;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.Tables;
+import org.apache.cassandraBloomFilters.schema.TriggerMetadata;
+import org.apache.cassandraBloomFilters.service.MigrationManager;
 
 import static org.junit.Assert.*;
 
@@ -37,7 +37,7 @@ public class TriggersSchemaTest
     String ksName = "ks" + System.nanoTime();
     String cfName = "cf" + System.nanoTime();
     String triggerName = "trigger_" + System.nanoTime();
-    String triggerClass = "org.apache.cassandra.triggers.NoSuchTrigger.class";
+    String triggerClass = "org.apache.cassandraBloomFilters.triggers.NoSuchTrigger.class";
 
     @BeforeClass
     public static void beforeTest() throws ConfigurationException

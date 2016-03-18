@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.concurrent;
+package org.apache.cassandraBloomFilters.concurrent;
 
 import java.io.IOException;
 import java.util.concurrent.CancellationException;
@@ -31,8 +31,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.service.EmbeddedCassandraService;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.service.EmbeddedCassandraService;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 public class DebuggableScheduledThreadPoolExecutorTest
 {

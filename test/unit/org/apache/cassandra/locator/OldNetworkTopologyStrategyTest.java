@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -31,11 +31,11 @@ import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 

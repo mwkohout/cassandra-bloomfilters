@@ -16,24 +16,24 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress.operations;
+package org.apache.cassandraBloomFilters.stress.operations;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.google.common.util.concurrent.RateLimiter;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.WorkManager;
-import org.apache.cassandra.stress.generate.Distribution;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.PartitionIterator;
-import org.apache.cassandra.stress.generate.RatioDistribution;
-import org.apache.cassandra.stress.generate.Seed;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.settings.OptionRatioDistribution;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.WorkManager;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionIterator;
+import org.apache.cassandraBloomFilters.stress.generate.RatioDistribution;
+import org.apache.cassandraBloomFilters.stress.generate.Seed;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.settings.OptionRatioDistribution;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 public abstract class PartitionOperation extends Operation
 {

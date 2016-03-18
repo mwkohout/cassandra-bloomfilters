@@ -18,7 +18,7 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 
 import java.io.*;
 import java.util.ArrayList;

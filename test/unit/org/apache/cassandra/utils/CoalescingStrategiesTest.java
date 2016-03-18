@@ -15,12 +15,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
-import org.apache.cassandra.utils.CoalescingStrategies.Clock;
-import org.apache.cassandra.utils.CoalescingStrategies.Coalescable;
-import org.apache.cassandra.utils.CoalescingStrategies.CoalescingStrategy;
-import org.apache.cassandra.utils.CoalescingStrategies.Parker;
+import org.apache.cassandraBloomFilters.utils.CoalescingStrategies.Clock;
+import org.apache.cassandraBloomFilters.utils.CoalescingStrategies.Coalescable;
+import org.apache.cassandraBloomFilters.utils.CoalescingStrategies.CoalescingStrategy;
+import org.apache.cassandraBloomFilters.utils.CoalescingStrategies.Parker;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -269,7 +269,7 @@ public class CoalescingStrategiesTest
     @Test
     public void testMovingAverageCoalescingStrategy() throws Exception
     {
-        cs = newStrategy("org.apache.cassandra.utils.CoalescingStrategies$MovingAverageCoalescingStrategy", 200);
+        cs = newStrategy("org.apache.cassandraBloomFilters.utils.CoalescingStrategies$MovingAverageCoalescingStrategy", 200);
 
 
         //Test that things can be pulled out of the queue if it is non-empty

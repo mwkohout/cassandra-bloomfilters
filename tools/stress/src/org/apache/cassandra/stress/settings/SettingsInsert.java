@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,8 +27,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.datastax.driver.core.BatchStatement;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.RatioDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.RatioDistributionFactory;
 
 public class SettingsInsert implements Serializable
 {

@@ -16,19 +16,19 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 import java.io.IOException;
 
 import com.google.common.util.concurrent.RateLimiter;
 
-import org.apache.cassandra.stress.settings.SettingsLog;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.InvalidRequestException;
-import org.apache.cassandra.transport.SimpleClient;
+import org.apache.cassandraBloomFilters.stress.settings.SettingsLog;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.InvalidRequestException;
+import org.apache.cassandraBloomFilters.transport.SimpleClient;
 
 public abstract class Operation
 {

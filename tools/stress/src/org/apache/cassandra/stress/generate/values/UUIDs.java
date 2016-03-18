@@ -18,11 +18,11 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import java.util.UUID;
 
-import org.apache.cassandra.db.marshal.UUIDType;
+import org.apache.cassandraBloomFilters.db.marshal.UUIDType;
 
 public class UUIDs extends Generator<UUID>
 {

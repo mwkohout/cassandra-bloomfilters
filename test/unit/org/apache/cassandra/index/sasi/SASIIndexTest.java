@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi;
+package org.apache.cassandraBloomFilters.index.sasi;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -25,47 +25,47 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.*;
-import org.apache.cassandra.cql3.Term;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.cql3.statements.SelectStatement;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.filter.ColumnFilter;
-import org.apache.cassandra.db.filter.DataLimits;
-import org.apache.cassandra.db.filter.RowFilter;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.db.partitions.UnfilteredPartitionIterator;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.index.sasi.conf.ColumnIndex;
-import org.apache.cassandra.index.sasi.disk.OnDiskIndexBuilder;
-import org.apache.cassandra.index.sasi.exceptions.TimeQuotaExceededException;
-import org.apache.cassandra.index.sasi.memory.IndexMemtable;
-import org.apache.cassandra.index.sasi.plan.QueryController;
-import org.apache.cassandra.index.sasi.plan.QueryPlan;
-import org.apache.cassandra.schema.IndexMetadata;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.Tables;
-import org.apache.cassandra.serializers.MarshalException;
-import org.apache.cassandra.serializers.TypeSerializer;
-import org.apache.cassandra.service.MigrationManager;
-import org.apache.cassandra.service.QueryState;
-import org.apache.cassandra.thrift.CqlRow;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.*;
+import org.apache.cassandraBloomFilters.cql3.Term;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.cql3.statements.SelectStatement;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.filter.ColumnFilter;
+import org.apache.cassandraBloomFilters.db.filter.DataLimits;
+import org.apache.cassandraBloomFilters.db.filter.RowFilter;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.db.partitions.UnfilteredPartitionIterator;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.index.sasi.conf.ColumnIndex;
+import org.apache.cassandraBloomFilters.index.sasi.disk.OnDiskIndexBuilder;
+import org.apache.cassandraBloomFilters.index.sasi.exceptions.TimeQuotaExceededException;
+import org.apache.cassandraBloomFilters.index.sasi.memory.IndexMemtable;
+import org.apache.cassandraBloomFilters.index.sasi.plan.QueryController;
+import org.apache.cassandraBloomFilters.index.sasi.plan.QueryPlan;
+import org.apache.cassandraBloomFilters.schema.IndexMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.Tables;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.serializers.TypeSerializer;
+import org.apache.cassandraBloomFilters.service.MigrationManager;
+import org.apache.cassandraBloomFilters.service.QueryState;
+import org.apache.cassandraBloomFilters.thrift.CqlRow;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import com.google.common.collect.Lists;
 import com.google.common.util.concurrent.Uninterruptibles;
@@ -1780,11 +1780,11 @@ public class SASIIndexTest
         QueryProcessor.executeOnceInternal(String.format("CREATE TABLE IF NOT EXISTS %s.%s (k int primary key, v text);", KS_NAME, analyzedPrefixTable));
 
         QueryProcessor.executeOnceInternal(String.format("CREATE CUSTOM INDEX IF NOT EXISTS ON %s.%s(v) " +
-                "USING 'org.apache.cassandra.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'CONTAINS' };", KS_NAME, containsTable));
+                "USING 'org.apache.cassandraBloomFilters.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'CONTAINS' };", KS_NAME, containsTable));
         QueryProcessor.executeOnceInternal(String.format("CREATE CUSTOM INDEX IF NOT EXISTS ON %s.%s(v) " +
-                "USING 'org.apache.cassandra.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'PREFIX' };", KS_NAME, prefixTable));
+                "USING 'org.apache.cassandraBloomFilters.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'PREFIX' };", KS_NAME, prefixTable));
         QueryProcessor.executeOnceInternal(String.format("CREATE CUSTOM INDEX IF NOT EXISTS ON %s.%s(v) " +
-                "USING 'org.apache.cassandra.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'PREFIX', 'analyzed': 'true' };", KS_NAME, analyzedPrefixTable));
+                "USING 'org.apache.cassandraBloomFilters.index.sasi.SASIIndex' WITH OPTIONS = { 'mode' : 'PREFIX', 'analyzed': 'true' };", KS_NAME, analyzedPrefixTable));
 
         testLIKEAndEQSemanticsWithDifferenceKindsOfIndexes(containsTable, prefixTable, analyzedPrefixTable, false);
         testLIKEAndEQSemanticsWithDifferenceKindsOfIndexes(containsTable, prefixTable, analyzedPrefixTable, true);
@@ -1961,8 +1961,8 @@ public class SASIIndexTest
                                                                           Optional.empty());
 
         QueryController controller = new QueryController(store, command, Integer.MAX_VALUE);
-        org.apache.cassandra.index.sasi.plan.Expression expression =
-                new org.apache.cassandra.index.sasi.plan.Expression(controller, index)
+        org.apache.cassandraBloomFilters.index.sasi.plan.Expression expression =
+                new org.apache.cassandraBloomFilters.index.sasi.plan.Expression(controller, index)
                                                     .add(Operator.LIKE_MATCHES, UTF8Type.instance.fromString("Pavel"));
 
         Assert.assertTrue(beforeFlushMemtable.search(expression).getCount() > 0);
@@ -1980,7 +1980,7 @@ public class SASIIndexTest
             put("key2", Pair.create("Sam", 15));
         }}, false);
 
-        expression = new org.apache.cassandra.index.sasi.plan.Expression(controller, index)
+        expression = new org.apache.cassandraBloomFilters.index.sasi.plan.Expression(controller, index)
                         .add(Operator.LIKE_MATCHES, UTF8Type.instance.fromString("Sam"));
 
         beforeFlushMemtable = index.getCurrentMemtable();
@@ -2006,7 +2006,7 @@ public class SASIIndexTest
             put("key3", Pair.create("Jonathan", 16));
         }}, false);
 
-        expression = new org.apache.cassandra.index.sasi.plan.Expression(controller, index)
+        expression = new org.apache.cassandraBloomFilters.index.sasi.plan.Expression(controller, index)
                 .add(Operator.LIKE_MATCHES, UTF8Type.instance.fromString("Jonathan"));
 
         Assert.assertTrue(index.searchMemtable(expression).getCount() > 0);
@@ -2163,7 +2163,7 @@ public class SASIIndexTest
         Set<String> results = new TreeSet<>();
         for (CqlRow row : cqlRows.toThriftResult().getRows())
         {
-            for (org.apache.cassandra.thrift.Column col : row.columns)
+            for (org.apache.cassandraBloomFilters.thrift.Column col : row.columns)
             {
                 String columnName = UTF8Type.instance.getString(col.bufferForName());
                 if (columnName.equals("id"))

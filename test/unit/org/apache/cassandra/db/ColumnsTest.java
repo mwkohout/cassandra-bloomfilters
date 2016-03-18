@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.IOException;
 import java.util.*;
@@ -30,16 +30,16 @@ import org.junit.AfterClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.marshal.SetType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.utils.btree.BTreeSet;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.marshal.SetType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.utils.btree.BTreeSet;
 
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 
 public class ColumnsTest
 {

@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 
 public class DateTypeTest extends CQLTester
 {

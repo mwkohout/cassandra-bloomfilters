@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.DataOutputStream;
 import java.io.File;
@@ -32,8 +32,8 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 
-import org.apache.cassandra.io.compress.BufferType;
-import org.apache.cassandra.utils.concurrent.AbstractTransactionalTest;
+import org.apache.cassandraBloomFilters.io.compress.BufferType;
+import org.apache.cassandraBloomFilters.utils.concurrent.AbstractTransactionalTest;
 
 import static org.apache.commons.io.FileUtils.*;
 

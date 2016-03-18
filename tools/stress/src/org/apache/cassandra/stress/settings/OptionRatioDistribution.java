@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -28,9 +28,9 @@ import java.util.regex.Pattern;
 
 import com.google.common.base.Function;
 
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.RatioDistribution;
-import org.apache.cassandra.stress.generate.RatioDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.RatioDistribution;
+import org.apache.cassandraBloomFilters.stress.generate.RatioDistributionFactory;
 
 /**
  * For selecting a mathematical distribution

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.File;
 import java.io.IOException;

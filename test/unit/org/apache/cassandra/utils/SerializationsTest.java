@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -24,14 +24,14 @@ import java.io.IOException;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.AbstractSerializationsTester;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.io.util.DataInputPlus.DataInputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.AbstractSerializationsTester;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus.DataInputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
 
 import java.io.File;
 import java.io.FileInputStream;

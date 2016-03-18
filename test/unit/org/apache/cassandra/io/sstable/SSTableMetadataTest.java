@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.nio.charset.CharacterCodingException;
 import java.util.ArrayList;
@@ -25,20 +25,20 @@ import java.util.concurrent.ExecutionException;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.IntegerType;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.IntegerType;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
-import static org.apache.cassandra.Util.getBytes;
+import static org.apache.cassandraBloomFilters.Util.getBytes;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

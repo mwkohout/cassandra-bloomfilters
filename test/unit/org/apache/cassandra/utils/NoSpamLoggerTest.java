@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import static org.junit.Assert.*;
 
@@ -26,8 +26,8 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.cassandra.utils.NoSpamLogger.Level;
-import org.apache.cassandra.utils.NoSpamLogger.NoSpamLogStatement;
+import org.apache.cassandraBloomFilters.utils.NoSpamLogger.Level;
+import org.apache.cassandraBloomFilters.utils.NoSpamLogger.NoSpamLogStatement;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;

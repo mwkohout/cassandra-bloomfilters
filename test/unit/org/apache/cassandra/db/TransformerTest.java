@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,17 +24,17 @@ import java.util.List;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.db.transform.FilteredRows;
-import org.apache.cassandra.db.transform.MoreRows;
-import org.apache.cassandra.db.transform.Transformation;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.utils.AbstractIterator;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.db.transform.FilteredRows;
+import org.apache.cassandraBloomFilters.db.transform.MoreRows;
+import org.apache.cassandraBloomFilters.db.transform.Transformation;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.utils.AbstractIterator;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class TransformerTest
 {

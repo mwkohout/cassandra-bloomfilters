@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.triggers;
+package org.apache.cassandraBloomFilters.triggers;
 
 import java.net.InetAddress;
 import java.util.Collection;
@@ -26,23 +26,23 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.ConsistencyLevel;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.partitions.Partition;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.RequestExecutionException;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.thrift.*;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.partitions.Partition;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.RequestExecutionException;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.thrift.*;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 import org.apache.thrift.protocol.TBinaryProtocol;
 
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
-import static org.apache.cassandra.utils.ByteBufferUtil.toInt;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.toInt;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -131,7 +131,7 @@ public class TriggersTest
         client.insert(bytes(2),
                       new ColumnParent(cfName),
                       getColumnForInsert("v1", 2),
-                      org.apache.cassandra.thrift.ConsistencyLevel.ONE);
+                      org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE);
 
         assertUpdateIsAugmented(2);
     }
@@ -144,7 +144,7 @@ public class TriggersTest
                                         new TFramedTransportFactory().openTransport(
                                             InetAddress.getLocalHost().getHostName(), 9170)));
         client.set_keyspace(ksName);
-        org.apache.cassandra.thrift.Mutation mutation = new org.apache.cassandra.thrift.Mutation();
+        org.apache.cassandraBloomFilters.thrift.Mutation mutation = new org.apache.cassandraBloomFilters.thrift.Mutation();
         ColumnOrSuperColumn cosc = new ColumnOrSuperColumn();
         cosc.setColumn(getColumnForInsert("v1", 3));
         mutation.setColumn_or_supercolumn(cosc);
@@ -152,7 +152,7 @@ public class TriggersTest
             Collections.singletonMap(bytes(3),
                                      Collections.singletonMap(cfName,
                                                               Collections.singletonList(mutation))),
-            org.apache.cassandra.thrift.ConsistencyLevel.ONE);
+            org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE);
 
         assertUpdateIsAugmented(3);
     }
@@ -189,13 +189,13 @@ public class TriggersTest
                    cfName,
                    Collections.<Column>emptyList(),
                    Collections.singletonList(getColumnForInsert("v1", 6)),
-                   org.apache.cassandra.thrift.ConsistencyLevel.LOCAL_SERIAL,
-                   org.apache.cassandra.thrift.ConsistencyLevel.ONE);
+                   org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.LOCAL_SERIAL,
+                   org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE);
 
         assertUpdateIsAugmented(6);
     }
 
-    @Test(expected=org.apache.cassandra.exceptions.InvalidRequestException.class)
+    @Test(expected=org.apache.cassandraBloomFilters.exceptions.InvalidRequestException.class)
     public void onCqlUpdateWithConditionsRejectGeneratedUpdatesForDifferentPartition() throws Exception
     {
         String cf = "cf" + System.nanoTime();
@@ -211,7 +211,7 @@ public class TriggersTest
         }
     }
 
-    @Test(expected=org.apache.cassandra.exceptions.InvalidRequestException.class)
+    @Test(expected=org.apache.cassandraBloomFilters.exceptions.InvalidRequestException.class)
     public void onCqlUpdateWithConditionsRejectGeneratedUpdatesForDifferentTable() throws Exception
     {
         String cf = "cf" + System.nanoTime();
@@ -243,8 +243,8 @@ public class TriggersTest
                        cf,
                        Collections.<Column>emptyList(),
                        Collections.singletonList(getColumnForInsert("v1", 9)),
-                       org.apache.cassandra.thrift.ConsistencyLevel.LOCAL_SERIAL,
-                       org.apache.cassandra.thrift.ConsistencyLevel.ONE);
+                       org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.LOCAL_SERIAL,
+                       org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE);
         }
         finally
         {
@@ -268,8 +268,8 @@ public class TriggersTest
                        cf,
                        Collections.<Column>emptyList(),
                        Collections.singletonList(getColumnForInsert("v1", 10)),
-                       org.apache.cassandra.thrift.ConsistencyLevel.LOCAL_SERIAL,
-                       org.apache.cassandra.thrift.ConsistencyLevel.ONE);
+                       org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.LOCAL_SERIAL,
+                       org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE);
         }
         finally
         {
@@ -277,7 +277,7 @@ public class TriggersTest
         }
     }
 
-    @Test(expected=org.apache.cassandra.exceptions.InvalidRequestException.class)
+    @Test(expected=org.apache.cassandraBloomFilters.exceptions.InvalidRequestException.class)
     public void ifTriggerThrowsErrorNoMutationsAreApplied() throws Exception
     {
         String cf = "cf" + System.nanoTime();
@@ -325,9 +325,9 @@ public class TriggersTest
         assertTrue(rs.isEmpty());
     }
 
-    private org.apache.cassandra.thrift.Column getColumnForInsert(String columnName, int value)
+    private org.apache.cassandraBloomFilters.thrift.Column getColumnForInsert(String columnName, int value)
     {
-        org.apache.cassandra.thrift.Column column = new org.apache.cassandra.thrift.Column();
+        org.apache.cassandraBloomFilters.thrift.Column column = new org.apache.cassandraBloomFilters.thrift.Column();
         column.setName(LegacyLayout.makeLegacyComparator(Schema.instance.getCFMetaData(ksName, cfName)).fromString(columnName));
         column.setValue(bytes(value));
         column.setTimestamp(System.currentTimeMillis());
@@ -373,7 +373,7 @@ public class TriggersTest
         public static final String MESSAGE = "Thrown by ErrorTrigger";
         public Collection<Mutation> augment(Partition partition)
         {
-            throw new org.apache.cassandra.exceptions.InvalidRequestException(MESSAGE);
+            throw new org.apache.cassandraBloomFilters.exceptions.InvalidRequestException(MESSAGE);
         }
     }
 }

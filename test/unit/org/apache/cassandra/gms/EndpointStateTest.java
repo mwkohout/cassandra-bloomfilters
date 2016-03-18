@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -28,8 +28,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.Token;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.Token;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

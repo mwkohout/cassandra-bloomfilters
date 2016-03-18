@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.Random;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;

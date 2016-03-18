@@ -1,4 +1,4 @@
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,8 +23,8 @@ import org.slf4j.LoggerFactory;
 
 import static org.junit.Assert.*;
 
-import org.apache.cassandra.io.compress.BufferType;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.io.compress.BufferType;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class RandomAccessReaderTest
 {

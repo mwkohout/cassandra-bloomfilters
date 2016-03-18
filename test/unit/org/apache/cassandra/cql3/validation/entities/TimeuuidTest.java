@@ -16,16 +16,16 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.util.Date;
 import java.util.UUID;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 import static org.junit.Assert.assertEquals;
 

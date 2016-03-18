@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.nio.ByteBuffer;
 import java.util.UUID;
@@ -23,10 +23,10 @@ import java.util.UUID;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.restrictions.StatementRestrictions;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.restrictions.StatementRestrictions;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

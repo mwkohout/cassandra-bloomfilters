@@ -16,29 +16,29 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.db.compaction;
+package org.apache.cassandraBloomFilters.db.compaction;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.lifecycle.SSTableSet;
-import org.apache.cassandra.db.rows.UnfilteredRowIterator;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.lifecycle.SSTableSet;
+import org.apache.cassandraBloomFilters.db.rows.UnfilteredRowIterator;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
 import org.junit.BeforeClass;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.filter.ColumnFilter;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.ISSTableScanner;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.tools.SSTableExpiredBlockers;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.filter.ColumnFilter;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.ISSTableScanner;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.tools.SSTableExpiredBlockers;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import java.io.IOException;
 import java.util.Collections;

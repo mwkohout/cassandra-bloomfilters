@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +25,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 import static org.junit.Assert.assertEquals;
 

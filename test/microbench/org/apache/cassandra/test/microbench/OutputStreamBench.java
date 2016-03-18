@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.test.microbench;
+package org.apache.cassandraBloomFilters.test.microbench;
 
-import org.apache.cassandra.io.util.BufferedDataOutputStreamPlus;
-import org.apache.cassandra.io.util.BufferedDataOutputStreamTest;
-import org.apache.cassandra.io.util.WrappedDataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.BufferedDataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.BufferedDataOutputStreamTest;
+import org.apache.cassandraBloomFilters.io.util.WrappedDataOutputStreamPlus;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 

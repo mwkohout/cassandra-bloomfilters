@@ -17,7 +17,7 @@
 * under the License.
 */
 
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -30,30 +30,30 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.gms.ApplicationState;
-import org.apache.cassandra.gms.Gossiper;
-import org.apache.cassandra.locator.AbstractNetworkTopologySnitch;
-import org.apache.cassandra.locator.NetworkTopologyStrategy;
-import org.apache.cassandra.locator.PendingRangeMaps;
-import org.apache.cassandra.gms.VersionedValue;
-import org.apache.cassandra.locator.AbstractReplicationStrategy;
-import org.apache.cassandra.locator.SimpleSnitch;
-import org.apache.cassandra.locator.TokenMetadata;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.Tables;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.gms.ApplicationState;
+import org.apache.cassandraBloomFilters.gms.Gossiper;
+import org.apache.cassandraBloomFilters.locator.AbstractNetworkTopologySnitch;
+import org.apache.cassandraBloomFilters.locator.NetworkTopologyStrategy;
+import org.apache.cassandraBloomFilters.locator.PendingRangeMaps;
+import org.apache.cassandraBloomFilters.gms.VersionedValue;
+import org.apache.cassandraBloomFilters.locator.AbstractReplicationStrategy;
+import org.apache.cassandraBloomFilters.locator.SimpleSnitch;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.Tables;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

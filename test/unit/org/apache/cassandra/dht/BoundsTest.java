@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.util.LinkedList;
 import java.util.List;

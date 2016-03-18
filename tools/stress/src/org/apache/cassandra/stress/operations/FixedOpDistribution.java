@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations;
+package org.apache.cassandraBloomFilters.stress.operations;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,7 +21,7 @@ package org.apache.cassandra.stress.operations;
  */
 
 
-import org.apache.cassandra.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.Operation;
 
 public class FixedOpDistribution implements OpDistribution
 {

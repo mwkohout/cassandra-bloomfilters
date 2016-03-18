@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.io.compress;
+package org.apache.cassandraBloomFilters.io.compress;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,19 +24,19 @@ import java.io.RandomAccessFile;
 import java.util.Random;
 
 import org.junit.Test;
-import org.apache.cassandra.db.ClusteringComparator;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.CorruptSSTableException;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.io.util.ChannelProxy;
-import org.apache.cassandra.io.util.DataPosition;
-import org.apache.cassandra.io.util.MmappedRegions;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SequentialWriter;
-import org.apache.cassandra.schema.CompressionParams;
-import org.apache.cassandra.utils.ChecksumType;
-import org.apache.cassandra.utils.SyncUtil;
+import org.apache.cassandraBloomFilters.db.ClusteringComparator;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.CorruptSSTableException;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.io.util.ChannelProxy;
+import org.apache.cassandraBloomFilters.io.util.DataPosition;
+import org.apache.cassandraBloomFilters.io.util.MmappedRegions;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriter;
+import org.apache.cassandraBloomFilters.schema.CompressionParams;
+import org.apache.cassandraBloomFilters.utils.ChecksumType;
+import org.apache.cassandraBloomFilters.utils.SyncUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

@@ -1,4 +1,4 @@
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.UUID;
 
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import org.junit.Test;
 

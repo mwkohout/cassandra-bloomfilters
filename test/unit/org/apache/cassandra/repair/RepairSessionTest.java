@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.repair;
+package org.apache.cassandraBloomFilters.repair;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -28,14 +28,14 @@ import java.util.concurrent.ExecutionException;
 import com.google.common.collect.Sets;
 import org.junit.Test;
 
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.gms.Gossiper;
-import org.apache.cassandra.service.ActiveRepairService;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.gms.Gossiper;
+import org.apache.cassandraBloomFilters.service.ActiveRepairService;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;

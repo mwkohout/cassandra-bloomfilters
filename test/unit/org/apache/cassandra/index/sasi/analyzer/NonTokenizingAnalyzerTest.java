@@ -15,13 +15,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.analyzer;
+package org.apache.cassandraBloomFilters.index.sasi.analyzer;
 
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import org.junit.Assert;
 import org.junit.Test;

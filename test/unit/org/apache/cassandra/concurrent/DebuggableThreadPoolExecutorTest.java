@@ -1,4 +1,4 @@
-package org.apache.cassandra.concurrent;
+package org.apache.cassandraBloomFilters.concurrent;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
-import org.apache.cassandra.utils.WrappedRunnable;
+import org.apache.cassandraBloomFilters.utils.WrappedRunnable;
 
 public class DebuggableThreadPoolExecutorTest
 {

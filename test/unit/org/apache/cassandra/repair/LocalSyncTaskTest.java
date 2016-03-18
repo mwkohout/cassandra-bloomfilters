@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.repair;
+package org.apache.cassandraBloomFilters.repair;
 
 import java.net.InetAddress;
 import java.util.Arrays;
@@ -26,17 +26,17 @@ import java.util.UUID;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.service.ActiveRepairService;
-import org.apache.cassandra.utils.MerkleTree;
-import org.apache.cassandra.utils.MerkleTrees;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.service.ActiveRepairService;
+import org.apache.cassandraBloomFilters.utils.MerkleTree;
+import org.apache.cassandraBloomFilters.utils.MerkleTrees;
 
 import static org.junit.Assert.assertEquals;
 

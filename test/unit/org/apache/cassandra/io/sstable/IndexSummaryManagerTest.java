@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -41,32 +41,32 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.compaction.CompactionInfo;
-import org.apache.cassandra.db.compaction.CompactionInterruptedException;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.metrics.CompactionMetrics;
-import org.apache.cassandra.metrics.RestorableMeter;
-import org.apache.cassandra.schema.CachingParams;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionInfo;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionInterruptedException;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.metrics.CompactionMetrics;
+import org.apache.cassandraBloomFilters.metrics.RestorableMeter;
+import org.apache.cassandraBloomFilters.schema.CachingParams;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static com.google.common.collect.ImmutableMap.of;
 import static java.util.Arrays.asList;
-import static org.apache.cassandra.io.sstable.Downsampling.BASE_SAMPLING_LEVEL;
-import static org.apache.cassandra.io.sstable.IndexSummaryRedistribution.DOWNSAMPLE_THESHOLD;
-import static org.apache.cassandra.io.sstable.IndexSummaryRedistribution.UPSAMPLE_THRESHOLD;
-import static org.apache.cassandra.io.sstable.IndexSummaryManager.redistributeSummaries;
+import static org.apache.cassandraBloomFilters.io.sstable.Downsampling.BASE_SAMPLING_LEVEL;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexSummaryRedistribution.DOWNSAMPLE_THESHOLD;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexSummaryRedistribution.UPSAMPLE_THRESHOLD;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexSummaryManager.redistributeSummaries;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;

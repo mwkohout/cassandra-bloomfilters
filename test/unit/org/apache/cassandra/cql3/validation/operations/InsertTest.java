@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.UntypedResultSet.Row;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet.Row;
 
 public class InsertTest extends CQLTester
 {

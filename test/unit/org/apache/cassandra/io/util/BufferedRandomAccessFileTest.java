@@ -17,9 +17,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.io.util;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.SyncUtil;
+package org.apache.cassandraBloomFilters.io.util;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.SyncUtil;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -27,8 +27,8 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import static org.apache.cassandra.Util.expectEOF;
-import static org.apache.cassandra.Util.expectException;
+import static org.apache.cassandraBloomFilters.Util.expectEOF;
+import static org.apache.cassandraBloomFilters.Util.expectException;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 

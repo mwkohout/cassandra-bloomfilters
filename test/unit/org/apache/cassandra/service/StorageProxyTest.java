@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.net.InetAddress;
 import java.util.List;
@@ -24,13 +24,13 @@ import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.db.PartitionPosition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.*;
-import org.apache.cassandra.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.db.PartitionPosition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.*;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
 
-import static org.apache.cassandra.Util.rp;
-import static org.apache.cassandra.Util.token;
+import static org.apache.cassandraBloomFilters.Util.rp;
+import static org.apache.cassandraBloomFilters.Util.token;
 import static org.junit.Assert.assertEquals;
 
 public class StorageProxyTest

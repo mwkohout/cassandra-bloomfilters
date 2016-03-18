@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -29,11 +29,11 @@ import java.util.regex.Pattern;
 
 import org.junit.Test;
 
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.serializers.*;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.serializers.*;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 import static org.junit.Assert.assertEquals;
 

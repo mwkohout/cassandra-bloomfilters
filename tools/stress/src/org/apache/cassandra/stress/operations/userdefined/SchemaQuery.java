@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations.userdefined;
+package org.apache.cassandraBloomFilters.stress.operations.userdefined;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -30,14 +30,14 @@ import java.util.Random;
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.ResultSet;
-import org.apache.cassandra.db.ConsistencyLevel;
-import org.apache.cassandra.stress.generate.*;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.CqlResult;
-import org.apache.cassandra.thrift.ThriftConversion;
+import org.apache.cassandraBloomFilters.db.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.CqlResult;
+import org.apache.cassandraBloomFilters.thrift.ThriftConversion;
 
 public class SchemaQuery extends SchemaStatement
 {

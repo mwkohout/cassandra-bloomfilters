@@ -1,4 +1,4 @@
-package org.apache.cassandra.io;
+package org.apache.cassandraBloomFilters.io;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,7 +23,7 @@ package org.apache.cassandra.io;
 
 import org.junit.Test;
 
-import org.apache.cassandra.io.sstable.BloomFilterTracker;
+import org.apache.cassandraBloomFilters.io.sstable.BloomFilterTracker;
 
 import static org.junit.Assert.assertEquals;
 

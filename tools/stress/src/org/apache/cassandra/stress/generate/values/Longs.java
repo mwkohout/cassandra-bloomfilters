@@ -18,9 +18,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
 
 public class Longs extends Generator<Long>
 {

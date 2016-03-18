@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.rows;
+package org.apache.cassandraBloomFilters.db.rows;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -30,14 +30,14 @@ import com.google.common.collect.Iterators;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.Slice.Bound;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.rows.Unfiltered.Kind;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.Slice.Bound;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.rows.Unfiltered.Kind;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class UnfilteredRowIteratorsMergeTest
 {

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.math.BigInteger;
 import java.util.*;
@@ -26,16 +26,16 @@ import com.google.common.collect.AbstractIterator;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.dht.*;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.utils.MerkleTree.Hashable;
-import org.apache.cassandra.utils.MerkleTree.RowHash;
-import org.apache.cassandra.utils.MerkleTree.TreeRange;
-import org.apache.cassandra.utils.MerkleTrees.TreeRangeIterator;
+import org.apache.cassandraBloomFilters.dht.*;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.Hashable;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.RowHash;
+import org.apache.cassandraBloomFilters.utils.MerkleTree.TreeRange;
+import org.apache.cassandraBloomFilters.utils.MerkleTrees.TreeRangeIterator;
 
 import static org.junit.Assert.*;
 

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.compress;
+package org.apache.cassandraBloomFilters.io.compress;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -31,9 +31,9 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.memory.BufferPool;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.memory.BufferPool;
 
 public class CompressorTest
 {

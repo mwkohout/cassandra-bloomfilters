@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.Json;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
-import org.apache.cassandra.serializers.SimpleDateSerializer;
-import org.apache.cassandra.serializers.TimeSerializer;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.Json;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.serializers.SimpleDateSerializer;
+import org.apache.cassandraBloomFilters.serializers.TimeSerializer;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

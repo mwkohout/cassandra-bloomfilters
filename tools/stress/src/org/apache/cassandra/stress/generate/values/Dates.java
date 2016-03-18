@@ -18,13 +18,13 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import java.util.Date;
 
-import org.apache.cassandra.db.marshal.DateType;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.settings.OptionDistribution;
+import org.apache.cassandraBloomFilters.db.marshal.DateType;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.settings.OptionDistribution;
 
 public class Dates extends Generator<Date>
 {

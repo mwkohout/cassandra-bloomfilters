@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.tracing;
+package org.apache.cassandraBloomFilters.tracing;
 
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
@@ -28,8 +28,8 @@ import java.util.UUID;
 
 import org.junit.Test;
 
-import org.apache.cassandra.utils.progress.ProgressEvent;
-import org.apache.cassandra.utils.progress.ProgressListener;
+import org.apache.cassandraBloomFilters.utils.progress.ProgressEvent;
+import org.apache.cassandraBloomFilters.utils.progress.ProgressListener;
 
 public final class TracingTest
 {

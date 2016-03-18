@@ -15,14 +15,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.io.IOException;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
+import org.apache.cassandraBloomFilters.SchemaLoader;
 
 public class OrderPreservingPartitionerTest extends PartitionerTestCase
 {

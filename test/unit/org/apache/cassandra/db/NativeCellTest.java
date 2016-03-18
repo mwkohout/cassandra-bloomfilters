@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -29,16 +29,16 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.marshal.SetType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.utils.concurrent.OpOrder;
-import org.apache.cassandra.utils.memory.HeapAllocator;
-import org.apache.cassandra.utils.memory.NativeAllocator;
-import org.apache.cassandra.utils.memory.NativePool;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.marshal.SetType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.utils.memory.HeapAllocator;
+import org.apache.cassandraBloomFilters.utils.memory.NativeAllocator;
+import org.apache.cassandraBloomFilters.utils.memory.NativePool;
 
 public class NativeCellTest
 {

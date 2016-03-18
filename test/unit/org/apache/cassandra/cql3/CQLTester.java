@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,30 +40,30 @@ import org.slf4j.LoggerFactory;
 
 import com.datastax.driver.core.*;
 import com.datastax.driver.core.ResultSet;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.concurrent.ScheduledExecutors;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.functions.FunctionName;
-import org.apache.cassandra.cql3.functions.ThreadAwareSecurityManager;
-import org.apache.cassandra.cql3.statements.ParsedStatement;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.commitlog.CommitLog;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.db.marshal.TupleType;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.serializers.TypeSerializer;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.service.QueryState;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.transport.Event;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.concurrent.ScheduledExecutors;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.functions.FunctionName;
+import org.apache.cassandraBloomFilters.cql3.functions.ThreadAwareSecurityManager;
+import org.apache.cassandraBloomFilters.cql3.statements.ParsedStatement;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLog;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.db.marshal.TupleType;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.serializers.TypeSerializer;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.service.QueryState;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.transport.Event;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static junit.framework.Assert.assertNotNull;
 
@@ -81,7 +81,7 @@ public abstract class CQLTester
     protected static final long ROW_CACHE_SIZE_IN_MB = Integer.valueOf(System.getProperty("cassandra.test.row_cache_size_in_mb", "0"));
     private static final AtomicInteger seqNumber = new AtomicInteger();
 
-    private static org.apache.cassandra.transport.Server server;
+    private static org.apache.cassandraBloomFilters.transport.Server server;
     protected static final int nativePort;
     protected static final InetAddress nativeAddr;
     private static final Map<Integer, Cluster> clusters = new HashMap<>();

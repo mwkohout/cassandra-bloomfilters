@@ -1,4 +1,4 @@
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.EOFException;
 import java.io.IOException;
@@ -28,7 +28,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.utils.memory.MemoryUtil;
+import org.apache.cassandraBloomFilters.utils.memory.MemoryUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils.concurrent;
+package org.apache.cassandraBloomFilters.utils.concurrent;
 
 import org.junit.Ignore;
 import org.junit.Test;

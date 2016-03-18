@@ -15,9 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils.btree;
+package org.apache.cassandraBloomFilters.utils.btree;
 
-import static org.apache.cassandra.utils.btree.BTreeRemoval.remove;
+import static org.apache.cassandraBloomFilters.utils.btree.BTreeRemoval.remove;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.nio.ByteBuffer;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
 
 public class LargeCompactValueTest extends CQLTester
 {

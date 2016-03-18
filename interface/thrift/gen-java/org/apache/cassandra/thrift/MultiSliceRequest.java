@@ -4,7 +4,7 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-package org.apache.cassandra.thrift;
+package org.apache.cassandraBloomFilters.thrift;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -197,7 +197,7 @@ public class MultiSliceRequest implements org.apache.thrift.TBase<MultiSliceRequ
 
     this.count = 1000;
 
-    this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+    this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
   }
 
@@ -240,7 +240,7 @@ public class MultiSliceRequest implements org.apache.thrift.TBase<MultiSliceRequ
 
     this.count = 1000;
 
-    this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+    this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
   }
 

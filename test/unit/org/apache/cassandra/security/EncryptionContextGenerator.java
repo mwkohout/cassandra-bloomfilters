@@ -18,13 +18,13 @@
  * under the License.
  *
  */
-package org.apache.cassandra.security;
+package org.apache.cassandraBloomFilters.security;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.config.TransparentDataEncryptionOptions;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.config.TransparentDataEncryptionOptions;
 
 public class EncryptionContextGenerator
 {

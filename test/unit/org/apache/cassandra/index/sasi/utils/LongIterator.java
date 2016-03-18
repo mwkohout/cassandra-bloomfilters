@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.utils;
+package org.apache.cassandraBloomFilters.index.sasi.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,8 +23,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.index.sasi.disk.Token;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.index.sasi.disk.Token;
 
 public class LongIterator extends RangeIterator<Long, Token>
 {

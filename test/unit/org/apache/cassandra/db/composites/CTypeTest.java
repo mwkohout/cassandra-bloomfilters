@@ -15,10 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.composites;
+package org.apache.cassandraBloomFilters.db.composites;
 
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.junit.Test;
 
 import java.nio.ByteBuffer;

@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,15 +26,15 @@ import java.util.*;
 
 import com.datastax.driver.core.Metadata;
 import com.google.common.collect.ImmutableMap;
-import org.apache.cassandra.config.EncryptionOptions;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.SimpleThriftClient;
-import org.apache.cassandra.stress.util.SmartThriftClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.thrift.AuthenticationRequest;
-import org.apache.cassandra.thrift.Cassandra;
-import org.apache.cassandra.thrift.InvalidRequestException;
-import org.apache.cassandra.transport.SimpleClient;
+import org.apache.cassandraBloomFilters.config.EncryptionOptions;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.SimpleThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.SmartThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.thrift.AuthenticationRequest;
+import org.apache.cassandraBloomFilters.thrift.Cassandra;
+import org.apache.cassandraBloomFilters.thrift.InvalidRequestException;
+import org.apache.cassandraBloomFilters.transport.SimpleClient;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.transport.TTransport;
 
@@ -174,7 +174,7 @@ public class StressSettings implements Serializable
             String currentNode = node.randomNode();
             SimpleClient client = new SimpleClient(currentNode, port.nativePort);
             client.connect(false);
-            client.execute("USE \"" + schema.keyspace + "\";", org.apache.cassandra.db.ConsistencyLevel.ONE);
+            client.execute("USE \"" + schema.keyspace + "\";", org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
             return client;
         }
         catch (Exception e)
@@ -212,7 +212,7 @@ public class StressSettings implements Serializable
                 JavaDriverClient c = new JavaDriverClient(this, currentNode, port.nativePort, encOptions);
                 c.connect(mode.compression());
                 if (setKeyspace)
-                    c.execute("USE \"" + schema.keyspace + "\";", org.apache.cassandra.db.ConsistencyLevel.ONE);
+                    c.execute("USE \"" + schema.keyspace + "\";", org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
 
                 return client = c;
             }

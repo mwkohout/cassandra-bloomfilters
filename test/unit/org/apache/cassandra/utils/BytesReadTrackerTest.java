@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -29,10 +29,10 @@ import java.io.DataOutputStream;
 
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.BytesReadTracker;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.TrackedDataInputPlus;
-import org.apache.cassandra.io.util.TrackedInputStream;
+import org.apache.cassandraBloomFilters.io.util.BytesReadTracker;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.TrackedDataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.TrackedInputStream;
 
 public class BytesReadTrackerTest
 {

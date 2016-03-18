@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,12 +24,12 @@ import java.io.IOException;
 import com.google.common.base.Predicate;
 
 import org.junit.Assert;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.rows.SerializationHelper;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.NIODataInputStream;
-import org.apache.cassandra.io.util.RebufferingInputStream;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.rows.SerializationHelper;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.NIODataInputStream;
+import org.apache.cassandraBloomFilters.io.util.RebufferingInputStream;
 
 /**
  * Utility class for tests needing to examine the commitlog contents.

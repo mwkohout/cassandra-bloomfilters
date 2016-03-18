@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.miscellaneous;
+package org.apache.cassandraBloomFilters.cql3.validation.miscellaneous;
 
 import java.math.BigInteger;
 
@@ -27,9 +27,9 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 /**
  * Any tests that do not fit in any other category,

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -31,16 +31,16 @@ import java.util.UUID;
 
 import junit.framework.Assert;
 
-import org.apache.cassandra.concurrent.SEPExecutor;
-import org.apache.cassandra.concurrent.Stage;
-import org.apache.cassandra.concurrent.StageManager;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.SystemKeyspace;
-import org.apache.cassandra.serializers.SimpleDateSerializer;
-import org.apache.cassandra.serializers.TimeSerializer;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.concurrent.SEPExecutor;
+import org.apache.cassandraBloomFilters.concurrent.Stage;
+import org.apache.cassandraBloomFilters.concurrent.StageManager;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.SystemKeyspace;
+import org.apache.cassandraBloomFilters.serializers.SimpleDateSerializer;
+import org.apache.cassandraBloomFilters.serializers.TimeSerializer;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;

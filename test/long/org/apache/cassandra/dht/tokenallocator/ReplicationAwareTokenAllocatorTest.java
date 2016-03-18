@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht.tokenallocator;
+package org.apache.cassandraBloomFilters.dht.tokenallocator;
 
 import java.util.*;
 
@@ -29,8 +29,8 @@ import org.apache.commons.math3.stat.descriptive.SummaryStatistics;
 
 import org.junit.Test;
 
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.Token;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.Token;
 
 public class ReplicationAwareTokenAllocatorTest
 {

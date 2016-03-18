@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,20 +23,20 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.rows.EncodingStats;
-import org.apache.cassandra.db.partitions.*;
-import org.apache.cassandra.io.sstable.IndexHelper;
-import org.apache.cassandra.io.sstable.format.big.BigFormat;
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.SequentialWriter;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.rows.EncodingStats;
+import org.apache.cassandraBloomFilters.db.partitions.*;
+import org.apache.cassandraBloomFilters.io.sstable.IndexHelper;
+import org.apache.cassandraBloomFilters.io.sstable.format.big.BigFormat;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriter;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import org.junit.Assert;
 import org.junit.Test;

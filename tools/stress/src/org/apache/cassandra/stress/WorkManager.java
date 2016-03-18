@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 import java.util.concurrent.atomic.AtomicLong;
 

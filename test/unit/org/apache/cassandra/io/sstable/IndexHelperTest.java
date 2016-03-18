@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,15 +24,15 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.ClusteringComparator;
-import org.apache.cassandra.db.ClusteringPrefix;
-import org.apache.cassandra.db.DeletionTime;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.ClusteringComparator;
+import org.apache.cassandraBloomFilters.db.ClusteringPrefix;
+import org.apache.cassandraBloomFilters.db.DeletionTime;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
-import static org.apache.cassandra.io.sstable.IndexHelper.IndexInfo;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexHelper.IndexInfo;
 import static org.junit.Assert.assertEquals;
 
 public class IndexHelperTest

@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.serializers;
+package org.apache.cassandraBloomFilters.serializers;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ import java.util.ArrayList;
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.cassandra.serializers.MarshalException;
-import org.apache.cassandra.serializers.TimestampSerializer;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.serializers.TimestampSerializer;
 
 public class TimestampSerializerTest
 {

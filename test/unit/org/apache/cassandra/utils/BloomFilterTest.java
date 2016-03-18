@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -29,15 +29,15 @@ import java.util.Set;
 
 import org.junit.*;
 
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.io.util.BufferedDataOutputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.utils.IFilter.FilterKey;
-import org.apache.cassandra.utils.KeyGenerator.RandomStringGenerator;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.io.util.BufferedDataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.utils.IFilter.FilterKey;
+import org.apache.cassandraBloomFilters.utils.KeyGenerator.RandomStringGenerator;
 
 public class BloomFilterTest
 {

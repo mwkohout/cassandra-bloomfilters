@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,11 +29,11 @@ import java.nio.ByteBuffer;
 import java.nio.charset.CharacterCodingException;
 import java.util.*;
 
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.stress.generate.Distribution;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.DistributionFixed;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFixed;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 /**
  * For parsing column options

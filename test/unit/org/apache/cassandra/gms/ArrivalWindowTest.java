@@ -1,4 +1,4 @@
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one

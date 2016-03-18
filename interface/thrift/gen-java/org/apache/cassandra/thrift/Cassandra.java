@@ -4,7 +4,7 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-package org.apache.cassandra.thrift;
+package org.apache.cassandraBloomFilters.thrift;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -9245,7 +9245,7 @@ public class Cassandra {
     }
 
     public get_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -9284,7 +9284,7 @@ public class Cassandra {
     public void clear() {
       this.key = null;
       this.column_path = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -10637,7 +10637,7 @@ public class Cassandra {
     }
 
     public get_slice_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -10682,7 +10682,7 @@ public class Cassandra {
       this.key = null;
       this.column_parent = null;
       this.predicate = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -12070,7 +12070,7 @@ public class Cassandra {
     }
 
     public get_count_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -12115,7 +12115,7 @@ public class Cassandra {
       this.key = null;
       this.column_parent = null;
       this.predicate = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -13450,7 +13450,7 @@ public class Cassandra {
     }
 
     public multiget_slice_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -13495,7 +13495,7 @@ public class Cassandra {
       this.keys = null;
       this.column_parent = null;
       this.predicate = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -14969,7 +14969,7 @@ public class Cassandra {
     }
 
     public multiget_count_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -15014,7 +15014,7 @@ public class Cassandra {
       this.keys = null;
       this.column_parent = null;
       this.predicate = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -16437,7 +16437,7 @@ public class Cassandra {
     }
 
     public get_range_slices_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -16481,7 +16481,7 @@ public class Cassandra {
       this.column_parent = null;
       this.predicate = null;
       this.range = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -17864,7 +17864,7 @@ public class Cassandra {
     }
 
     public get_paged_slice_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -17909,7 +17909,7 @@ public class Cassandra {
       this.column_family = null;
       this.range = null;
       this.start_column = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -19292,7 +19292,7 @@ public class Cassandra {
     }
 
     public get_indexed_slices_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -19336,7 +19336,7 @@ public class Cassandra {
       this.column_parent = null;
       this.index_clause = null;
       this.column_predicate = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -20719,7 +20719,7 @@ public class Cassandra {
     }
 
     public insert_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -20764,7 +20764,7 @@ public class Cassandra {
       this.key = null;
       this.column_parent = null;
       this.column = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -21993,7 +21993,7 @@ public class Cassandra {
     }
 
     public add_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -22038,7 +22038,7 @@ public class Cassandra {
       this.key = null;
       this.column_parent = null;
       this.column = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -23291,9 +23291,9 @@ public class Cassandra {
     }
 
     public cas_args() {
-      this.serial_consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.SERIAL;
+      this.serial_consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.SERIAL;
 
-      this.commit_consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.QUORUM;
+      this.commit_consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.QUORUM;
 
     }
 
@@ -23357,9 +23357,9 @@ public class Cassandra {
       this.column_family = null;
       this.expected = null;
       this.updates = null;
-      this.serial_consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.SERIAL;
+      this.serial_consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.SERIAL;
 
-      this.commit_consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.QUORUM;
+      this.commit_consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.QUORUM;
 
     }
 
@@ -24983,7 +24983,7 @@ public class Cassandra {
     }
 
     public remove_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -25029,7 +25029,7 @@ public class Cassandra {
       this.column_path = null;
       setTimestampIsSet(false);
       this.timestamp = 0;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -26249,7 +26249,7 @@ public class Cassandra {
     }
 
     public remove_counter_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -26288,7 +26288,7 @@ public class Cassandra {
     public void clear() {
       this.key = null;
       this.path = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -27415,7 +27415,7 @@ public class Cassandra {
     }
 
     public batch_mutate_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -27474,7 +27474,7 @@ public class Cassandra {
     @Override
     public void clear() {
       this.mutation_map = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -28619,7 +28619,7 @@ public class Cassandra {
     }
 
     public atomic_batch_mutate_args() {
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 
@@ -28678,7 +28678,7 @@ public class Cassandra {
     @Override
     public void clear() {
       this.mutation_map = null;
-      this.consistency_level = org.apache.cassandra.thrift.ConsistencyLevel.ONE;
+      this.consistency_level = org.apache.cassandraBloomFilters.thrift.ConsistencyLevel.ONE;
 
     }
 

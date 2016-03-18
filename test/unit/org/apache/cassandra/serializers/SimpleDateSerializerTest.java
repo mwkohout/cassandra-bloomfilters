@@ -16,10 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.serializers;
+package org.apache.cassandraBloomFilters.serializers;
 
-import org.apache.cassandra.db.marshal.SimpleDateType;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.db.marshal.SimpleDateType;
+import org.apache.cassandraBloomFilters.utils.Pair;
 import org.junit.Test;
 
 import java.nio.ByteBuffer;

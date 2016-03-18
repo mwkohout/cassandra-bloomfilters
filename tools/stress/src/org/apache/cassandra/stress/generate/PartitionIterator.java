@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -38,10 +38,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import com.google.common.collect.Iterables;
 
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.stress.generate.values.Generator;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.stress.generate.values.Generator;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 // a partition is re-used to reduce garbage generation, as is its internal RowIterator
 // TODO: we should batch the generation of clustering components so we can bound the time and size necessary to

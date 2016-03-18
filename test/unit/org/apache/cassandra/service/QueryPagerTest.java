@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.CharacterCodingException;
@@ -26,24 +26,24 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.apache.cassandra.*;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.RowIterator;
-import org.apache.cassandra.db.filter.*;
-import org.apache.cassandra.db.partitions.FilteredPartition;
-import org.apache.cassandra.db.partitions.PartitionIterator;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.service.pager.QueryPager;
-import org.apache.cassandra.service.pager.PagingState;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.transport.Server;
+import org.apache.cassandraBloomFilters.*;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.RowIterator;
+import org.apache.cassandraBloomFilters.db.filter.*;
+import org.apache.cassandraBloomFilters.db.partitions.FilteredPartition;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionIterator;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.service.pager.QueryPager;
+import org.apache.cassandraBloomFilters.service.pager.PagingState;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.transport.Server;
 
-import static org.apache.cassandra.cql3.QueryProcessor.executeInternal;
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.cql3.QueryProcessor.executeInternal;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 import static org.junit.Assert.*;
 
 @RunWith(OrderedJUnit4ClassRunner.class)

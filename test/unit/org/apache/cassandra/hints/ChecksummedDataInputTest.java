@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.hints;
+package org.apache.cassandraBloomFilters.hints;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,11 +26,11 @@ import java.util.zip.CRC32;
 
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SequentialWriter;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriter;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;

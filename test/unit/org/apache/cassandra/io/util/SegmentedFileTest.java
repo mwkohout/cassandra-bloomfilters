@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import org.junit.Test;
 
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
 
 import static org.junit.Assert.assertEquals;
 

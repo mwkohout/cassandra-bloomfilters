@@ -17,7 +17,7 @@
 * under the License.
 */
 
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -32,26 +32,26 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.WindowsFailedSnapshotTracker;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.Murmur3Partitioner.LongToken;
-import org.apache.cassandra.dht.OrderPreservingPartitioner.StringToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.locator.IEndpointSnitch;
-import org.apache.cassandra.locator.PropertyFileSnitch;
-import org.apache.cassandra.locator.TokenMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.ReplicationParams;
-import org.apache.cassandra.schema.SchemaKeyspace;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.WindowsFailedSnapshotTracker;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner.LongToken;
+import org.apache.cassandraBloomFilters.dht.OrderPreservingPartitioner.StringToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.locator.IEndpointSnitch;
+import org.apache.cassandraBloomFilters.locator.PropertyFileSnitch;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.ReplicationParams;
+import org.apache.cassandraBloomFilters.schema.SchemaKeyspace;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

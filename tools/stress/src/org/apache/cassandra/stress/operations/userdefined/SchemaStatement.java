@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations.userdefined;
+package org.apache.cassandraBloomFilters.stress.operations.userdefined;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,13 +29,13 @@ import com.datastax.driver.core.ColumnDefinitions;
 import com.datastax.driver.core.DataType;
 import com.datastax.driver.core.LocalDate;
 import com.datastax.driver.core.PreparedStatement;
-import org.apache.cassandra.db.ConsistencyLevel;
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.Row;
-import org.apache.cassandra.stress.operations.PartitionOperation;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.db.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.Row;
+import org.apache.cassandraBloomFilters.stress.operations.PartitionOperation;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 public abstract class SchemaStatement extends PartitionOperation
 {

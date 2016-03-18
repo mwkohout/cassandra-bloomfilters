@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import org.junit.Test;
 
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.restrictions.StatementRestrictions;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.restrictions.StatementRestrictions;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class SelectMultiColumnRelationTest extends CQLTester
 {

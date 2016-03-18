@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.net;
+package org.apache.cassandraBloomFilters.net;
 
 import java.net.InetAddress;
 import java.util.UUID;
@@ -24,16 +24,16 @@ import java.util.UUID;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.db.BufferDecoratedKey;
-import org.apache.cassandra.db.ConsistencyLevel;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.PartitionColumns;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.net.MessagingService.Verb;
-import org.apache.cassandra.service.paxos.Commit;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.db.BufferDecoratedKey;
+import org.apache.cassandraBloomFilters.db.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.PartitionColumns;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.net.MessagingService.Verb;
+import org.apache.cassandraBloomFilters.service.paxos.Commit;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class WriteCallbackInfoTest
 {

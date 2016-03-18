@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils.concurrent;
+package org.apache.cassandraBloomFilters.utils.concurrent;
 
 import org.junit.Test;
 
@@ -36,9 +36,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.apache.cassandra.utils.ObjectSizes;
-import org.apache.cassandra.utils.Pair;
-import org.apache.cassandra.utils.concurrent.Ref.Visitor;
+import org.apache.cassandraBloomFilters.utils.ObjectSizes;
+import org.apache.cassandraBloomFilters.utils.Pair;
+import org.apache.cassandraBloomFilters.utils.concurrent.Ref.Visitor;
 
 @SuppressWarnings({"unused", "unchecked", "rawtypes"})
 public class RefCountedTest

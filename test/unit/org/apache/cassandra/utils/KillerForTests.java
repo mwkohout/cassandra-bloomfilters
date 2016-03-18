@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 /**
  * Responsible for stubbing out the System.exit() logic during unit tests.

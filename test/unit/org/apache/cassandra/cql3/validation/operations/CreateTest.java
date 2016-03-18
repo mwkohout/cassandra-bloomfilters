@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -24,16 +24,16 @@ import java.util.UUID;
 import org.junit.Test;
 
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.partitions.Partition;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.SyntaxException;
-import org.apache.cassandra.schema.SchemaKeyspace;
-import org.apache.cassandra.triggers.ITrigger;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.partitions.Partition;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.schema.SchemaKeyspace;
+import org.apache.cassandraBloomFilters.triggers.ITrigger;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static java.lang.String.format;
 import static junit.framework.Assert.assertFalse;
@@ -515,7 +515,7 @@ public class CreateTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandra.io.compress.LZ4Compressor")));
+                   row(map("chunk_length_in_kb", "64", "class", "org.apache.cassandraBloomFilters.io.compress.LZ4Compressor")));
 
         createTable("CREATE TABLE %s (a text, b int, c int, primary key (a, b))"
                 + " WITH compression = { 'class' : 'SnappyCompressor', 'chunk_length_in_kb' : 32 };");
@@ -525,7 +525,7 @@ public class CreateTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandra.io.compress.SnappyCompressor")));
+                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandraBloomFilters.io.compress.SnappyCompressor")));
 
         createTable("CREATE TABLE %s (a text, b int, c int, primary key (a, b))"
                 + " WITH compression = { 'class' : 'SnappyCompressor', 'chunk_length_in_kb' : 32, 'enabled' : true };");
@@ -535,7 +535,7 @@ public class CreateTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandra.io.compress.SnappyCompressor")));
+                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandraBloomFilters.io.compress.SnappyCompressor")));
 
         createTable("CREATE TABLE %s (a text, b int, c int, primary key (a, b))"
                 + " WITH compression = { 'sstable_compression' : 'SnappyCompressor', 'chunk_length_kb' : 32 };");
@@ -545,7 +545,7 @@ public class CreateTest extends CQLTester
                                   SchemaKeyspace.TABLES),
                            KEYSPACE,
                            currentTable()),
-                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandra.io.compress.SnappyCompressor")));
+                   row(map("chunk_length_in_kb", "32", "class", "org.apache.cassandraBloomFilters.io.compress.SnappyCompressor")));
 
         createTable("CREATE TABLE %s (a text, b int, c int, primary key (a, b))"
                 + " WITH compression = { 'sstable_compression' : '', 'chunk_length_kb' : 32 };");

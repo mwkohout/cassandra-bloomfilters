@@ -1,4 +1,4 @@
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -17,7 +17,7 @@ import java.nio.channels.WritableByteChannel;
 import java.util.Arrays;
 import java.util.Random;
 
-import org.apache.cassandra.utils.vint.VIntCoding;
+import org.apache.cassandraBloomFilters.utils.vint.VIntCoding;
 import org.junit.Test;
 
 import com.google.common.primitives.UnsignedBytes;

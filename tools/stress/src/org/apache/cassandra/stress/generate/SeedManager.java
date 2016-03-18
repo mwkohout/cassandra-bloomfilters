@@ -16,16 +16,16 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.utils.LockedDynamicList;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.utils.LockedDynamicList;
 
 public class SeedManager
 {

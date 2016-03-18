@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -24,8 +24,8 @@ import com.google.common.collect.Iterables;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.utils.btree.BTree;
-import org.apache.cassandra.utils.btree.UpdateFunction;
+import org.apache.cassandraBloomFilters.utils.btree.BTree;
+import org.apache.cassandraBloomFilters.utils.btree.UpdateFunction;
 
 import static org.junit.Assert.*;
 

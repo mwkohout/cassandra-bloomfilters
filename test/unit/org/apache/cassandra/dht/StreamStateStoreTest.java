@@ -15,17 +15,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.net.InetAddress;
 import java.util.Collections;
 
 import org.junit.Test;
 
-import org.apache.cassandra.streaming.DefaultConnectionFactory;
-import org.apache.cassandra.streaming.StreamEvent;
-import org.apache.cassandra.streaming.StreamSession;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.streaming.DefaultConnectionFactory;
+import org.apache.cassandraBloomFilters.streaming.StreamEvent;
+import org.apache.cassandraBloomFilters.streaming.StreamSession;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

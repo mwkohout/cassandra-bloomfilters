@@ -17,15 +17,15 @@
  * under the License.
  *
  */
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
-import org.apache.cassandra.io.IVersionedSerializer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.DataInputPlus.DataInputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.io.util.BufferedDataOutputStreamPlus;
-import org.apache.cassandra.net.MessagingService;
+import org.apache.cassandraBloomFilters.io.IVersionedSerializer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus.DataInputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.BufferedDataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.net.MessagingService;
 
 import java.io.File;
 import java.io.FileInputStream;

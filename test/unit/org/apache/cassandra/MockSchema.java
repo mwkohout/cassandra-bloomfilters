@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,29 +26,29 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import com.google.common.collect.ImmutableSet;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.io.sstable.Component;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.IndexSummary;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.io.sstable.metadata.MetadataType;
-import org.apache.cassandra.io.sstable.metadata.StatsMetadata;
-import org.apache.cassandra.io.util.BufferedSegmentedFile;
-import org.apache.cassandra.io.util.ChannelProxy;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.io.util.Memory;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SegmentedFile;
-import org.apache.cassandra.schema.CachingParams;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.AlwaysPresentFilter;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.io.sstable.Component;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.IndexSummary;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataType;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.StatsMetadata;
+import org.apache.cassandraBloomFilters.io.util.BufferedSegmentedFile;
+import org.apache.cassandraBloomFilters.io.util.ChannelProxy;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.io.util.Memory;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SegmentedFile;
+import org.apache.cassandraBloomFilters.schema.CachingParams;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.AlwaysPresentFilter;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class MockSchema
 {

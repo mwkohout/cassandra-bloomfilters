@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.db.view;
+package org.apache.cassandraBloomFilters.db.view;
 
 import java.net.InetAddress;
 import java.util.HashMap;
@@ -27,19 +27,19 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.OrderPreservingPartitioner.StringToken;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.locator.IEndpointSnitch;
-import org.apache.cassandra.locator.NetworkTopologyStrategy;
-import org.apache.cassandra.locator.PropertyFileSnitch;
-import org.apache.cassandra.locator.TokenMetadata;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.schema.ReplicationParams;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.OrderPreservingPartitioner.StringToken;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.locator.IEndpointSnitch;
+import org.apache.cassandraBloomFilters.locator.NetworkTopologyStrategy;
+import org.apache.cassandraBloomFilters.locator.PropertyFileSnitch;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.schema.ReplicationParams;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 public class ViewUtilsTest
 {

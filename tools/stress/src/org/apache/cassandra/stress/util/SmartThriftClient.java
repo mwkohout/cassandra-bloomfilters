@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -33,9 +33,9 @@ import com.google.common.collect.Iterators;
 
 import com.datastax.driver.core.Host;
 import com.datastax.driver.core.Metadata;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.thrift.*;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.thrift.*;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.apache.thrift.TException;
 
 public class SmartThriftClient implements ThriftClient

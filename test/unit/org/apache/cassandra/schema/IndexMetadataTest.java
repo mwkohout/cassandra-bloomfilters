@@ -1,4 +1,4 @@
-package org.apache.cassandra.schema;
+package org.apache.cassandraBloomFilters.schema;
 
 import org.junit.Assert;
 import org.junit.Test;

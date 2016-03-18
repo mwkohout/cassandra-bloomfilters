@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.dht;
+package org.apache.cassandraBloomFilters.dht;
 
 import java.nio.ByteBuffer;
 import java.util.Collection;
@@ -31,12 +31,12 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.cassandra.db.PartitionPosition;
-import org.apache.cassandra.dht.ByteOrderedPartitioner.BytesToken;
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.db.PartitionPosition;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner.BytesToken;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
 
 import static java.util.Arrays.asList;
-import static org.apache.cassandra.Util.range;
+import static org.apache.cassandraBloomFilters.Util.range;
 import static org.junit.Assert.*;
 
 

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -32,12 +32,12 @@ import java.util.UUID;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.functions.FunctionName;
-import org.apache.cassandra.exceptions.FunctionExecutionException;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.functions.FunctionName;
+import org.apache.cassandraBloomFilters.exceptions.FunctionExecutionException;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 public class UFPureScriptTest extends CQLTester
 {

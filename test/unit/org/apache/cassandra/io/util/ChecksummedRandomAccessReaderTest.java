@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.io.util;
+package org.apache.cassandraBloomFilters.io.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,10 +27,10 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import org.apache.cassandra.io.util.ChecksummedRandomAccessReader;
-import org.apache.cassandra.io.util.ChecksummedSequentialWriter;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SequentialWriter;
+import org.apache.cassandraBloomFilters.io.util.ChecksummedRandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.ChecksummedSequentialWriter;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriter;
 
 public class ChecksummedRandomAccessReaderTest
 {

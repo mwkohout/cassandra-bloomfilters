@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,10 +29,10 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadFactory;
 
-import org.apache.cassandra.stress.util.*;
+import org.apache.cassandraBloomFilters.stress.util.*;
 import org.apache.commons.lang3.time.DurationFormatUtils;
-import org.apache.cassandra.concurrent.NamedThreadFactory;
-import org.apache.cassandra.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.concurrent.NamedThreadFactory;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
 
 public class StressMetrics
 {

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.disk;
+package org.apache.cassandraBloomFilters.index.sasi.disk;
 
 import java.io.File;
 import java.nio.ByteBuffer;
@@ -23,21 +23,21 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
-import org.apache.cassandra.cql3.Operator;
-import org.apache.cassandra.db.BufferDecoratedKey;
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.index.sasi.plan.Expression;
-import org.apache.cassandra.index.sasi.utils.CombinedTerm;
-import org.apache.cassandra.index.sasi.utils.CombinedTermIterator;
-import org.apache.cassandra.index.sasi.utils.OnDiskIndexIterator;
-import org.apache.cassandra.index.sasi.utils.RangeIterator;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.utils.MurmurHash;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.cql3.Operator;
+import org.apache.cassandraBloomFilters.db.BufferDecoratedKey;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.index.sasi.plan.Expression;
+import org.apache.cassandraBloomFilters.index.sasi.utils.CombinedTerm;
+import org.apache.cassandraBloomFilters.index.sasi.utils.CombinedTermIterator;
+import org.apache.cassandraBloomFilters.index.sasi.utils.OnDiskIndexIterator;
+import org.apache.cassandraBloomFilters.index.sasi.utils.RangeIterator;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.utils.MurmurHash;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import com.carrotsearch.hppc.LongSet;
 import com.carrotsearch.hppc.cursors.LongCursor;

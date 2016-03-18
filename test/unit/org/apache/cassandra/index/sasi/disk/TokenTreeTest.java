@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.disk;
+package org.apache.cassandraBloomFilters.index.sasi.disk;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,20 +24,20 @@ import java.util.*;
 
 import com.google.common.collect.Iterators;
 import com.google.common.collect.PeekingIterator;
-import org.apache.cassandra.db.BufferDecoratedKey;
-import org.apache.cassandra.db.DecoratedKey;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.index.sasi.disk.TokenTreeBuilder.EntryType;
-import org.apache.cassandra.index.sasi.utils.CombinedValue;
-import org.apache.cassandra.index.sasi.utils.MappedBuffer;
-import org.apache.cassandra.index.sasi.utils.RangeIterator;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.io.compress.BufferType;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.utils.MurmurHash;
-import org.apache.cassandra.utils.Pair;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SequentialWriter;
+import org.apache.cassandraBloomFilters.db.BufferDecoratedKey;
+import org.apache.cassandraBloomFilters.db.DecoratedKey;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.index.sasi.disk.TokenTreeBuilder.EntryType;
+import org.apache.cassandraBloomFilters.index.sasi.utils.CombinedValue;
+import org.apache.cassandraBloomFilters.index.sasi.utils.MappedBuffer;
+import org.apache.cassandraBloomFilters.index.sasi.utils.RangeIterator;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.io.compress.BufferType;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.utils.MurmurHash;
+import org.apache.cassandraBloomFilters.utils.Pair;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SequentialWriter;
 
 import junit.framework.Assert;
 import org.junit.Test;

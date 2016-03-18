@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -28,15 +28,15 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.config.TransparentDataEncryptionOptions;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.util.FileDataInput;
-import org.apache.cassandra.io.util.FileSegmentInputStream;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.security.EncryptionContext;
-import org.apache.cassandra.security.EncryptionContextGenerator;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.config.TransparentDataEncryptionOptions;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.util.FileDataInput;
+import org.apache.cassandraBloomFilters.io.util.FileSegmentInputStream;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.security.EncryptionContext;
+import org.apache.cassandraBloomFilters.security.EncryptionContextGenerator;
 
 public class CommitLogDescriptorTest
 {

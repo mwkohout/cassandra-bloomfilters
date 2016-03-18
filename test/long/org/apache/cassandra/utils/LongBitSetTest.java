@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 
-import org.apache.cassandra.utils.obs.OffHeapBitSet;
-import org.apache.cassandra.utils.obs.OpenBitSet;
+import org.apache.cassandraBloomFilters.utils.obs.OffHeapBitSet;
+import org.apache.cassandraBloomFilters.utils.obs.OpenBitSet;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

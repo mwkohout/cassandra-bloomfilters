@@ -16,7 +16,7 @@
  * * specific language governing permissions and limitations
  * * under the License.
  * */
-package org.apache.cassandra.db.filter;
+package org.apache.cassandraBloomFilters.db.filter;
 
 
 import java.awt.*;
@@ -24,13 +24,13 @@ import java.nio.ByteBuffer;
 import java.util.*;
 import java.util.List;
 
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.*;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.*;
 import org.junit.Test;
 
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static org.junit.Assert.*;
 

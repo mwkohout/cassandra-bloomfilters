@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.ThreadLocalRandom;
@@ -24,8 +24,8 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import static org.junit.Assert.assertEquals;
 
 public class ColumnIdentifierTest

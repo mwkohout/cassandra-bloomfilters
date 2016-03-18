@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.metrics;
+package org.apache.cassandraBloomFilters.metrics;
 
 import java.io.IOException;
 
@@ -27,13 +27,13 @@ import org.junit.runner.RunWith;
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.Session;
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.service.EmbeddedCassandraService;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.service.EmbeddedCassandraService;
 
 import static junit.framework.Assert.assertEquals;
 

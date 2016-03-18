@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -26,19 +26,19 @@ import java.util.*;
 import com.google.common.collect.Lists;
 import org.junit.Test;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
-import static org.apache.cassandra.io.sstable.IndexSummaryBuilder.downsample;
-import static org.apache.cassandra.io.sstable.IndexSummaryBuilder.entriesAtSamplingLevel;
-import static org.apache.cassandra.io.sstable.Downsampling.BASE_SAMPLING_LEVEL;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexSummaryBuilder.downsample;
+import static org.apache.cassandraBloomFilters.io.sstable.IndexSummaryBuilder.entriesAtSamplingLevel;
+import static org.apache.cassandraBloomFilters.io.sstable.Downsampling.BASE_SAMPLING_LEVEL;
 import static org.junit.Assert.*;
 
 public class IndexSummaryTest

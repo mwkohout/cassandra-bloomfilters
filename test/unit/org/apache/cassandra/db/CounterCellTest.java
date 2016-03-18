@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
@@ -27,19 +27,19 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.rows.BufferCell;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.db.rows.CellPath;
-import org.apache.cassandra.db.rows.Cells;
-import org.apache.cassandra.db.context.CounterContext;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.*;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.rows.BufferCell;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.db.rows.CellPath;
+import org.apache.cassandraBloomFilters.db.rows.Cells;
+import org.apache.cassandraBloomFilters.db.context.CounterContext;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.*;
 
 import static org.junit.Assert.*;
-import static org.apache.cassandra.db.context.CounterContext.ContextState;
+import static org.apache.cassandraBloomFilters.db.context.CounterContext.ContextState;
 
 public class CounterCellTest
 {

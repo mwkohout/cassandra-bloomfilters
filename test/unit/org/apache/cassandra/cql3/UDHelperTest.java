@@ -16,39 +16,39 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.nio.ByteBuffer;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.functions.UDHelper;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.BooleanType;
-import org.apache.cassandra.db.marshal.ByteType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.db.marshal.CounterColumnType;
-import org.apache.cassandra.db.marshal.DateType;
-import org.apache.cassandra.db.marshal.DecimalType;
-import org.apache.cassandra.db.marshal.DoubleType;
-import org.apache.cassandra.db.marshal.FloatType;
-import org.apache.cassandra.db.marshal.InetAddressType;
-import org.apache.cassandra.db.marshal.Int32Type;
-import org.apache.cassandra.db.marshal.IntegerType;
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.marshal.ReversedType;
-import org.apache.cassandra.db.marshal.ShortType;
-import org.apache.cassandra.db.marshal.SimpleDateType;
-import org.apache.cassandra.db.marshal.TimeType;
-import org.apache.cassandra.db.marshal.TimeUUIDType;
-import org.apache.cassandra.db.marshal.TimestampType;
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.db.marshal.UUIDType;
-import org.apache.cassandra.serializers.MarshalException;
-import org.apache.cassandra.serializers.TypeSerializer;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.cql3.functions.UDHelper;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.BooleanType;
+import org.apache.cassandraBloomFilters.db.marshal.ByteType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.db.marshal.CounterColumnType;
+import org.apache.cassandraBloomFilters.db.marshal.DateType;
+import org.apache.cassandraBloomFilters.db.marshal.DecimalType;
+import org.apache.cassandraBloomFilters.db.marshal.DoubleType;
+import org.apache.cassandraBloomFilters.db.marshal.FloatType;
+import org.apache.cassandraBloomFilters.db.marshal.InetAddressType;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.IntegerType;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.ReversedType;
+import org.apache.cassandraBloomFilters.db.marshal.ShortType;
+import org.apache.cassandraBloomFilters.db.marshal.SimpleDateType;
+import org.apache.cassandraBloomFilters.db.marshal.TimeType;
+import org.apache.cassandraBloomFilters.db.marshal.TimeUUIDType;
+import org.apache.cassandraBloomFilters.db.marshal.TimestampType;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.marshal.UUIDType;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.serializers.TypeSerializer;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class UDHelperTest
 {

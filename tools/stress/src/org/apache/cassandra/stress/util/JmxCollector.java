@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,8 +27,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import org.apache.cassandra.concurrent.NamedThreadFactory;
-import org.apache.cassandra.tools.NodeProbe;
+import org.apache.cassandraBloomFilters.concurrent.NamedThreadFactory;
+import org.apache.cassandraBloomFilters.tools.NodeProbe;
 
 public class JmxCollector implements Callable<JmxCollector.GcStats>
 {

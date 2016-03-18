@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 import java.io.DataInput;
 import java.io.File;
@@ -30,20 +30,20 @@ import javax.crypto.Cipher;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.db.commitlog.SegmentReader.CompressedSegmenter;
-import org.apache.cassandra.db.commitlog.SegmentReader.EncryptedSegmenter;
-import org.apache.cassandra.db.commitlog.SegmentReader.SyncSegment;
-import org.apache.cassandra.io.compress.DeflateCompressor;
-import org.apache.cassandra.io.compress.ICompressor;
-import org.apache.cassandra.io.compress.LZ4Compressor;
-import org.apache.cassandra.io.compress.SnappyCompressor;
-import org.apache.cassandra.io.util.FileDataInput;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.security.CipherFactory;
-import org.apache.cassandra.security.EncryptionUtils;
-import org.apache.cassandra.security.EncryptionContext;
-import org.apache.cassandra.security.EncryptionContextGenerator;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.commitlog.SegmentReader.CompressedSegmenter;
+import org.apache.cassandraBloomFilters.db.commitlog.SegmentReader.EncryptedSegmenter;
+import org.apache.cassandraBloomFilters.db.commitlog.SegmentReader.SyncSegment;
+import org.apache.cassandraBloomFilters.io.compress.DeflateCompressor;
+import org.apache.cassandraBloomFilters.io.compress.ICompressor;
+import org.apache.cassandraBloomFilters.io.compress.LZ4Compressor;
+import org.apache.cassandraBloomFilters.io.compress.SnappyCompressor;
+import org.apache.cassandraBloomFilters.io.util.FileDataInput;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.security.CipherFactory;
+import org.apache.cassandraBloomFilters.security.EncryptionUtils;
+import org.apache.cassandraBloomFilters.security.EncryptionContext;
+import org.apache.cassandraBloomFilters.security.EncryptionContextGenerator;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class SegmentReaderTest
 {

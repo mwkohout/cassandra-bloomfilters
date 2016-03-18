@@ -15,15 +15,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.functions;
+package org.apache.cassandraBloomFilters.cql3.functions;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.serializers.SimpleDateSerializer;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.serializers.SimpleDateSerializer;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.util.Arrays;
 
@@ -24,10 +24,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static org.apache.commons.lang3.StringUtils.isEmpty;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.UntypedResultSet.Row;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet.Row;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class UpdateTest extends CQLTester
 {

@@ -1,4 +1,4 @@
-package org.apache.cassandra.cql3.selection;
+package org.apache.cassandraBloomFilters.cql3.selection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,18 +6,18 @@ import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.*;
-import org.apache.cassandra.cql3.statements.SelectStatement;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
-import org.apache.cassandra.exceptions.RequestExecutionException;
-import org.apache.cassandra.exceptions.RequestValidationException;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.service.QueryState;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.*;
+import org.apache.cassandraBloomFilters.cql3.statements.SelectStatement;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.exceptions.RequestExecutionException;
+import org.apache.cassandraBloomFilters.exceptions.RequestValidationException;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.service.QueryState;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

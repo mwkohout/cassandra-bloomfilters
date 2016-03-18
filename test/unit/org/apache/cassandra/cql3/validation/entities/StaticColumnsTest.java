@@ -16,13 +16,13 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.util.Arrays;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 
 import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertEquals;

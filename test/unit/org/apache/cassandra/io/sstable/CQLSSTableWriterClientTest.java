@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -27,9 +27,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 import static org.junit.Assert.assertEquals;
 

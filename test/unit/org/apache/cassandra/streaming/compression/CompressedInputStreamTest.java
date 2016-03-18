@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.streaming.compression;
+package org.apache.cassandraBloomFilters.streaming.compression;
 
 import java.io.*;
 import java.util.*;
@@ -23,18 +23,18 @@ import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
-import org.apache.cassandra.db.ClusteringComparator;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.io.compress.CompressedSequentialWriter;
-import org.apache.cassandra.io.compress.CompressionMetadata;
-import org.apache.cassandra.schema.CompressionParams;
-import org.apache.cassandra.io.sstable.Component;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.streaming.compress.CompressedInputStream;
-import org.apache.cassandra.streaming.compress.CompressionInfo;
-import org.apache.cassandra.utils.ChecksumType;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.db.ClusteringComparator;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.io.compress.CompressedSequentialWriter;
+import org.apache.cassandraBloomFilters.io.compress.CompressionMetadata;
+import org.apache.cassandraBloomFilters.schema.CompressionParams;
+import org.apache.cassandraBloomFilters.io.sstable.Component;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.streaming.compress.CompressedInputStream;
+import org.apache.cassandraBloomFilters.streaming.compress.CompressionInfo;
+import org.apache.cassandraBloomFilters.utils.ChecksumType;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
 

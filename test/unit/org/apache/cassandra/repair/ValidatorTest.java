@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.repair;
+package org.apache.cassandraBloomFilters.repair;
 
 import java.net.InetAddress;
 import java.util.Arrays;
@@ -26,25 +26,25 @@ import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.BufferDecoratedKey;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.EmptyIterators;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.net.IMessageSink;
-import org.apache.cassandra.net.MessageIn;
-import org.apache.cassandra.net.MessageOut;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.repair.messages.RepairMessage;
-import org.apache.cassandra.repair.messages.ValidationComplete;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.MerkleTrees;
-import org.apache.cassandra.utils.concurrent.SimpleCondition;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.BufferDecoratedKey;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.EmptyIterators;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.net.IMessageSink;
+import org.apache.cassandraBloomFilters.net.MessageIn;
+import org.apache.cassandraBloomFilters.net.MessageOut;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.repair.messages.RepairMessage;
+import org.apache.cassandraBloomFilters.repair.messages.ValidationComplete;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.MerkleTrees;
+import org.apache.cassandraBloomFilters.utils.concurrent.SimpleCondition;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

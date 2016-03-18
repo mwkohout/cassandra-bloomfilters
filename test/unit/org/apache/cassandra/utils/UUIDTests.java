@@ -1,4 +1,4 @@
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,8 +26,8 @@ import java.util.UUID;
 
 import org.junit.Test;
 
-import org.apache.cassandra.db.marshal.TimeUUIDType;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.db.marshal.TimeUUIDType;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 
 public class UUIDTests

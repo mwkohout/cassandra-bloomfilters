@@ -15,11 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import org.junit.Test;
 
-import org.apache.cassandra.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
 
 import static junit.framework.Assert.assertTrue;
 

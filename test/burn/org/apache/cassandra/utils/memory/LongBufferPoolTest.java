@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils.memory;
+package org.apache.cassandraBloomFilters.utils.memory;
 
 import java.nio.ByteBuffer;
 import java.text.DateFormat;
@@ -32,7 +32,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.utils.DynamicList;
+import org.apache.cassandraBloomFilters.utils.DynamicList;
 
 import static org.junit.Assert.*;
 

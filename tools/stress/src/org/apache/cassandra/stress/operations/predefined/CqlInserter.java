@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations.predefined;
+package org.apache.cassandraBloomFilters.stress.operations.predefined;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,11 +25,11 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.settings.Command;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.settings.Command;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 public class CqlInserter extends CqlOperation<Integer>
 {

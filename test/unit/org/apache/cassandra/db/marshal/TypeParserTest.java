@@ -16,17 +16,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.fail;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.*;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.exceptions.SyntaxException;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.*;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.exceptions.SyntaxException;
 
 public class TypeParserTest
 {

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.lifecycle;
+package org.apache.cassandraBloomFilters.db.lifecycle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,10 +31,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;

@@ -17,7 +17,7 @@
 * under the License.
 */
 
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -25,11 +25,11 @@ import java.util.*;
 
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.assertEquals;
 

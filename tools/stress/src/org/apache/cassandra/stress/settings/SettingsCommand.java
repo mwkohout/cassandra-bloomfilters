@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,9 +29,9 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 
-import org.apache.cassandra.stress.operations.OpDistributionFactory;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.thrift.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.stress.operations.OpDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.thrift.ConsistencyLevel;
 
 // Generic command settings - common to read/write/etc
 public abstract class SettingsCommand implements Serializable
@@ -163,7 +163,7 @@ public abstract class SettingsCommand implements Serializable
         for (String table : tables)
         {
             String cql = String.format("TRUNCATE %s.%s", ks, table);
-            client.execute(cql, org.apache.cassandra.db.ConsistencyLevel.ONE);
+            client.execute(cql, org.apache.cassandraBloomFilters.db.ConsistencyLevel.ONE);
         }
         System.out.println(String.format("Truncated %s.%s. Sleeping %ss for propagation.",
                                          ks, Arrays.toString(tables), settings.node.nodes.size()));

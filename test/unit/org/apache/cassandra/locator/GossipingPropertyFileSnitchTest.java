@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.net.InetAddress;
 
 import com.google.common.net.InetAddresses;
 import org.junit.Test;
 
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import static org.junit.Assert.*;
 

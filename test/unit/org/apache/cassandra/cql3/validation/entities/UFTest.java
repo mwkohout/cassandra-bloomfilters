@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.nio.ByteBuffer;
 import java.security.AccessControlException;
@@ -35,28 +35,28 @@ import org.junit.Test;
 
 import com.datastax.driver.core.*;
 import com.datastax.driver.core.exceptions.InvalidQueryException;
-import org.apache.cassandra.config.Config;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.CQL3Type;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.functions.FunctionName;
-import org.apache.cassandra.cql3.functions.JavaBasedUDFunction;
-import org.apache.cassandra.cql3.functions.UDFunction;
-import org.apache.cassandra.cql3.functions.UDHelper;
-import org.apache.cassandra.db.marshal.CollectionType;
-import org.apache.cassandra.exceptions.FunctionExecutionException;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.service.ClientWarn;
-import org.apache.cassandra.transport.Event;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.config.Config;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.CQL3Type;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.functions.FunctionName;
+import org.apache.cassandraBloomFilters.cql3.functions.JavaBasedUDFunction;
+import org.apache.cassandraBloomFilters.cql3.functions.UDFunction;
+import org.apache.cassandraBloomFilters.cql3.functions.UDHelper;
+import org.apache.cassandraBloomFilters.db.marshal.CollectionType;
+import org.apache.cassandraBloomFilters.exceptions.FunctionExecutionException;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.service.ClientWarn;
+import org.apache.cassandraBloomFilters.transport.Event;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 public class UFTest extends CQLTester
 {
@@ -2329,9 +2329,9 @@ public class UFTest extends CQLTester
                                     "} catch (Exception t) {" +
                                     "     throw new RuntimeException(t);" +
                                     '}'},
-        {"org.apache.cassandra.service.StorageService",
+        {"org.apache.cassandraBloomFilters.service.StorageService",
                                     "try {" +
-                                    "     org.apache.cassandra.service.StorageService v = org.apache.cassandra.service.StorageService.instance; v.isInShutdownHook(); return 0d;" +
+                                    "     org.apache.cassandraBloomFilters.service.StorageService v = org.apache.cassandraBloomFilters.service.StorageService.instance; v.isInShutdownHook(); return 0d;" +
                                     "} catch (Exception t) {" +
                                     "     throw new RuntimeException(t);" +
                                     '}'},
@@ -2371,7 +2371,7 @@ public class UFTest extends CQLTester
                                           "RETURNS NULL ON NULL INPUT " +
                                           "RETURNS double " +
                                           "LANGUAGE javascript\n" +
-                                          "AS 'org.apache.cassandra.service.StorageService.instance.isInShutdownHook(); 0;';");
+                                          "AS 'org.apache.cassandraBloomFilters.service.StorageService.instance.isInShutdownHook(); 0;';");
             execute("SELECT " + fName + "(dval) FROM %s WHERE key=1");
             Assert.fail("Javascript security check failed");
         }

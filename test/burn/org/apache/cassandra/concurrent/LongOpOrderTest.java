@@ -1,4 +1,4 @@
-package org.apache.cassandra.concurrent;
+package org.apache.cassandraBloomFilters.concurrent;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -34,7 +34,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
 
 import static org.junit.Assert.assertTrue;
 

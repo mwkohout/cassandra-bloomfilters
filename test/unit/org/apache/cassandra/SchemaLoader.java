@@ -15,33 +15,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.index.sasi.SASIIndex;
-import org.apache.cassandra.index.sasi.disk.OnDiskIndexBuilder;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.index.sasi.SASIIndex;
+import org.apache.cassandraBloomFilters.index.sasi.disk.OnDiskIndexBuilder;
 import org.junit.After;
 import org.junit.BeforeClass;
 
-import org.apache.cassandra.config.*;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.cql3.statements.IndexTarget;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.commitlog.CommitLog;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.gms.Gossiper;
-import org.apache.cassandra.index.StubIndex;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.schema.*;
-import org.apache.cassandra.service.MigrationManager;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.*;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.cql3.statements.IndexTarget;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLog;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.gms.Gossiper;
+import org.apache.cassandraBloomFilters.index.StubIndex;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.schema.*;
+import org.apache.cassandraBloomFilters.service.MigrationManager;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class SchemaLoader
 {
@@ -526,7 +526,7 @@ public class SchemaLoader
                         }}))
                         .with(IndexMetadata.fromSchemaMetadata("address", IndexMetadata.Kind.CUSTOM, new HashMap<String, String>()
                         {{
-                            put("analyzer_class", "org.apache.cassandra.index.sasi.analyzer.NonTokenizingAnalyzer");
+                            put("analyzer_class", "org.apache.cassandraBloomFilters.index.sasi.analyzer.NonTokenizingAnalyzer");
                             put(IndexTarget.CUSTOM_INDEX_OPTION_NAME, SASIIndex.class.getName());
                             put(IndexTarget.TARGET_OPTION_NAME, "address");
                             put("mode", OnDiskIndexBuilder.Mode.PREFIX.toString());
@@ -556,7 +556,7 @@ public class SchemaLoader
                             put(IndexTarget.CUSTOM_INDEX_OPTION_NAME, SASIIndex.class.getName());
                             put(IndexTarget.TARGET_OPTION_NAME, "/output/full-name/");
                             put("analyzed", "true");
-                            put("analyzer_class", "org.apache.cassandra.index.sasi.analyzer.NonTokenizingAnalyzer");
+                            put("analyzer_class", "org.apache.cassandraBloomFilters.index.sasi.analyzer.NonTokenizingAnalyzer");
                             put("case_sensitive", "false");
                         }}))
                         .with(IndexMetadata.fromSchemaMetadata("data_output_id", IndexMetadata.Kind.CUSTOM, new HashMap<String, String>()

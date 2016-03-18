@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.functions;
+package org.apache.cassandraBloomFilters.cql3.functions;
 
 import java.nio.ByteBuffer;
 import java.util.Arrays;
@@ -23,13 +23,13 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.db.marshal.SimpleDateType;
-import org.apache.cassandra.db.marshal.TimeUUIDType;
-import org.apache.cassandra.db.marshal.TimestampType;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.marshal.SimpleDateType;
+import org.apache.cassandraBloomFilters.db.marshal.TimeUUIDType;
+import org.apache.cassandraBloomFilters.db.marshal.TimestampType;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;

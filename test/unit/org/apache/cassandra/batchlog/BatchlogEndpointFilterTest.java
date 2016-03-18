@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.batchlog;
+package org.apache.cassandraBloomFilters.batchlog;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

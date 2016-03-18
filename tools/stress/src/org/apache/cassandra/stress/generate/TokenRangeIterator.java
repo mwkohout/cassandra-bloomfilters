@@ -16,14 +16,14 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 import com.datastax.driver.core.TokenRange;
-import org.apache.cassandra.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
 
 public class TokenRangeIterator
 {

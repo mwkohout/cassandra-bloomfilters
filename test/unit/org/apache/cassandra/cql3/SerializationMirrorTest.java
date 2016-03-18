@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class SerializationMirrorTest extends CQLTester
 {

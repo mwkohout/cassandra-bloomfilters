@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations.userdefined;
+package org.apache.cassandraBloomFilters.stress.operations.userdefined;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,20 +29,20 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import com.datastax.driver.core.*;
-import org.apache.cassandra.db.ConsistencyLevel;
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.*;
-import org.apache.cassandra.stress.generate.Row;
-import org.apache.cassandra.stress.operations.PartitionOperation;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.Compression;
-import org.apache.cassandra.thrift.CqlResult;
-import org.apache.cassandra.thrift.CqlRow;
-import org.apache.cassandra.thrift.ThriftConversion;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.db.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.generate.Row;
+import org.apache.cassandraBloomFilters.stress.operations.PartitionOperation;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.Compression;
+import org.apache.cassandraBloomFilters.thrift.CqlResult;
+import org.apache.cassandraBloomFilters.thrift.CqlRow;
+import org.apache.cassandraBloomFilters.thrift.ThriftConversion;
+import org.apache.cassandraBloomFilters.utils.Pair;
 import org.apache.thrift.TException;
 
 public class ValidatingSchemaQuery extends PartitionOperation

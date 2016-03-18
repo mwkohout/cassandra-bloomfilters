@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.transport;
+package org.apache.cassandraBloomFilters.transport;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,10 +26,10 @@ import java.util.Map;
 import org.junit.Test;
 
 import io.netty.buffer.ByteBuf;
-import org.apache.cassandra.db.TypeSizes;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.db.TypeSizes;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
 
 import static org.junit.Assert.assertEquals;
 

@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.io.sstable;
+package org.apache.cassandraBloomFilters.io.sstable;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,15 +24,15 @@ import java.io.IOException;
 import org.junit.BeforeClass;
 
 import junit.framework.Assert;
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.UpdateBuilder;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.SerializationHeader;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.db.rows.EncodingStats;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.concurrent.AbstractTransactionalTest;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.UpdateBuilder;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.SerializationHeader;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.db.rows.EncodingStats;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.concurrent.AbstractTransactionalTest;
 
 public class BigTableWriterTest extends AbstractTransactionalTest
 {

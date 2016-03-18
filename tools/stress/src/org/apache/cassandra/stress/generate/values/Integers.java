@@ -18,9 +18,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.Int32Type;
+import org.apache.cassandraBloomFilters.db.marshal.Int32Type;
 
 public class Integers extends Generator<Integer>
 {

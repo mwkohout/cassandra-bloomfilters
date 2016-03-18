@@ -18,9 +18,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
 
 public class HexStrings extends Generator<String>
 {

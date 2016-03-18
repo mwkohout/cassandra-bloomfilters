@@ -18,10 +18,10 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import com.datastax.driver.core.LocalDate;
-import org.apache.cassandra.db.marshal.SimpleDateType;
+import org.apache.cassandraBloomFilters.db.marshal.SimpleDateType;
 import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;

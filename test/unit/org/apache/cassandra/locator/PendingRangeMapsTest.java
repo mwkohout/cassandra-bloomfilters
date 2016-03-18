@@ -1,8 +1,8 @@
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
-import org.apache.cassandra.dht.RandomPartitioner.BigIntegerToken;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner.BigIntegerToken;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
 import org.junit.Test;
 
 import java.net.InetAddress;

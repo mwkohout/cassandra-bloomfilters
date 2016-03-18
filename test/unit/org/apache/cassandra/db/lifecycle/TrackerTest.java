@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db.lifecycle;
+package org.apache.cassandraBloomFilters.db.lifecycle;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -34,15 +34,15 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Memtable;
-import org.apache.cassandra.db.commitlog.ReplayPosition;
-import org.apache.cassandra.db.compaction.OperationType;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.notifications.*;
-import org.apache.cassandra.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Memtable;
+import org.apache.cassandraBloomFilters.db.commitlog.ReplayPosition;
+import org.apache.cassandraBloomFilters.db.compaction.OperationType;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.notifications.*;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
 
 import static com.google.common.collect.ImmutableSet.copyOf;
 import static java.util.Collections.singleton;

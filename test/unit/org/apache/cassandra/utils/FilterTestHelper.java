@@ -16,14 +16,14 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.db.BufferDecoratedKey;
-import org.apache.cassandra.db.CachedHashDecoratedKey;
-import org.apache.cassandra.dht.Murmur3Partitioner.LongToken;
-import org.apache.cassandra.utils.IFilter.FilterKey;
+import org.apache.cassandraBloomFilters.db.BufferDecoratedKey;
+import org.apache.cassandraBloomFilters.db.CachedHashDecoratedKey;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner.LongToken;
+import org.apache.cassandraBloomFilters.utils.IFilter.FilterKey;
 
 public class FilterTestHelper
 {

@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -26,18 +26,18 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.generate.values.Bytes;
-import org.apache.cassandra.stress.generate.values.Generator;
-import org.apache.cassandra.stress.generate.values.GeneratorConfig;
-import org.apache.cassandra.stress.generate.values.HexBytes;
-import org.apache.cassandra.stress.operations.FixedOpDistribution;
-import org.apache.cassandra.stress.operations.OpDistribution;
-import org.apache.cassandra.stress.operations.OpDistributionFactory;
-import org.apache.cassandra.stress.operations.predefined.PredefinedOperation;
-import org.apache.cassandra.stress.util.Timing;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.generate.values.Bytes;
+import org.apache.cassandraBloomFilters.stress.generate.values.Generator;
+import org.apache.cassandraBloomFilters.stress.generate.values.GeneratorConfig;
+import org.apache.cassandraBloomFilters.stress.generate.values.HexBytes;
+import org.apache.cassandraBloomFilters.stress.operations.FixedOpDistribution;
+import org.apache.cassandraBloomFilters.stress.operations.OpDistribution;
+import org.apache.cassandraBloomFilters.stress.operations.OpDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.operations.predefined.PredefinedOperation;
+import org.apache.cassandraBloomFilters.stress.util.Timing;
 
 // Settings unique to the mixed command type
 public class SettingsCommandPreDefined extends SettingsCommand

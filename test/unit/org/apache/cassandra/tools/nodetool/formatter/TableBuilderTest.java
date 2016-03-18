@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.tools.nodetool.formatter;
+package org.apache.cassandraBloomFilters.tools.nodetool.formatter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

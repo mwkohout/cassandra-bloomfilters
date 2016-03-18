@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.stress.operations.predefined;
+package org.apache.cassandraBloomFilters.stress.operations.predefined;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -24,17 +24,17 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.cassandra.stress.generate.Distribution;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.settings.Command;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.ColumnOrSuperColumn;
-import org.apache.cassandra.thrift.CounterColumn;
-import org.apache.cassandra.thrift.Mutation;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.settings.Command;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.ColumnOrSuperColumn;
+import org.apache.cassandraBloomFilters.thrift.CounterColumn;
+import org.apache.cassandraBloomFilters.thrift.Mutation;
 
 public class ThriftCounterAdder extends PredefinedOperation
 {

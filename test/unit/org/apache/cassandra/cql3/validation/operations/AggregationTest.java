@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.operations;
+package org.apache.cassandraBloomFilters.cql3.validation.operations;
 
 import java.math.BigDecimal;
 import java.nio.ByteBuffer;
@@ -38,23 +38,23 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.spi.TurboFilterList;
 import ch.qos.logback.classic.turbo.ReconfigureOnChangeFilter;
 import ch.qos.logback.classic.turbo.TurboFilter;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.UntypedResultSet.Row;
-import org.apache.cassandra.cql3.functions.UDAggregate;
-import org.apache.cassandra.db.SystemKeyspace;
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.db.marshal.DynamicCompositeType;
-import org.apache.cassandra.db.marshal.TypeParser;
-import org.apache.cassandra.exceptions.FunctionExecutionException;
-import org.apache.cassandra.exceptions.InvalidRequestException;
-import org.apache.cassandra.schema.KeyspaceMetadata;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.transport.Event;
-import org.apache.cassandra.transport.Server;
-import org.apache.cassandra.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet.Row;
+import org.apache.cassandraBloomFilters.cql3.functions.UDAggregate;
+import org.apache.cassandraBloomFilters.db.SystemKeyspace;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.db.marshal.DynamicCompositeType;
+import org.apache.cassandraBloomFilters.db.marshal.TypeParser;
+import org.apache.cassandraBloomFilters.exceptions.FunctionExecutionException;
+import org.apache.cassandraBloomFilters.exceptions.InvalidRequestException;
+import org.apache.cassandraBloomFilters.schema.KeyspaceMetadata;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.transport.Event;
+import org.apache.cassandraBloomFilters.transport.Server;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

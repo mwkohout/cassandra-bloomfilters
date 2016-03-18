@@ -16,12 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.cql.jdbc;
+package org.apache.cassandraBloomFilters.cql.jdbc;
 
 import java.math.BigDecimal;
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.serializers.DecimalSerializer;
+import org.apache.cassandraBloomFilters.serializers.DecimalSerializer;
 import org.junit.Assert;
 import org.junit.Test;
 

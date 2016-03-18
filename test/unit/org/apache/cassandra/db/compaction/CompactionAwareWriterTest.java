@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.compaction;
+package org.apache.cassandraBloomFilters.db.compaction;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -23,18 +23,18 @@ import java.util.*;
 import com.google.common.primitives.Longs;
 import org.junit.*;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.compaction.writers.CompactionAwareWriter;
-import org.apache.cassandra.db.compaction.writers.DefaultCompactionWriter;
-import org.apache.cassandra.db.compaction.writers.MajorLeveledCompactionWriter;
-import org.apache.cassandra.db.compaction.writers.MaxSSTableSizeWriter;
-import org.apache.cassandra.db.compaction.writers.SplittingSizeTieredCompactionWriter;
-import org.apache.cassandra.db.lifecycle.LifecycleTransaction;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.compaction.writers.CompactionAwareWriter;
+import org.apache.cassandraBloomFilters.db.compaction.writers.DefaultCompactionWriter;
+import org.apache.cassandraBloomFilters.db.compaction.writers.MajorLeveledCompactionWriter;
+import org.apache.cassandraBloomFilters.db.compaction.writers.MaxSSTableSizeWriter;
+import org.apache.cassandraBloomFilters.db.compaction.writers.SplittingSizeTieredCompactionWriter;
+import org.apache.cassandraBloomFilters.db.lifecycle.LifecycleTransaction;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 
 import static org.junit.Assert.assertEquals;
 

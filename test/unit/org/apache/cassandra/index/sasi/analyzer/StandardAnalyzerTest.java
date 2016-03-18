@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.analyzer;
+package org.apache.cassandraBloomFilters.index.sasi.analyzer;
 
 import java.io.InputStream;
 import java.nio.ByteBuffer;

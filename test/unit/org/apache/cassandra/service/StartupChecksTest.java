@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,11 +25,11 @@ import java.nio.file.Paths;
 
 import org.junit.*;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.exceptions.StartupException;
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.exceptions.StartupException;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

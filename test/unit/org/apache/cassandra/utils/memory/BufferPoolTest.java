@@ -17,7 +17,7 @@
  * under the License.
  *
  */
-package org.apache.cassandra.utils.memory;
+package org.apache.cassandraBloomFilters.utils.memory;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -28,8 +28,8 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import org.apache.cassandra.io.compress.BufferType;
-import org.apache.cassandra.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.compress.BufferType;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
 
 import static org.junit.Assert.*;
 

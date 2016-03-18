@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.miscellaneous;
+package org.apache.cassandraBloomFilters.cql3.validation.miscellaneous;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,9 +24,9 @@ import com.google.common.base.Throwables;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.filter.TombstoneOverwhelmingException;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.filter.TombstoneOverwhelmingException;
 
 import static junit.framework.Assert.assertTrue;
 import static junit.framework.Assert.fail;

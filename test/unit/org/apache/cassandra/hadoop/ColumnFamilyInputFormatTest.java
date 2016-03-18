@@ -1,4 +1,4 @@
-package org.apache.cassandra.hadoop;
+package org.apache.cassandraBloomFilters.hadoop;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,8 +25,8 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.cassandra.thrift.SlicePredicate;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.thrift.SlicePredicate;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.apache.hadoop.conf.Configuration;
 import org.junit.Test;
 

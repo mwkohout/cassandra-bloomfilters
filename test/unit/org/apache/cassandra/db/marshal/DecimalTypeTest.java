@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import static org.junit.Assert.*;
 
@@ -24,8 +24,8 @@ import java.math.BigDecimal;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import org.apache.cassandra.db.marshal.DecimalType;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.marshal.DecimalType;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.junit.Test;
 
 public class DecimalTypeTest

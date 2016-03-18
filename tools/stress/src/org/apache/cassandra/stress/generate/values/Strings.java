@@ -18,10 +18,10 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.UTF8Type;
-import org.apache.cassandra.stress.generate.FasterRandom;
+import org.apache.cassandraBloomFilters.db.marshal.UTF8Type;
+import org.apache.cassandraBloomFilters.stress.generate.FasterRandom;
 
 public class Strings extends Generator<String>
 {

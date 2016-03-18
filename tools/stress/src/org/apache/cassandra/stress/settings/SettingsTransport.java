@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,10 +27,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.cassandra.config.EncryptionOptions;
-import org.apache.cassandra.thrift.ITransportFactory;
-import org.apache.cassandra.thrift.SSLTransportFactory;
-import org.apache.cassandra.thrift.TFramedTransportFactory;
+import org.apache.cassandraBloomFilters.config.EncryptionOptions;
+import org.apache.cassandraBloomFilters.thrift.ITransportFactory;
+import org.apache.cassandraBloomFilters.thrift.SSLTransportFactory;
+import org.apache.cassandraBloomFilters.thrift.TFramedTransportFactory;
 
 public class SettingsTransport implements Serializable
 {
@@ -113,7 +113,7 @@ public class SettingsTransport implements Serializable
 
     static class TOptions extends GroupedOptions implements Serializable
     {
-        final OptionSimple factory = new OptionSimple("factory=", ".*", TFramedTransportFactory.class.getName(), "Fully-qualified ITransportFactory class name for creating a connection. Note: For Thrift over SSL, use org.apache.cassandra.thrift.SSLTransportFactory.", false);
+        final OptionSimple factory = new OptionSimple("factory=", ".*", TFramedTransportFactory.class.getName(), "Fully-qualified ITransportFactory class name for creating a connection. Note: For Thrift over SSL, use org.apache.cassandraBloomFilters.thrift.SSLTransportFactory.", false);
         final OptionSimple trustStore = new OptionSimple("truststore=", ".*", null, "SSL: full path to truststore", false);
         final OptionSimple trustStorePw = new OptionSimple("truststore-password=", ".*", null, "SSL: truststore password", false);
         final OptionSimple protocol = new OptionSimple("ssl-protocol=", ".*", "TLS", "SSL: connection protocol to use", false);

@@ -15,24 +15,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.compaction;
+package org.apache.cassandraBloomFilters.db.compaction;
 
 import java.nio.ByteBuffer;
 import java.util.*;
 import java.util.concurrent.*;
 
-import org.apache.cassandra.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.UpdateBuilder;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.schema.CompactionParams;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.UpdateBuilder;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.schema.CompactionParams;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 public class LongLeveledCompactionStrategyTest
 {

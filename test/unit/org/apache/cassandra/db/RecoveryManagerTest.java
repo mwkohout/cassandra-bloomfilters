@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.io.IOException;
 import java.util.Date;
@@ -30,12 +30,12 @@ import java.util.concurrent.atomic.AtomicReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.rows.*;
-import org.apache.cassandra.db.context.CounterContext;
-import org.apache.cassandra.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.rows.*;
+import org.apache.cassandraBloomFilters.db.context.CounterContext;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -45,12 +45,12 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertEquals;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.db.commitlog.CommitLog;
-import org.apache.cassandra.db.commitlog.CommitLogArchiver;
-import org.apache.cassandra.schema.KeyspaceParams;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.db.commitlog.CommitLogReplayer;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLog;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLogArchiver;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.db.commitlog.CommitLogReplayer;
 
 @RunWith(OrderedJUnit4ClassRunner.class)
 public class RecoveryManagerTest

@@ -1,7 +1,7 @@
-package org.apache.cassandra.metrics;
+package org.apache.cassandraBloomFilters.metrics;
 
 import org.junit.Test;
-import org.apache.cassandra.metrics.CassandraMetricsRegistry.MetricName;
+import org.apache.cassandraBloomFilters.metrics.CassandraMetricsRegistry.MetricName;
 import static org.junit.Assert.*;
 
 

@@ -18,19 +18,19 @@
  * under the License.
  *
  */
-package org.apache.cassandra.db.context;
+package org.apache.cassandraBloomFilters.db.context;
 
 import java.nio.ByteBuffer;
 
 import org.junit.Test;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.db.ClockAndCount;
-import org.apache.cassandra.db.context.CounterContext.Relationship;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.CounterId;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.db.ClockAndCount;
+import org.apache.cassandraBloomFilters.db.context.CounterContext.Relationship;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.CounterId;
 
-import static org.apache.cassandra.db.context.CounterContext.ContextState;
+import static org.apache.cassandraBloomFilters.db.context.CounterContext.ContextState;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotSame;

@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,7 +29,7 @@ import java.util.NoSuchElementException;
 
 import com.google.common.collect.Iterables;
 
-import org.apache.cassandra.stress.generate.values.Generator;
+import org.apache.cassandraBloomFilters.stress.generate.values.Generator;
 
 public class PartitionGenerator
 {

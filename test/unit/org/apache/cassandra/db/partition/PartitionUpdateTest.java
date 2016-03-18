@@ -15,13 +15,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.partition;
+package org.apache.cassandraBloomFilters.db.partition;
 
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.partitions.PartitionUpdate;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionUpdate;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 import org.junit.Test;
 
 import junit.framework.Assert;

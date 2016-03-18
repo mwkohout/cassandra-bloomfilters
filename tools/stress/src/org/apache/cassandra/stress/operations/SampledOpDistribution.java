@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.operations;
+package org.apache.cassandraBloomFilters.stress.operations;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,8 +23,8 @@ package org.apache.cassandra.stress.operations;
 
 import org.apache.commons.math3.distribution.EnumeratedDistribution;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
 import org.apache.commons.math3.util.Pair;
 
 public class SampledOpDistribution implements OpDistribution

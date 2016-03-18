@@ -15,20 +15,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.client;
+package org.apache.cassandraBloomFilters.client;
 
 import java.net.InetAddress;
 import java.nio.ByteBuffer;
 import java.util.Collection;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.hadoop.ConfigHelper;
-import org.apache.cassandra.thrift.Cassandra;
-import org.apache.cassandra.thrift.Column;
-import org.apache.cassandra.thrift.ColumnParent;
-import org.apache.cassandra.thrift.ColumnPath;
-import org.apache.cassandra.thrift.ConsistencyLevel;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.hadoop.ConfigHelper;
+import org.apache.cassandraBloomFilters.thrift.Cassandra;
+import org.apache.cassandraBloomFilters.thrift.Column;
+import org.apache.cassandraBloomFilters.thrift.ColumnParent;
+import org.apache.cassandraBloomFilters.thrift.ColumnPath;
+import org.apache.cassandraBloomFilters.thrift.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.thrift.protocol.TBinaryProtocol;
@@ -69,7 +69,7 @@ public class TestRingCache
     }
 
     /**
-     * usage: java -cp <configpath> org.apache.cassandra.client.TestRingCache [keyspace row-id-prefix row-id-int]
+     * usage: java -cp <configpath> org.apache.cassandraBloomFilters.client.TestRingCache [keyspace row-id-prefix row-id-int]
      * to test a single keyspace/row, use the parameters. row-id-prefix and row-id-int are appended together to form a
      * single row id.  If you supply now parameters, 'Keyspace1' is assumed and will check 9 rows ('row1' through 'row9').
      * @param args

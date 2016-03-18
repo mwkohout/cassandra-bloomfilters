@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +32,11 @@ import org.junit.Test;
 import com.datastax.driver.core.Row;
 import com.datastax.driver.core.exceptions.NoHostAvailableException;
 import com.datastax.driver.core.exceptions.WriteTimeoutException;
-import org.apache.cassandra.concurrent.SEPExecutor;
-import org.apache.cassandra.concurrent.Stage;
-import org.apache.cassandra.concurrent.StageManager;
-import org.apache.cassandra.batchlog.BatchlogManager;
-import org.apache.cassandra.utils.WrappedRunnable;
+import org.apache.cassandraBloomFilters.concurrent.SEPExecutor;
+import org.apache.cassandraBloomFilters.concurrent.Stage;
+import org.apache.cassandraBloomFilters.concurrent.StageManager;
+import org.apache.cassandraBloomFilters.batchlog.BatchlogManager;
+import org.apache.cassandraBloomFilters.utils.WrappedRunnable;
 
 public class ViewLongTest extends CQLTester
 {

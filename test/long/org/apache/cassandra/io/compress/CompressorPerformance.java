@@ -1,4 +1,4 @@
-package org.apache.cassandra.io.compress;
+package org.apache.cassandraBloomFilters.io.compress;
 
 import java.io.FileInputStream;
 import java.io.IOException;

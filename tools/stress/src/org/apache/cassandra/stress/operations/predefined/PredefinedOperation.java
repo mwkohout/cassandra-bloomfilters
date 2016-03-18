@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.stress.operations.predefined;
+package org.apache.cassandraBloomFilters.stress.operations.predefined;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
@@ -23,15 +23,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.*;
-import org.apache.cassandra.stress.operations.PartitionOperation;
-import org.apache.cassandra.stress.settings.Command;
-import org.apache.cassandra.stress.settings.CqlVersion;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.Timer;
-import org.apache.cassandra.thrift.SlicePredicate;
-import org.apache.cassandra.thrift.SliceRange;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.*;
+import org.apache.cassandraBloomFilters.stress.operations.PartitionOperation;
+import org.apache.cassandraBloomFilters.stress.settings.Command;
+import org.apache.cassandraBloomFilters.stress.settings.CqlVersion;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
+import org.apache.cassandraBloomFilters.thrift.SlicePredicate;
+import org.apache.cassandraBloomFilters.thrift.SliceRange;
 
 public abstract class PredefinedOperation extends PartitionOperation
 {

@@ -16,15 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 
-import org.apache.cassandra.AbstractSerializationsTester;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.io.util.DataInputPlus.DataInputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.service.StorageService;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.AbstractSerializationsTester;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus.DataInputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.service.StorageService;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 
 import org.junit.Test;
 

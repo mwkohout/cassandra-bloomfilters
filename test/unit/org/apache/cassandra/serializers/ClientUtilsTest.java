@@ -1,4 +1,4 @@
-package org.apache.cassandra.serializers;
+package org.apache.cassandraBloomFilters.serializers;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -27,7 +27,7 @@ import java.nio.ByteBuffer;
 import java.sql.Date;
 import java.util.UUID;
 
-import org.apache.cassandra.utils.UUIDGen;
+import org.apache.cassandraBloomFilters.utils.UUIDGen;
 import org.junit.Test;
 
 public class ClientUtilsTest

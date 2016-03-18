@@ -15,11 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.transport;
+package org.apache.cassandraBloomFilters.transport;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import org.apache.cassandra.transport.messages.ErrorMessage;
+import org.apache.cassandraBloomFilters.transport.messages.ErrorMessage;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,7 +27,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.apache.cassandra.transport.Message.Direction.*;
+import static org.apache.cassandraBloomFilters.transport.Message.Direction.*;
 
 public class ProtocolErrorTest {
 

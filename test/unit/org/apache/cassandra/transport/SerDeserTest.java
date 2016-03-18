@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.transport;
+package org.apache.cassandraBloomFilters.transport;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -24,17 +24,17 @@ import io.netty.buffer.Unpooled;
 import io.netty.buffer.ByteBuf;
 
 import org.junit.Test;
-import org.apache.cassandra.cql3.*;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.serializers.CollectionSerializer;
-import org.apache.cassandra.transport.Event.TopologyChange;
-import org.apache.cassandra.transport.Event.SchemaChange;
-import org.apache.cassandra.transport.Event.StatusChange;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.cql3.*;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.serializers.CollectionSerializer;
+import org.apache.cassandraBloomFilters.transport.Event.TopologyChange;
+import org.apache.cassandraBloomFilters.transport.Event.SchemaChange;
+import org.apache.cassandraBloomFilters.transport.Event.StatusChange;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 import static org.junit.Assert.assertEquals;
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 import static org.junit.Assert.assertNotSame;
 
 /**

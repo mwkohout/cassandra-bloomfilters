@@ -16,24 +16,24 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.db;
+package org.apache.cassandraBloomFilters.db;
 
 import java.nio.ByteBuffer;
 import java.util.*;
 
-import org.apache.cassandra.Util;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.db.rows.Cell;
-import org.apache.cassandra.db.rows.Row;
-import org.apache.cassandra.db.rows.RowIterator;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.filter.*;
-import org.apache.cassandra.db.partitions.PartitionIterator;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.metrics.ClearableHistogram;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.db.rows.Cell;
+import org.apache.cassandraBloomFilters.db.rows.Row;
+import org.apache.cassandraBloomFilters.db.rows.RowIterator;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.filter.*;
+import org.apache.cassandraBloomFilters.db.partitions.PartitionIterator;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.metrics.ClearableHistogram;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

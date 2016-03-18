@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.generate;
+package org.apache.cassandraBloomFilters.stress.generate;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -24,7 +24,7 @@ package org.apache.cassandra.stress.generate;
 import java.util.Arrays;
 import java.util.Random;
 
-import org.apache.cassandra.stress.Stress;
+import org.apache.cassandraBloomFilters.stress.Stress;
 
 public class DistributionQuantized extends Distribution
 {

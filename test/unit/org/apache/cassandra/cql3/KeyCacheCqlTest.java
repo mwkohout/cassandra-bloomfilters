@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3;
+package org.apache.cassandraBloomFilters.cql3;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,20 +27,20 @@ import java.util.concurrent.Callable;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.cache.KeyCacheKey;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.index.Index;
-import org.apache.cassandra.metrics.CacheMetrics;
-import org.apache.cassandra.metrics.CassandraMetricsRegistry;
-import org.apache.cassandra.service.CacheService;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.cache.KeyCacheKey;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.index.Index;
+import org.apache.cassandraBloomFilters.metrics.CacheMetrics;
+import org.apache.cassandraBloomFilters.metrics.CassandraMetricsRegistry;
+import org.apache.cassandraBloomFilters.service.CacheService;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertNull;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 
 public class KeyCacheCqlTest extends CQLTester

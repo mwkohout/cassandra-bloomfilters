@@ -18,9 +18,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
-import org.apache.cassandra.db.marshal.BooleanType;
+import org.apache.cassandraBloomFilters.db.marshal.BooleanType;
 
 public class Booleans extends Generator<Boolean>
 {

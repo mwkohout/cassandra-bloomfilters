@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,10 +21,10 @@ package org.apache.cassandra.stress.generate.values;
  */
 
 
-import org.apache.cassandra.db.marshal.AbstractType;
-import org.apache.cassandra.stress.generate.Distribution;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.settings.OptionDistribution;
+import org.apache.cassandraBloomFilters.db.marshal.AbstractType;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.settings.OptionDistribution;
 
 public abstract class Generator<T>
 {

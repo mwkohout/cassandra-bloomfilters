@@ -16,19 +16,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.gms;
+package org.apache.cassandraBloomFilters.gms;
 
 import static org.junit.Assert.*;
 
 import java.io.IOException;
 
-import org.apache.cassandra.io.util.DataInputBuffer;
-import org.apache.cassandra.io.util.DataInputPlus;
-import org.apache.cassandra.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
 
 import java.net.InetAddress;
 
-import org.apache.cassandra.net.MessagingService;
+import org.apache.cassandraBloomFilters.net.MessagingService;
 import org.junit.Test;
 
 public class GossipDigestTest

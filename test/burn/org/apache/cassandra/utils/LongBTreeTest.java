@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -43,15 +43,15 @@ import org.junit.Test;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Snapshot;
 import com.codahale.metrics.Timer;
-import org.apache.cassandra.concurrent.NamedThreadFactory;
-import org.apache.cassandra.utils.btree.*;
+import org.apache.cassandraBloomFilters.concurrent.NamedThreadFactory;
+import org.apache.cassandraBloomFilters.utils.btree.*;
 
 import static com.google.common.base.Predicates.notNull;
 import static com.google.common.collect.Iterables.filter;
 import static com.google.common.collect.Iterables.transform;
 import static java.util.Comparator.naturalOrder;
 import static java.util.Comparator.reverseOrder;
-import static org.apache.cassandra.utils.btree.BTree.iterable;
+import static org.apache.cassandraBloomFilters.utils.btree.BTree.iterable;
 import static org.junit.Assert.assertTrue;
 
 public class LongBTreeTest

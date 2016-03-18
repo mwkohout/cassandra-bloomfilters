@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress.operations.userdefined;
+package org.apache.cassandraBloomFilters.stress.operations.userdefined;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -37,14 +37,14 @@ import com.datastax.driver.core.Statement;
 import com.datastax.driver.core.TableMetadata;
 import com.datastax.driver.core.Token;
 import com.datastax.driver.core.TokenRange;
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.StressYaml;
-import org.apache.cassandra.stress.WorkManager;
-import org.apache.cassandra.stress.generate.TokenRangeIterator;
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.stress.util.ThriftClient;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.StressYaml;
+import org.apache.cassandraBloomFilters.stress.WorkManager;
+import org.apache.cassandraBloomFilters.stress.generate.TokenRangeIterator;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.stress.util.ThriftClient;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 public class TokenRangeQuery extends Operation
 {

@@ -17,9 +17,9 @@
  * under the License.
  *
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
-import org.apache.cassandra.serializers.MarshalException;
+import org.apache.cassandraBloomFilters.serializers.MarshalException;
 import org.junit.Test;
 
 public class BytesTypeTest

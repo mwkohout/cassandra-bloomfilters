@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.serializers;
+package org.apache.cassandraBloomFilters.serializers;
 
 import org.junit.Test;
 

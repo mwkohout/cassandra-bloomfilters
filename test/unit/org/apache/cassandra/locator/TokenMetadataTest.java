@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -32,14 +32,14 @@ import org.junit.runner.RunWith;
 import static junit.framework.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
 
-import static org.apache.cassandra.Util.token;
+import static org.apache.cassandraBloomFilters.Util.token;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.apache.cassandra.OrderedJUnit4ClassRunner;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.OrderedJUnit4ClassRunner;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 
 @RunWith(OrderedJUnit4ClassRunner.class)

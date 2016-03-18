@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.locator;
+package org.apache.cassandraBloomFilters.locator;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -34,13 +34,13 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.dht.Murmur3Partitioner;
-import org.apache.cassandra.dht.OrderPreservingPartitioner.StringToken;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.exceptions.ConfigurationException;
-import org.apache.cassandra.locator.TokenMetadata.Topology;
-import org.apache.cassandra.service.StorageService;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.dht.Murmur3Partitioner;
+import org.apache.cassandraBloomFilters.dht.OrderPreservingPartitioner.StringToken;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.exceptions.ConfigurationException;
+import org.apache.cassandraBloomFilters.locator.TokenMetadata.Topology;
+import org.apache.cassandraBloomFilters.service.StorageService;
 
 public class NetworkTopologyStrategyTest
 {

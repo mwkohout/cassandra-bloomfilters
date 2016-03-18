@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,7 +25,7 @@ import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.cassandra.thrift.*;
+import org.apache.cassandraBloomFilters.thrift.*;
 import org.apache.thrift.TException;
 
 public interface ThriftClient

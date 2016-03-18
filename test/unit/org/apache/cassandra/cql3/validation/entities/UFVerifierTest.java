@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -28,24 +28,24 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.functions.UDFByteCodeVerifier;
-import org.apache.cassandra.cql3.validation.entities.udfverify.CallClone;
-import org.apache.cassandra.cql3.validation.entities.udfverify.CallComDatastax;
-import org.apache.cassandra.cql3.validation.entities.udfverify.CallFinalize;
-import org.apache.cassandra.cql3.validation.entities.udfverify.CallOrgApache;
-import org.apache.cassandra.cql3.validation.entities.udfverify.ClassWithField;
-import org.apache.cassandra.cql3.validation.entities.udfverify.ClassWithInitializer;
-import org.apache.cassandra.cql3.validation.entities.udfverify.ClassWithInitializer2;
-import org.apache.cassandra.cql3.validation.entities.udfverify.ClassWithInitializer3;
-import org.apache.cassandra.cql3.validation.entities.udfverify.ClassWithStaticInitializer;
-import org.apache.cassandra.cql3.validation.entities.udfverify.GoodClass;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronized;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronizedWithNotify;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronizedWithNotifyAll;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronizedWithWait;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronizedWithWaitL;
-import org.apache.cassandra.cql3.validation.entities.udfverify.UseOfSynchronizedWithWaitLI;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.functions.UDFByteCodeVerifier;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.CallClone;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.CallComDatastax;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.CallFinalize;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.CallOrgApache;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.ClassWithField;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.ClassWithInitializer;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.ClassWithInitializer2;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.ClassWithInitializer3;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.ClassWithStaticInitializer;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.GoodClass;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronized;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronizedWithNotify;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronizedWithNotifyAll;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronizedWithWait;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronizedWithWaitL;
+import org.apache.cassandraBloomFilters.cql3.validation.entities.udfverify.UseOfSynchronizedWithWaitLI;
 
 import static org.junit.Assert.assertEquals;
 
@@ -163,7 +163,7 @@ public class UFVerifierTest extends CQLTester
     @Test
     public void testCallOrgApache()
     {
-        assertEquals(new HashSet<>(Collections.singletonList("call to org.apache.cassandra.config.DatabaseDescriptor.getClusterName()")),
+        assertEquals(new HashSet<>(Collections.singletonList("call to org.apache.cassandraBloomFilters.config.DatabaseDescriptor.getClusterName()")),
                      new UDFByteCodeVerifier().addDisallowedPackage("org/").verify(readClass(CallOrgApache.class)));
     }
 

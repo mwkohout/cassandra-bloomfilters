@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,7 +21,7 @@ package org.apache.cassandra.stress.settings;
  */
 
 
-import org.apache.cassandra.stress.util.MultiPrintStream;
+import org.apache.cassandraBloomFilters.stress.util.MultiPrintStream;
 
 import java.io.*;
 import java.util.Arrays;

@@ -15,16 +15,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
-import org.apache.cassandra.stress.settings.StressSettings;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.WindowsTimer;
-import org.apache.cassandra.stress.util.MultiPrintStream;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.WindowsTimer;
+import org.apache.cassandraBloomFilters.stress.util.MultiPrintStream;
 
 public final class Stress
 {

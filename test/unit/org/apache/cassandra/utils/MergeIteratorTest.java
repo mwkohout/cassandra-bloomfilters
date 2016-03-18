@@ -16,12 +16,12 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.util.Arrays;
 import java.util.Iterator;
 
-import org.apache.cassandra.utils.AbstractIterator;
+import org.apache.cassandraBloomFilters.utils.AbstractIterator;
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Ordering;
 import org.junit.Before;

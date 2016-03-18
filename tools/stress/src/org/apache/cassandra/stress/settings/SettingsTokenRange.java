@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 
 import java.util.List;
 import java.util.Map;

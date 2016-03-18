@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
 import java.util.*;
 
@@ -25,14 +25,14 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.Attributes;
-import org.apache.cassandra.cql3.CQLStatement;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.functions.Function;
-import org.apache.cassandra.cql3.statements.BatchStatement;
-import org.apache.cassandra.cql3.statements.ModificationStatement;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.service.ClientState;
+import org.apache.cassandraBloomFilters.cql3.Attributes;
+import org.apache.cassandraBloomFilters.cql3.CQLStatement;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.functions.Function;
+import org.apache.cassandraBloomFilters.cql3.statements.BatchStatement;
+import org.apache.cassandraBloomFilters.cql3.statements.ModificationStatement;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.service.ClientState;
 
 import static org.junit.Assert.assertTrue;
 

@@ -15,14 +15,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.miscellaneous;
+package org.apache.cassandraBloomFilters.cql3.validation.miscellaneous;
 
 import org.junit.Test;
 
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.io.sstable.metadata.StatsMetadata;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.StatsMetadata;
 import static org.junit.Assert.assertEquals;
 
 public class SSTableMetadataTrackingTest extends CQLTester

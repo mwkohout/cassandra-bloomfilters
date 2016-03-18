@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.stress.util;
+package org.apache.cassandraBloomFilters.stress.util;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -27,9 +27,9 @@ import com.datastax.driver.core.policies.DCAwareRoundRobinPolicy;
 import com.datastax.driver.core.policies.WhiteListPolicy;
 import io.netty.util.internal.logging.InternalLoggerFactory;
 import io.netty.util.internal.logging.Slf4JLoggerFactory;
-import org.apache.cassandra.config.EncryptionOptions;
-import org.apache.cassandra.security.SSLFactory;
-import org.apache.cassandra.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.config.EncryptionOptions;
+import org.apache.cassandraBloomFilters.security.SSLFactory;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
 
 public class JavaDriverClient
 {
@@ -165,14 +165,14 @@ public class JavaDriverClient
         return session;
     }
 
-    public ResultSet execute(String query, org.apache.cassandra.db.ConsistencyLevel consistency)
+    public ResultSet execute(String query, org.apache.cassandraBloomFilters.db.ConsistencyLevel consistency)
     {
         SimpleStatement stmt = new SimpleStatement(query);
         stmt.setConsistencyLevel(from(consistency));
         return getSession().execute(stmt);
     }
 
-    public ResultSet executePrepared(PreparedStatement stmt, List<Object> queryParams, org.apache.cassandra.db.ConsistencyLevel consistency)
+    public ResultSet executePrepared(PreparedStatement stmt, List<Object> queryParams, org.apache.cassandraBloomFilters.db.ConsistencyLevel consistency)
     {
 
         stmt.setConsistencyLevel(from(consistency));
@@ -187,7 +187,7 @@ public class JavaDriverClient
      * @param cl
      * @return
      */
-    public static ConsistencyLevel from(org.apache.cassandra.db.ConsistencyLevel cl)
+    public static ConsistencyLevel from(org.apache.cassandraBloomFilters.db.ConsistencyLevel cl)
     {
         switch (cl)
         {

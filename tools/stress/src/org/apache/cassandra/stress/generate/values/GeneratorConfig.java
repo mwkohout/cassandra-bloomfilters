@@ -18,15 +18,15 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import java.io.Serializable;
 import java.nio.ByteBuffer;
 
-import org.apache.cassandra.stress.generate.Distribution;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.utils.MurmurHash;
+import org.apache.cassandraBloomFilters.stress.generate.Distribution;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.utils.MurmurHash;
 
 public class GeneratorConfig implements Serializable
 {

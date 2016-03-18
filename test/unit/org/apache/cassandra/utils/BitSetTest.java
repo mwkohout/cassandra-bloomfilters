@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -27,12 +27,12 @@ import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.utils.IFilter.FilterKey;
-import org.apache.cassandra.utils.KeyGenerator.RandomStringGenerator;
-import org.apache.cassandra.utils.obs.IBitSet;
-import org.apache.cassandra.utils.obs.OffHeapBitSet;
-import org.apache.cassandra.utils.obs.OpenBitSet;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.utils.IFilter.FilterKey;
+import org.apache.cassandraBloomFilters.utils.KeyGenerator.RandomStringGenerator;
+import org.apache.cassandraBloomFilters.utils.obs.IBitSet;
+import org.apache.cassandraBloomFilters.utils.obs.OffHeapBitSet;
+import org.apache.cassandraBloomFilters.utils.obs.OpenBitSet;
 
 import static org.junit.Assert.assertEquals;
 

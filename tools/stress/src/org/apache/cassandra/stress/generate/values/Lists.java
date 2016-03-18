@@ -18,13 +18,13 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.cassandra.db.marshal.ListType;
+import org.apache.cassandraBloomFilters.db.marshal.ListType;
 
 public class Lists<T> extends Generator<List<T>>
 {

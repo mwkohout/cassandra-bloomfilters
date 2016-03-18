@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -29,7 +29,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.apache.cassandra.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;

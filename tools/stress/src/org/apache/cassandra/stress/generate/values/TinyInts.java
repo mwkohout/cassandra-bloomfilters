@@ -18,17 +18,17 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import java.math.BigDecimal;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-import org.apache.cassandra.db.marshal.ByteType;
-import org.apache.cassandra.db.marshal.DecimalType;
-import org.apache.cassandra.db.marshal.IntegerType;
-import org.apache.cassandra.db.marshal.ShortType;
-import org.apache.cassandra.stress.generate.FasterRandom;
+import org.apache.cassandraBloomFilters.db.marshal.ByteType;
+import org.apache.cassandraBloomFilters.db.marshal.DecimalType;
+import org.apache.cassandraBloomFilters.db.marshal.IntegerType;
+import org.apache.cassandraBloomFilters.db.marshal.ShortType;
+import org.apache.cassandraBloomFilters.stress.generate.FasterRandom;
 
 public class TinyInts extends Generator<Byte>
 {

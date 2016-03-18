@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.metrics;
+package org.apache.cassandraBloomFilters.metrics;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -34,11 +34,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import org.junit.Test;
 
-import org.apache.cassandra.db.TypeSizes;
-import org.apache.cassandra.io.ISerializer;
-import org.apache.cassandra.io.IVersionedSerializer;
-import org.apache.cassandra.io.util.DataOutputBuffer;
-import org.apache.cassandra.io.util.DataOutputPlus;
+import org.apache.cassandraBloomFilters.db.TypeSizes;
+import org.apache.cassandraBloomFilters.io.ISerializer;
+import org.apache.cassandraBloomFilters.io.IVersionedSerializer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputBuffer;
+import org.apache.cassandraBloomFilters.io.util.DataOutputPlus;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

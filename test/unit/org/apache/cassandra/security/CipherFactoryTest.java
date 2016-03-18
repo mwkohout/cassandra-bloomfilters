@@ -1,4 +1,4 @@
-package org.apache.cassandra.security;
+package org.apache.cassandraBloomFilters.security;
 
 import java.io.IOException;
 import java.security.SecureRandom;
@@ -12,7 +12,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.apache.cassandra.config.TransparentDataEncryptionOptions;
+import org.apache.cassandraBloomFilters.config.TransparentDataEncryptionOptions;
 
 public class CipherFactoryTest
 {

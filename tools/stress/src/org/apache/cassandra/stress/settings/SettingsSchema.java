@@ -18,7 +18,7 @@
  * under the License.
  * 
  */
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 
 import java.io.Serializable;
 import java.nio.ByteBuffer;
@@ -26,10 +26,10 @@ import java.nio.charset.CharacterCodingException;
 import java.util.*;
 
 import com.datastax.driver.core.exceptions.AlreadyExistsException;
-import org.apache.cassandra.stress.util.JavaDriverClient;
-import org.apache.cassandra.thrift.*;
-import org.apache.cassandra.thrift.ConsistencyLevel;
-import org.apache.cassandra.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.stress.util.JavaDriverClient;
+import org.apache.cassandraBloomFilters.thrift.*;
+import org.apache.cassandraBloomFilters.thrift.ConsistencyLevel;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
 
 public class SettingsSchema implements Serializable
 {
@@ -81,13 +81,13 @@ public class SettingsSchema implements Serializable
         try
         {
             //Keyspace
-            client.execute(createKeyspaceStatementCQL3(), org.apache.cassandra.db.ConsistencyLevel.LOCAL_ONE);
+            client.execute(createKeyspaceStatementCQL3(), org.apache.cassandraBloomFilters.db.ConsistencyLevel.LOCAL_ONE);
 
-            client.execute("USE \""+keyspace+"\"", org.apache.cassandra.db.ConsistencyLevel.LOCAL_ONE);
+            client.execute("USE \""+keyspace+"\"", org.apache.cassandraBloomFilters.db.ConsistencyLevel.LOCAL_ONE);
 
             //Add standard1 and counter1
-            client.execute(createStandard1StatementCQL3(settings), org.apache.cassandra.db.ConsistencyLevel.LOCAL_ONE);
-            client.execute(createCounter1StatementCQL3(settings), org.apache.cassandra.db.ConsistencyLevel.LOCAL_ONE);
+            client.execute(createStandard1StatementCQL3(settings), org.apache.cassandraBloomFilters.db.ConsistencyLevel.LOCAL_ONE);
+            client.execute(createCounter1StatementCQL3(settings), org.apache.cassandraBloomFilters.db.ConsistencyLevel.LOCAL_ONE);
 
             System.out.println(String.format("Created keyspaces. Sleeping %ss for propagation.", settings.node.nodes.size()));
             Thread.sleep(settings.node.nodes.size() * 1000L); // seconds

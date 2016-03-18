@@ -1,4 +1,4 @@
-package org.apache.cassandra;
+package org.apache.cassandraBloomFilters;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one

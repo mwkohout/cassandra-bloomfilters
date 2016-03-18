@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.stress;
+package org.apache.cassandraBloomFilters.stress;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 import com.google.common.io.ByteStreams;
 import org.apache.commons.lang3.StringUtils;
 
-import org.apache.cassandra.stress.settings.StressSettings;
+import org.apache.cassandraBloomFilters.stress.settings.StressSettings;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;

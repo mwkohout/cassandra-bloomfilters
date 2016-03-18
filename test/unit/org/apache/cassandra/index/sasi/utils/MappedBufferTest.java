@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.utils;
+package org.apache.cassandraBloomFilters.index.sasi.utils;
 
 import java.io.*;
 import java.nio.ByteBuffer;
@@ -23,9 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.apache.cassandra.db.marshal.LongType;
-import org.apache.cassandra.io.util.ChannelProxy;
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.db.marshal.LongType;
+import org.apache.cassandraBloomFilters.io.util.ChannelProxy;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package org.apache.cassandra.stress.settings;
+package org.apache.cassandraBloomFilters.stress.settings;
 /*
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -23,14 +23,14 @@ package org.apache.cassandra.stress.settings;
 
 import java.util.*;
 
-import org.apache.cassandra.stress.Operation;
-import org.apache.cassandra.stress.generate.DistributionFactory;
-import org.apache.cassandra.stress.generate.PartitionGenerator;
-import org.apache.cassandra.stress.generate.SeedManager;
-import org.apache.cassandra.stress.operations.OpDistributionFactory;
-import org.apache.cassandra.stress.operations.SampledOpDistributionFactory;
-import org.apache.cassandra.stress.operations.predefined.PredefinedOperation;
-import org.apache.cassandra.stress.util.Timer;
+import org.apache.cassandraBloomFilters.stress.Operation;
+import org.apache.cassandraBloomFilters.stress.generate.DistributionFactory;
+import org.apache.cassandraBloomFilters.stress.generate.PartitionGenerator;
+import org.apache.cassandraBloomFilters.stress.generate.SeedManager;
+import org.apache.cassandraBloomFilters.stress.operations.OpDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.operations.SampledOpDistributionFactory;
+import org.apache.cassandraBloomFilters.stress.operations.predefined.PredefinedOperation;
+import org.apache.cassandraBloomFilters.stress.util.Timer;
 
 // Settings unique to the mixed command type
 public class SettingsCommandPreDefinedMixed extends SettingsCommandPreDefined

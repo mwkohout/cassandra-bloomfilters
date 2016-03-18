@@ -17,12 +17,12 @@
  * under the License.
  *
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import java.nio.ByteBuffer;
 
 import org.junit.Test;
-import org.apache.cassandra.serializers.SimpleDateSerializer;
+import org.apache.cassandraBloomFilters.serializers.SimpleDateSerializer;
 
 public class SimpleDateTypeTest
 {

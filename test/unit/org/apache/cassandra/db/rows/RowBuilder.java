@@ -16,16 +16,16 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.db.rows;
+package org.apache.cassandraBloomFilters.db.rows;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.db.Clustering;
-import org.apache.cassandra.db.DeletionTime;
-import org.apache.cassandra.db.LivenessInfo;
-import org.apache.cassandra.utils.Pair;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.db.Clustering;
+import org.apache.cassandraBloomFilters.db.DeletionTime;
+import org.apache.cassandraBloomFilters.db.LivenessInfo;
+import org.apache.cassandraBloomFilters.utils.Pair;
 
 /**
  * Instrumented Builder implementation for testing the

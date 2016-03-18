@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.io.sstable.metadata;
+package org.apache.cassandraBloomFilters.io.sstable.metadata;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -27,17 +27,17 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.db.SerializationHeader;
-import org.apache.cassandra.db.commitlog.ReplayPosition;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.io.sstable.Component;
-import org.apache.cassandra.io.sstable.Descriptor;
-import org.apache.cassandra.io.sstable.format.big.BigFormat;
-import org.apache.cassandra.io.util.BufferedDataOutputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.db.SerializationHeader;
+import org.apache.cassandraBloomFilters.db.commitlog.ReplayPosition;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.io.sstable.Component;
+import org.apache.cassandraBloomFilters.io.sstable.Descriptor;
+import org.apache.cassandraBloomFilters.io.sstable.format.big.BigFormat;
+import org.apache.cassandraBloomFilters.io.util.BufferedDataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
 
 import static org.junit.Assert.assertEquals;
 

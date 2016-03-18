@@ -17,13 +17,13 @@
  * under the License.
  *
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import java.nio.ByteBuffer;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
-import org.apache.cassandra.serializers.TimeSerializer;
+import org.apache.cassandraBloomFilters.serializers.TimeSerializer;
 
 public class TimeTypeTest
 {

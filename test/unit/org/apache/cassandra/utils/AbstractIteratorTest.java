@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import junit.framework.TestCase;
 

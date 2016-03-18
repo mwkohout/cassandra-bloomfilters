@@ -18,12 +18,12 @@
  * under the License.
  *
  */
-package org.apache.cassandra.stress.generate.values;
+package org.apache.cassandraBloomFilters.stress.generate.values;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import org.apache.cassandra.db.marshal.InetAddressType;
+import org.apache.cassandraBloomFilters.db.marshal.InetAddressType;
 
 
 public class Inets extends Generator<InetAddress>

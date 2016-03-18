@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.cassandra.service;
+package org.apache.cassandraBloomFilters.service;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -28,23 +28,23 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.AbstractSerializationsTester;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.Util.PartitionerSwitcher;
-import org.apache.cassandra.dht.IPartitioner;
-import org.apache.cassandra.dht.RandomPartitioner;
-import org.apache.cassandra.dht.Range;
-import org.apache.cassandra.dht.Token;
-import org.apache.cassandra.io.util.DataInputPlus.DataInputStreamPlus;
-import org.apache.cassandra.io.util.DataOutputStreamPlus;
-import org.apache.cassandra.net.MessageIn;
-import org.apache.cassandra.net.MessagingService;
-import org.apache.cassandra.repair.NodePair;
-import org.apache.cassandra.repair.RepairJobDesc;
-import org.apache.cassandra.repair.Validator;
-import org.apache.cassandra.repair.messages.*;
-import org.apache.cassandra.utils.FBUtilities;
-import org.apache.cassandra.utils.MerkleTrees;
+import org.apache.cassandraBloomFilters.AbstractSerializationsTester;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.Util.PartitionerSwitcher;
+import org.apache.cassandraBloomFilters.dht.IPartitioner;
+import org.apache.cassandraBloomFilters.dht.RandomPartitioner;
+import org.apache.cassandraBloomFilters.dht.Range;
+import org.apache.cassandraBloomFilters.dht.Token;
+import org.apache.cassandraBloomFilters.io.util.DataInputPlus.DataInputStreamPlus;
+import org.apache.cassandraBloomFilters.io.util.DataOutputStreamPlus;
+import org.apache.cassandraBloomFilters.net.MessageIn;
+import org.apache.cassandraBloomFilters.net.MessagingService;
+import org.apache.cassandraBloomFilters.repair.NodePair;
+import org.apache.cassandraBloomFilters.repair.RepairJobDesc;
+import org.apache.cassandraBloomFilters.repair.Validator;
+import org.apache.cassandraBloomFilters.repair.messages.*;
+import org.apache.cassandraBloomFilters.utils.FBUtilities;
+import org.apache.cassandraBloomFilters.utils.MerkleTrees;
 
 public class SerializationsTest extends AbstractSerializationsTester
 {

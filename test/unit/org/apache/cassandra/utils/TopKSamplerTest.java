@@ -1,4 +1,4 @@
-package org.apache.cassandra.utils;
+package org.apache.cassandraBloomFilters.utils;
 
 import java.util.List;
 import java.util.Map;
@@ -14,7 +14,7 @@ import org.junit.Test;
 import com.clearspring.analytics.hash.MurmurHash;
 import com.clearspring.analytics.stream.Counter;
 import junit.framework.Assert;
-import org.apache.cassandra.utils.TopKSampler.SamplerResult;
+import org.apache.cassandraBloomFilters.utils.TopKSampler.SamplerResult;
 
 public class TopKSamplerTest
 {

@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.schema;
+package org.apache.cassandraBloomFilters.schema;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -25,25 +25,25 @@ import java.util.stream.Collectors;
 import com.google.common.collect.ImmutableList;
 import org.junit.Test;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.config.CFMetaData;
-import org.apache.cassandra.config.ColumnDefinition;
-import org.apache.cassandra.config.Schema;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.cql3.ColumnIdentifier;
-import org.apache.cassandra.cql3.functions.*;
-import org.apache.cassandra.db.*;
-import org.apache.cassandra.db.marshal.*;
-import org.apache.cassandra.index.TargetParser;
-import org.apache.cassandra.thrift.ThriftConversion;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.config.CFMetaData;
+import org.apache.cassandraBloomFilters.config.ColumnDefinition;
+import org.apache.cassandraBloomFilters.config.Schema;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.ColumnIdentifier;
+import org.apache.cassandraBloomFilters.cql3.functions.*;
+import org.apache.cassandraBloomFilters.db.*;
+import org.apache.cassandraBloomFilters.db.marshal.*;
+import org.apache.cassandraBloomFilters.index.TargetParser;
+import org.apache.cassandraBloomFilters.thrift.ThriftConversion;
 
 import static java.lang.String.format;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
-import static org.apache.cassandra.cql3.QueryProcessor.executeOnceInternal;
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
-import static org.apache.cassandra.utils.FBUtilities.json;
+import static org.apache.cassandraBloomFilters.cql3.QueryProcessor.executeOnceInternal;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.FBUtilities.json;
 
 @SuppressWarnings("deprecation")
 public class LegacySchemaMigratorTest

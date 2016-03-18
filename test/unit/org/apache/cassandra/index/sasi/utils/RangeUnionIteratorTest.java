@@ -15,18 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.index.sasi.utils;
+package org.apache.cassandraBloomFilters.index.sasi.utils;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-import org.apache.cassandra.index.sasi.disk.Token;
-import org.apache.cassandra.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.index.sasi.disk.Token;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.apache.cassandra.index.sasi.utils.LongIterator.convert;
+import static org.apache.cassandraBloomFilters.index.sasi.utils.LongIterator.convert;
 
 public class RangeUnionIteratorTest
 {

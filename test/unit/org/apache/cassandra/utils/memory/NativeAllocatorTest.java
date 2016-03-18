@@ -16,7 +16,7 @@
 * specific language governing permissions and limitations
 * under the License.
 */
-package org.apache.cassandra.utils.memory;
+package org.apache.cassandraBloomFilters.utils.memory;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicReference;
@@ -25,7 +25,7 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import org.junit.Test;
 
 import junit.framework.Assert;
-import org.apache.cassandra.utils.concurrent.OpOrder;
+import org.apache.cassandraBloomFilters.utils.concurrent.OpOrder;
 
 public class NativeAllocatorTest
 {

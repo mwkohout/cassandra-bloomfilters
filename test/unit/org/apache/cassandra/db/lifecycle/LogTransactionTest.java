@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.lifecycle;
+package org.apache.cassandraBloomFilters.db.lifecycle;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,24 +39,24 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import junit.framework.Assert;
-import org.apache.cassandra.MockSchema;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Directories;
-import org.apache.cassandra.db.SerializationHeader;
-import org.apache.cassandra.db.compaction.*;
-import org.apache.cassandra.io.sstable.*;
-import org.apache.cassandra.io.sstable.format.SSTableReader;
-import org.apache.cassandra.io.sstable.metadata.MetadataCollector;
-import org.apache.cassandra.io.sstable.metadata.MetadataType;
-import org.apache.cassandra.io.sstable.metadata.StatsMetadata;
-import org.apache.cassandra.io.util.BufferedSegmentedFile;
-import org.apache.cassandra.io.util.ChannelProxy;
-import org.apache.cassandra.io.util.FileUtils;
-import org.apache.cassandra.io.util.RandomAccessReader;
-import org.apache.cassandra.io.util.SegmentedFile;
-import org.apache.cassandra.utils.AlwaysPresentFilter;
-import org.apache.cassandra.utils.concurrent.AbstractTransactionalTest;
-import org.apache.cassandra.utils.concurrent.Transactional;
+import org.apache.cassandraBloomFilters.MockSchema;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Directories;
+import org.apache.cassandraBloomFilters.db.SerializationHeader;
+import org.apache.cassandraBloomFilters.db.compaction.*;
+import org.apache.cassandraBloomFilters.io.sstable.*;
+import org.apache.cassandraBloomFilters.io.sstable.format.SSTableReader;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataCollector;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.MetadataType;
+import org.apache.cassandraBloomFilters.io.sstable.metadata.StatsMetadata;
+import org.apache.cassandraBloomFilters.io.util.BufferedSegmentedFile;
+import org.apache.cassandraBloomFilters.io.util.ChannelProxy;
+import org.apache.cassandraBloomFilters.io.util.FileUtils;
+import org.apache.cassandraBloomFilters.io.util.RandomAccessReader;
+import org.apache.cassandraBloomFilters.io.util.SegmentedFile;
+import org.apache.cassandraBloomFilters.utils.AlwaysPresentFilter;
+import org.apache.cassandraBloomFilters.utils.concurrent.AbstractTransactionalTest;
+import org.apache.cassandraBloomFilters.utils.concurrent.Transactional;
 
 public class LogTransactionTest extends AbstractTransactionalTest
 {

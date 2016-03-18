@@ -15,10 +15,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.cql3.validation.entities;
+package org.apache.cassandraBloomFilters.cql3.validation.entities;
 
-import org.apache.cassandra.cql3.UntypedResultSet;
-import org.apache.cassandra.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.cql3.UntypedResultSet;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -72,17 +72,17 @@ public class TypeTest extends CQLTester
     // tests CASSANDRA-7797
     public void testAlterReversedColumn() throws Throwable
     {
-        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandra.db.marshal.DateType', PRIMARY KEY (a, b)) WITH CLUSTERING ORDER BY (b DESC)");
-        alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandra.db.marshal.ReversedType(org.apache.cassandra.db.marshal.TimestampType)'");
+        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandraBloomFilters.db.marshal.DateType', PRIMARY KEY (a, b)) WITH CLUSTERING ORDER BY (b DESC)");
+        alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandraBloomFilters.db.marshal.ReversedType(org.apache.cassandraBloomFilters.db.marshal.TimestampType)'");
     }
 
     @Test
     public void testIncompatibleReversedTypes() throws Throwable
     {
-        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandra.db.marshal.DateType', PRIMARY KEY (a, b)) WITH CLUSTERING ORDER BY (b DESC)");
+        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandraBloomFilters.db.marshal.DateType', PRIMARY KEY (a, b)) WITH CLUSTERING ORDER BY (b DESC)");
         try
         {
-            alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandra.db.marshal.ReversedType(org.apache.cassandra.db.marshal.TimeUUIDType)'");
+            alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandraBloomFilters.db.marshal.ReversedType(org.apache.cassandraBloomFilters.db.marshal.TimeUUIDType)'");
             fail("Expected error for ALTER statement");
         }
         catch (RuntimeException e) { }
@@ -91,10 +91,10 @@ public class TypeTest extends CQLTester
     @Test
     public void testReversedAndNonReversed() throws Throwable
     {
-        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandra.db.marshal.DateType', PRIMARY KEY (a, b))");
+        createTable("CREATE TABLE IF NOT EXISTS %s (a int, b 'org.apache.cassandraBloomFilters.db.marshal.DateType', PRIMARY KEY (a, b))");
         try
         {
-            alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandra.db.marshal.ReversedType(org.apache.cassandra.db.marshal.DateType)'");
+            alterTable("ALTER TABLE %s ALTER b TYPE 'org.apache.cassandraBloomFilters.db.marshal.ReversedType(org.apache.cassandraBloomFilters.db.marshal.DateType)'");
             fail("Expected error for ALTER statement");
         }
         catch (RuntimeException e) { }

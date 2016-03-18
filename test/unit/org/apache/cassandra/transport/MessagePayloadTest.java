@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.transport;
+package org.apache.cassandraBloomFilters.transport;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -29,28 +29,28 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.cql3.BatchQueryOptions;
-import org.apache.cassandra.cql3.CQLStatement;
-import org.apache.cassandra.cql3.QueryHandler;
-import org.apache.cassandra.cql3.QueryOptions;
-import org.apache.cassandra.cql3.QueryProcessor;
-import org.apache.cassandra.cql3.statements.BatchStatement;
-import org.apache.cassandra.cql3.statements.ParsedStatement;
-import org.apache.cassandra.cql3.CQLTester;
-import org.apache.cassandra.dht.ByteOrderedPartitioner;
-import org.apache.cassandra.exceptions.RequestExecutionException;
-import org.apache.cassandra.exceptions.RequestValidationException;
-import org.apache.cassandra.service.ClientState;
-import org.apache.cassandra.service.QueryState;
-import org.apache.cassandra.transport.messages.BatchMessage;
-import org.apache.cassandra.transport.messages.ExecuteMessage;
-import org.apache.cassandra.transport.messages.PrepareMessage;
-import org.apache.cassandra.transport.messages.QueryMessage;
-import org.apache.cassandra.transport.messages.ResultMessage;
-import org.apache.cassandra.utils.MD5Digest;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.cql3.BatchQueryOptions;
+import org.apache.cassandraBloomFilters.cql3.CQLStatement;
+import org.apache.cassandraBloomFilters.cql3.QueryHandler;
+import org.apache.cassandraBloomFilters.cql3.QueryOptions;
+import org.apache.cassandraBloomFilters.cql3.QueryProcessor;
+import org.apache.cassandraBloomFilters.cql3.statements.BatchStatement;
+import org.apache.cassandraBloomFilters.cql3.statements.ParsedStatement;
+import org.apache.cassandraBloomFilters.cql3.CQLTester;
+import org.apache.cassandraBloomFilters.dht.ByteOrderedPartitioner;
+import org.apache.cassandraBloomFilters.exceptions.RequestExecutionException;
+import org.apache.cassandraBloomFilters.exceptions.RequestValidationException;
+import org.apache.cassandraBloomFilters.service.ClientState;
+import org.apache.cassandraBloomFilters.service.QueryState;
+import org.apache.cassandraBloomFilters.transport.messages.BatchMessage;
+import org.apache.cassandraBloomFilters.transport.messages.ExecuteMessage;
+import org.apache.cassandraBloomFilters.transport.messages.PrepareMessage;
+import org.apache.cassandraBloomFilters.transport.messages.QueryMessage;
+import org.apache.cassandraBloomFilters.transport.messages.ResultMessage;
+import org.apache.cassandraBloomFilters.utils.MD5Digest;
 
-import static org.apache.cassandra.utils.ByteBufferUtil.bytes;
+import static org.apache.cassandraBloomFilters.utils.ByteBufferUtil.bytes;
 
 public class MessagePayloadTest extends CQLTester
 {

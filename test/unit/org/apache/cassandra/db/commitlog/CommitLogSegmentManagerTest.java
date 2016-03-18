@@ -1,4 +1,4 @@
-package org.apache.cassandra.db.commitlog;
+package org.apache.cassandraBloomFilters.db.commitlog;
 
 import java.nio.ByteBuffer;
 import java.util.Random;
@@ -6,19 +6,19 @@ import java.util.concurrent.Semaphore;
 
 import javax.naming.ConfigurationException;
 
-import org.apache.cassandra.SchemaLoader;
-import org.apache.cassandra.Util;
-import org.apache.cassandra.config.Config.CommitLogSync;
-import org.apache.cassandra.config.DatabaseDescriptor;
-import org.apache.cassandra.config.ParameterizedClass;
-import org.apache.cassandra.db.ColumnFamilyStore;
-import org.apache.cassandra.db.Keyspace;
-import org.apache.cassandra.db.Mutation;
-import org.apache.cassandra.db.RowUpdateBuilder;
-import org.apache.cassandra.db.compaction.CompactionManager;
-import org.apache.cassandra.db.marshal.AsciiType;
-import org.apache.cassandra.db.marshal.BytesType;
-import org.apache.cassandra.schema.KeyspaceParams;
+import org.apache.cassandraBloomFilters.SchemaLoader;
+import org.apache.cassandraBloomFilters.Util;
+import org.apache.cassandraBloomFilters.config.Config.CommitLogSync;
+import org.apache.cassandraBloomFilters.config.DatabaseDescriptor;
+import org.apache.cassandraBloomFilters.config.ParameterizedClass;
+import org.apache.cassandraBloomFilters.db.ColumnFamilyStore;
+import org.apache.cassandraBloomFilters.db.Keyspace;
+import org.apache.cassandraBloomFilters.db.Mutation;
+import org.apache.cassandraBloomFilters.db.RowUpdateBuilder;
+import org.apache.cassandraBloomFilters.db.compaction.CompactionManager;
+import org.apache.cassandraBloomFilters.db.marshal.AsciiType;
+import org.apache.cassandraBloomFilters.db.marshal.BytesType;
+import org.apache.cassandraBloomFilters.schema.KeyspaceParams;
 import org.jboss.byteman.contrib.bmunit.BMRule;
 import org.jboss.byteman.contrib.bmunit.BMUnitRunner;
 import org.junit.Assert;
@@ -60,8 +60,8 @@ public class CommitLogSegmentManagerTest
     @BMRule(name = "Block AbstractCommitLogSegment segment flushing",
             targetClass = "AbstractCommitLogService$1",
             targetMethod = "run",
-            targetLocation = "AT INVOKE org.apache.cassandra.db.commitlog.CommitLog.sync",
-            action = "org.apache.cassandra.db.commitlog.CommitLogSegmentManagerTest.allowSync.acquire()")
+            targetLocation = "AT INVOKE org.apache.cassandraBloomFilters.db.commitlog.CommitLog.sync",
+            action = "org.apache.cassandraBloomFilters.db.commitlog.CommitLogSegmentManagerTest.allowSync.acquire()")
     public void testCompressedCommitLogBackpressure() throws Throwable
     {
         CommitLog.instance.resetUnsafe(true);

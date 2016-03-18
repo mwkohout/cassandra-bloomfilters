@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.cassandra.db.marshal;
+package org.apache.cassandraBloomFilters.db.marshal;
 
 import java.nio.ByteBuffer;
 import java.util.*;
@@ -28,8 +28,8 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import org.apache.cassandra.utils.ByteBufferUtil;
-import org.apache.cassandra.serializers.*;
+import org.apache.cassandraBloomFilters.utils.ByteBufferUtil;
+import org.apache.cassandraBloomFilters.serializers.*;
 
 public class CollectionTypeTest
 {
